@@ -30,9 +30,22 @@ set autochdir														" 현재 디렉토리를 자동으로 working dir로 
 set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch														" 검색결과에 하이라이트 표시
 set background=dark											" 바탕화면 어둡게
-
 " =============================================================================
 
+" ================================매핑세팅 관리 ================================
+" 리더키 <space>로 설정
+let mapleader=" "
+" 로컬리더키 <space>로 설정
+nnoremap <space> <Nop>
+" normal모드에서 <TAB>누르면 다음버퍼로
+nnoremap <silent> <TAB> :bnext<CR>
+" normal모드에서 <Shift-TAB>누르면 이전버퍼로
+nnoremap <silent> <S-TAB> :bprevious<CR>
+" visual모드에서
+" shift + k = 그 줄 올리기
+" shift + j = 그 줄 내리기
+" =============================================================================
+"
 " ================================플러그인 관리================================
 " vim-plug 자동 설치
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -56,3 +69,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 call plug#end()
 " =============================================================================
+"
