@@ -19,6 +19,17 @@ set laststatus=2                        " 상태바 표시(항상 표시)
 set showmatch														" 괄호쌍 보이기
 set cursorline													" 커서있는곳 라인으로 표시해줌
 set t_Co=256														" 256색 적용
+set noshowmode													" --INSERT-- 안보이게 하기
+set nobackup														" 백업파일 안생기도록 함
+set nowritebackup												" 백업파일 안생기게 함
+set shortmess+=c												" 사용자가 정의한 메세지 숨기기
+set updatetime=300											" completion 속도 증가
+set timeoutlen=100											" 타임아웃시간 0.1초로 지정
+set clipboard=unnamedplus								" 복사 붙여넣기 어디든 되도록 함
+set autochdir														" 현재 디렉토리를 자동으로 working dir로 설정
+set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
+set hlsearch														" 검색결과에 하이라이트 표시
+set background=dark											" 바탕화면 어둡게
 
 " =============================================================================
 
