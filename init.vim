@@ -30,6 +30,7 @@ set autochdir														" 현재 디렉토리를 자동으로 working dir로 
 set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch														" 검색결과에 하이라이트 표시
 set background=dark											" 바탕화면 어둡게
+set showtabline=2												" 무조건적으로 퍼버 보이도록 하기
 " =============================================================================
 
 " ================================매핑세팅 관리 ================================
@@ -37,13 +38,42 @@ set background=dark											" 바탕화면 어둡게
 let mapleader=" "
 " 로컬리더키 <space>로 설정
 nnoremap <space> <Nop>
+
 " normal모드에서 <TAB>누르면 다음버퍼로
 nnoremap <silent> <TAB> :bnext<CR>
 " normal모드에서 <Shift-TAB>누르면 이전버퍼로
 nnoremap <silent> <S-TAB> :bprevious<CR>
+
 " visual모드에서
 " shift + k = 그 줄 올리기
 " shift + j = 그 줄 내리기
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
+" <C-s>: :w로 동작하도록
+nnoremap <silent> <C-s> :w<CR>
+" <C-q>: :wq로 동작하도록
+nnoremap <silent> <C-q> :wq<CR>
+" <C-c>: <ESC>로 동작하도록
+nnoremap <silent> <C-c> <ESC>
+
+" 터미널 분할 창 이동
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" normal모드에서 창 크기 조절
+nnoremap <silent> <C-Up>		:resize -2<CR>
+nnoremap <silent> <C-Down>	:resize +2<CR>
+nnoremap <silent> <C-Left>	:vertical resize -2<CR>
+nnoremap <silent> <C-Right>	:vertical resize +2<CR>
+
+" insert모드에서 자동완성 팝업 움직이기
+" <TAB> = 다음
+inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" <c-k> = 이전
+inoremap <expr> <c-k> ("\<C-p>")
 " =============================================================================
 "
 " ================================플러그인 관리================================
@@ -69,4 +99,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 call plug#end()
 " =============================================================================
-"
+
+" ================================vim-commentary===============================
+" <space>/ : 자동 주석처리
+function! Comment()
+	if(mode() == "n")
+		execute "Commentary"
+	else
+		execute "'<,'>Commentary"
+	endif
+endfunction
+vnoremap <silent> <space>/ :call Comment()
+" =============================================================================
