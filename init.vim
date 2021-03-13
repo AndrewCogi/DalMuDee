@@ -108,6 +108,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 
+	" 
+
 call plug#end()
 " =============================================================================
 
@@ -146,8 +148,18 @@ colorscheme lucius									" Lucius color scheme
 " ====================[(Plug)vim-airline & airline-themes]=====================
 " 탭라인(버퍼)테마구분 활성화
 let g:airline#extensions#tabline#enabled = 1
-" > 모양으로 airline 설정
-let g:airline_powerline_fonts = 1
+" | 모양으로 airline 설정
+let g:airline_powerline_fonts = 1			" 구분자 활성화
+let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값)
+let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값)
+let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값) 
 " 버퍼 보이는 형식 지정(이름과 확장자만 보이도록 했음)
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+" airline 레이아웃설정
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'waring', 'error']]
+" 레이아웃 section별 설정
+let g:airline_section_a = "JNvim2.0"
+let g:airline_section_y = ''
+let g:webdevicons_enable_airline_tabline = 1
 " =============================================================================
