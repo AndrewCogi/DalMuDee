@@ -1,4 +1,4 @@
-" ================================기본세팅 관리================================
+" ==============================[기본세팅 관리]================================
 syntax on																" 구문강조 하이라이팅 킴
 set nowrap															" 자동 줄바꿈 안되도록 함
 set splitbelow													" 가로로 창 분할 시, 새 창은 아래에 생기도록
@@ -24,19 +24,19 @@ set nobackup														" 백업파일 안생기도록 함
 set nowritebackup												" 백업파일 안생기게 함
 set shortmess+=c												" 사용자가 정의한 메세지 숨기기
 set updatetime=300											" completion 속도 증가
-set timeoutlen=100											" 타임아웃시간 0.1초로 지정
+set timeoutlen=1000											" 타임아웃시간 1초로 지정
 set clipboard=unnamedplus								" 복사 붙여넣기 어디든 되도록 함
 set autochdir														" 현재 디렉토리를 자동으로 working dir로 설정
 set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch														" 검색결과에 하이라이트 표시
 set background=dark											" 바탕화면 어둡게
-set showtabline=2												" 무조건적으로 퍼버 보이도록 하기
+set showtabline=2												" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
 " =============================================================================
 
-" ================================매핑세팅 관리 ================================
+" ===============================[매핑세팅 관리]===============================
 " 리더키 <space>로 설정
-let mapleader=" "
-" 로컬리더키 <space>로 설정
+let mapleader = " "
+" <space>가 매핑으로 사용되는지 체크
 nnoremap <space> <Nop>
 
 " normal모드에서 <TAB>누르면 다음버퍼로
@@ -74,9 +74,13 @@ nnoremap <silent> <C-Right>	:vertical resize +2<CR>
 inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " <c-k> = 이전
 inoremap <expr> <c-k> ("\<C-p>")
+
+" >>랑 <<후에도 visual block 유지되도록
+vnoremap > >gv
+vnoremap < <gv
 " =============================================================================
-"
-" ================================플러그인 관리================================
+
+" ===============================[플러그인 관리]===============================
 " vim-plug 자동 설치
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -90,17 +94,25 @@ autocmd VimEnter *
   \| endif
 " =============================================================================
 
-" ================================플러그인 종류================================
+" ===============================[플러그인 종류]===============================
 call plug#begin('~/.config/nvim/autoload/plugged')
 
   " 주석처리 플러그인
   " <space>/ 로 주석처리 가능
   Plug 'tpope/vim-commentary'
+	" 주석처리 시 파일따라 주석문자 알아서 판단
+	Plug 'suy/vim-context-commentstring'
+
+	" 테마 플러그인
+	Plug 'rafi/awesome-vim-colorschemes'
+	" airline테마 플러그인
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 " =============================================================================
 
-" ================================vim-commentary===============================
+" ===========================[(Plug)vim-commentary]============================
 " <space>/ : 자동 주석처리
 function! Comment()
 	if(mode() == "n")
@@ -109,5 +121,18 @@ function! Comment()
 		execute "'<,'>Commentary"
 	endif
 endfunction
-vnoremap <silent> <space>/ :call Comment()
+" gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
+nnoremap <silent> <space>/ :call Comment()<CR>
+vnoremap <silent> <space>/ :call Comment()<CR> gv
 " =============================================================================
+
+" ======================[(Plug)awesome-vim-colorschemes]=======================
+" https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
+" colorscheme dogrun									" Dark purple
+" colorscheme afterglow								" Adaptation from Sublime Text
+" colorscheme alduin									" Dark rustic colors
+" colorscheme iceberg									" Dark blue color scheme
+" colorscheme onedark									" Inspired by Atom's One Dark syntax theme
+colorscheme space-vim-dark					" Dark magenta colors
+" =============================================================================
+
