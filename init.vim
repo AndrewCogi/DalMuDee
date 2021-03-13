@@ -29,7 +29,6 @@ set clipboard=unnamedplus								" 복사 붙여넣기 어디든 되도록 함
 set autochdir														" 현재 디렉토리를 자동으로 working dir로 설정
 set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch														" 검색결과에 하이라이트 표시
-set background=dark											" 바탕화면 어둡게
 set showtabline=2												" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
 " =============================================================================
 
@@ -128,11 +127,27 @@ vnoremap <silent> <space>/ :call Comment()<CR> gv
 
 " ======================[(Plug)awesome-vim-colorschemes]=======================
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
-" colorscheme dogrun									" Dark purple
-" colorscheme afterglow								" Adaptation from Sublime Text
 " colorscheme alduin									" Dark rustic colors
 " colorscheme iceberg									" Dark blue color scheme
 " colorscheme onedark									" Inspired by Atom's One Dark syntax theme
-colorscheme space-vim-dark					" Dark magenta colors
+" colorscheme gruvbox									" Retro groove color scheme
+" colorscheme hybrid									" A dark color scheme for vim/gvim
+colorscheme lucius									" Lucius color scheme
+" colorscheme minimalist							" Darker version of material theme inspired by Sublime Text
+" colorscheme molokai									" Molokai color scheme
+" colorscheme nord										" An arctic, north-bluish clean and elegant theme
+" colorscheme purify									" Clean & vibrant color schemes for Vim, Terminals...
+" colorscheme seoul256								" Low-contrast color scheme based on Seoul Colors
+" colorscheme sierra									" Dark vintage colors
+" colorscheme sonokai									" Vivid and high contrast based on Monokai Pro
+" colorscheme tender									" 24bit colorscheme for Vim
 " =============================================================================
 
+" ====================[(Plug)vim-airline & airline-themes]=====================
+" 탭라인(버퍼)테마구분 활성화
+let g:airline#extensions#tabline#enabled = 1
+" > 모양으로 airline 설정
+let g:airline_powerline_fonts = 1
+" 버퍼 보이는 형식 지정(이름과 확장자만 보이도록 했음)
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+" =============================================================================
