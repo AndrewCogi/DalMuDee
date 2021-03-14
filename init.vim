@@ -129,6 +129,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 	" 간단한 커맨드 사용으로 단어이동하는 플러그인
 	Plug 'easymotion/vim-easymotion'
+	" 여러가지 기호로 단어 감싸는 커맨드 플러그인
+	Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -230,14 +232,33 @@ let g:qs_max_chars=150
 " ============================[(Plug)easy motion]==============================
 
 " 기본 키바인딩 사용
-map <Leader>s <Plug>(easymotion-prefix)
+map <leader> <Plug>(easymotion-prefix)
 
-" (이정도만 숙지하자)
-" TODO 나중에 which-key에는 다 찾아서 넣어주자!!
-" sj: 아랫줄 위치 선택하여 이동
-" sk: 윗줄 위치 선택하여 이동
-" st: 추가단어 하나더 입력 후 그 단어 앞으로 이동(앞으로 이동)
-" ss: 추가단어 하나더 입력 후 그 단어 찾아 이동
-" sw,se,sb: web로 이동 가능한 곳 한번에 골라 이동(WEB동일)
+" [ 이정도만 숙지하자 ]
+
+" j: 아랫줄 위치 선택하여 이동
+" k: 윗줄 위치 선택하여 이동
+" s: 추가단어 하나더 입력 후 그 단어 찾아 이동
+
+" =============================================================================
+
+
+" ==============================[(Plug)surround]===============================
+
+" ref) https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
+
+" [ 이정도만 숙지하자 ]
+
+" ys: ( you surround )
+" yss?: ?로 그 줄을 감싼다. ( <로 시작해서 html처럼 감싸기 가능! )
+" ysiw?: ?로 그 단어를 감싼다.
+
+" ds: ( delete surround )
+" ds?: ?로 감싸져있던거 지운다.
+" dst: <p>같은 html문을 지울 수 있다.
+
+" cs: ( change surround )
+" cs?!: ?를 !로 바꾼다.
+" cst?: html문을 ?로 바꾼다.
 
 " =============================================================================
