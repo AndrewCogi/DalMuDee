@@ -1,4 +1,5 @@
 " ==============================[기본세팅 관리]================================
+
 syntax on																" 구문강조 하이라이팅 킴
 set nowrap															" 자동 줄바꿈 안되도록 함
 set splitbelow													" 가로로 창 분할 시, 새 창은 아래에 생기도록
@@ -30,9 +31,12 @@ set autochdir														" 현재 디렉토리를 자동으로 working dir로 
 set incsearch														" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch														" 검색결과에 하이라이트 표시
 set showtabline=2												" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
+
 " =============================================================================
 
+
 " ===============================[매핑세팅 관리]===============================
+
 " 리더키 <space>로 설정
 let mapleader = " "
 " <space>가 매핑으로 사용되는지 체크
@@ -77,9 +81,12 @@ inoremap <expr> <c-k> ("\<C-p>")
 " >>랑 <<후에도 visual block 유지되도록
 vnoremap > >gv
 vnoremap < <gv
+
 " =============================================================================
 
+
 " ===============================[플러그인 관리]===============================
+
 " vim-plug 자동 설치
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -91,9 +98,12 @@ autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
 " =============================================================================
 
+
 " ===============================[플러그인 종류]===============================
+
 call plug#begin('~/.config/nvim/autoload/plugged')
 
   " 주석처리 플러그인
@@ -108,12 +118,22 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 
-	" 
+	" 날짜 빠르게 바꿔주는 플로그인
+	" ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
+	Plug 'tpope/vim-speeddating'
+	" speeddating에 필요
+	Plug 'tpope/vim-repeat'
+
+	" f,F,t,T 사용 시 이동단어 하이라이트해줌
+	Plug 'unblevable/quick-scope'
 
 call plug#end()
+
 " =============================================================================
 
+
 " ===========================[(Plug)vim-commentary]============================
+
 " <space>/ : 자동 주석처리
 function! Comment()
 	if(mode() == "n")
@@ -125,9 +145,12 @@ endfunction
 " gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
 nnoremap <silent> <space>/ :call Comment()<CR>
 vnoremap <silent> <space>/ :call Comment()<CR> gv
+
 " =============================================================================
 
+
 " ======================[(Plug)awesome-vim-colorschemes]=======================
+
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
 " colorscheme alduin									" Dark rustic colors
 " colorscheme iceberg									" Dark blue color scheme
@@ -143,9 +166,12 @@ colorscheme lucius									" Lucius color scheme
 " colorscheme sierra									" Dark vintage colors
 " colorscheme sonokai									" Vivid and high contrast based on Monokai Pro
 " colorscheme tender									" 24bit colorscheme for Vim
+
 " =============================================================================
 
+
 " ====================[(Plug)vim-airline & airline-themes]=====================
+
 " 탭라인(버퍼)테마구분 활성화
 let g:airline#extensions#tabline#enabled = 1
 
@@ -160,7 +186,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " airline 레이아웃설정
-let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'waring', 'error']]
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['z', 'waring', 'error']]
 
 " 레이아웃 section별 설정
 let g:airline_section_a = "JNvim2.0"
@@ -175,9 +201,24 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#fnamecollapse = 1
 
-" ???
+" extention options
+let g:airline_extensions = ['branch', 'hunks', 'coc']
 let g:airline#extensions#tabline#buffers_label = ''
 let g:airline#extensions#tabline#tabs_label = ''
 let g:airline#extensions#coc#enabled = 1
+
+" =============================================================================
+
+
+" ============================[(Plug)quick-scope]==============================
+
+" 하이라이팅 활성화 키 설정
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" 하이라이팅 색 및 언더바 설정
+highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#eF5F70' gui=underline ctermfg=81 cterm=underline
+" 표시갯수 최대치
+let g:qs_max_chars=150
 
 " =============================================================================
