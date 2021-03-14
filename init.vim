@@ -127,6 +127,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" f,F,t,T 사용 시 이동단어 하이라이트해줌
 	Plug 'unblevable/quick-scope'
 
+	" 간단한 커맨드 사용으로 단어이동하는 플러그인
+	Plug 'easymotion/vim-easymotion'
+
 call plug#end()
 
 " =============================================================================
@@ -202,10 +205,10 @@ let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#fnamecollapse = 1
 
 " extention options
-let g:airline_extensions = ['branch', 'hunks', 'coc']
-let g:airline#extensions#tabline#buffers_label = ''
-let g:airline#extensions#tabline#tabs_label = ''
-let g:airline#extensions#coc#enabled = 1
+" let g:airline_extensions = ['branch', 'hunks', 'coc']
+" let g:airline#extensions#tabline#buffers_label = ''
+" let g:airline#extensions#tabline#tabs_label = ''
+" let g:airline#extensions#coc#enabled = 1
 
 " =============================================================================
 
@@ -220,5 +223,20 @@ highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=unde
 highlight QuickScopeSecondary guifg='#eF5F70' gui=underline ctermfg=81 cterm=underline
 " 표시갯수 최대치
 let g:qs_max_chars=150
+
+" =============================================================================
+
+
+" ============================[(Plug)easy motion]==============================
+
+" 기본 키바인딩 사용
+map <Leader>s <Plug>(easymotion-prefix)
+
+" (이정도만 숙지하자)
+" sj: 아랫줄 위치 선택하여 이동
+" sk: 윗줄 위치 선택하여 이동
+" st: 추가단어 하나더 입력 후 그 단어 앞으로 이동(앞으로 이동)
+" ss: 추가단어 하나더 입력 후 그 단어 찾아 이동
+" sw,se,sb: web로 이동 가능한 곳 한번에 골라 이동(WEB동일)
 
 " =============================================================================
