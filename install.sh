@@ -18,6 +18,3 @@ git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
 
 echo "Installing Plugins..."
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
-
-echo "apply .promptline.sh file"
-source ~/.config/nvim/.promptline.sh

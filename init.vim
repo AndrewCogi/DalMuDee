@@ -284,9 +284,13 @@ let g:promptline_preset = {
         \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
 
-" .promptline.sh 생성방법
+" TODO .promptline.sh 생성 및 적용하기
 " ref) https://github.com/edkolev/promptline.vim
-" :PromptlineSnapshot! ~/.config/nvim/.promptline.sh
+" :w
+" :source %
+" :PromptlineSnapshot! ~/.promptline.sh
+" .bashrc 들어가서 source ~/.promptline.sh추가
+" sudo reboot now
 
 " =============================================================================
 
