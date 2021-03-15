@@ -15,3 +15,6 @@ sudo apt install neovim -y
 
 echo "Cloning JNvim2.0 Configuration..."
 git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
+
+echo "make .promptline.sh file"
+autocmd VimEnter * PromptlineSnapshot! ~/.promptline.sh | source $MYVIMRC
