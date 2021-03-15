@@ -132,6 +132,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" 여러가지 기호로 단어 감싸는 커맨드 플러그인
 	Plug 'tpope/vim-surround'
 
+	" vim에서 터미널 실행!
+	" TODO 플러그인 설치 후 해야 할게 있음. 
+	Plug 'edkolev/promptline.vim'
 call plug#end()
 
 " =============================================================================
@@ -258,7 +261,28 @@ map <leader> <Plug>(easymotion-prefix)
 " dst: <p>같은 html문을 지울 수 있다.
 
 " cs: ( change surround )
+"
 " cs?!: ?를 !로 바꾼다.
 " cst?: html문을 ?로 바꾼다.
+
+" visual모드로 블록잡고 S눌러서 그만큼만 커버쳐줌
+xmap S   VSurround
+
+" =============================================================================
+
+
+" ==============================[(Plug)surround]===============================
+
+" 프롬프트 테마 airline 테마랑 같도록 함.
+let g:promptline_theme = 'airline'
+
+" section별 보여줄 것들 설정
+" sections (a, b, c, x, y, z, warn) are optional
+let g:promptline_preset = {
+        \'a' : [ promptline#slices#user() ],
+        \'b' : [ promptline#slices#cwd() ],
+        \'c' : [ promptline#slices#git_status() ],
+        \'y' : [ promptline#slices#vcs_branch() ],
+        \'warn' : [ promptline#slices#last_exit_code() ]}
 
 " =============================================================================
