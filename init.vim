@@ -289,7 +289,8 @@ let g:promptline_preset = {
 " :w
 " :source %
 " :PromptlineSnapshot! ~/.promptline.sh
-" .bashrc 들어가서 source ~/.promptline.sh추가
+" :q
+" .bashrc 들어가서 'source ~/.promptline.sh'추가
 " sudo reboot now
 
 " =============================================================================
