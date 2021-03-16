@@ -134,6 +134,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 	" 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
 	Plug 'edkolev/promptline.vim'
+
+	" root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
+	Plug 'airblade/vim-rooter'
+
+	" indent 세팅 스스로 설정해주는 플러그인
+	Plug 'tpope/vim-sleuth'
+
 call plug#end()
 
 " =============================================================================
