@@ -111,35 +111,35 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     " 주석처리 시 파일따라 주석문자 알아서 판단
     Plug 'suy/vim-context-commentstring'
-
     " 테마 플러그인
     Plug 'rafi/awesome-vim-colorschemes'
     " airline테마 플러그인
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-
     " 날짜 빠르게 바꿔주는 플로그인
     " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
     Plug 'tpope/vim-speeddating'
     " speeddating에 필요
     Plug 'tpope/vim-repeat'
-
     " f,F,t,T 사용 시 이동단어 하이라이트해줌
     Plug 'unblevable/quick-scope'
-
     " 간단한 커맨드 사용으로 단어이동하는 플러그인
     Plug 'easymotion/vim-easymotion'
     " 여러가지 기호로 단어 감싸는 커맨드 플러그인
     Plug 'tpope/vim-surround'
-
     " 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
     Plug 'edkolev/promptline.vim'
-
     " root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
     Plug 'airblade/vim-rooter'
-
     " 들여쓰기 자동세팅해줌(파일따라 다르게 잘해준다!)
     Plug 'tpope/vim-sleuth'
+    " syntax support 플러그인
+    Plug 'sheerun/vim-polyglot'
+    " Treesitter - language parsers & queries & modules!
+    " LSP랑 연결해주는 다리역할 겸 하이라이팅 등 다양한 모듈 지원
+    " treesitter.lua 파일에 세팅있음
+    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'nvim-treesitter/playground'
 
 call plug#end()
 
@@ -171,11 +171,11 @@ vnoremap <silent> <space>/ :call Comment()<CR> gv
 " colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme gruvbox                   " Retro groove color scheme
 " colorscheme hybrid                    " A dark color scheme for vim/gvim
-colorscheme lucius                    " Lucius color scheme
+" colorscheme lucius                    " Lucius color scheme
 " colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
 " colorscheme molokai                   " Molokai color scheme
 " colorscheme nord                      " An arctic, north-bluish clean and elegant theme
-" colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
+colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
 " colorscheme sierra                    " Dark vintage colors
 " colorscheme tender                    " 24bit colorscheme for Vim
 " colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro

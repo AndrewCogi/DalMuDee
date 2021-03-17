@@ -13,6 +13,9 @@ echo "Install neovim 5.0..."
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt install neovim -y
 
+echo "Install prerequisites..."
+sudo apt install clang -y
+
 echo "Cloning JNvim2.0 Configuration..."
 git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
 
