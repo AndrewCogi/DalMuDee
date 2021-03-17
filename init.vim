@@ -1,36 +1,36 @@
 "==============================[기본세팅 관리]================================
 
-syntax on												" 구문강조 하이라이팅 킴
-set nowrap											" 자동 줄바꿈 안되도록 함
-set splitbelow									" 가로로 창 분할 시, 새 창은 아래에 생기도록
-set splitright									" 세로로 창 분할 시, 새 창은 오른쪽에 생기도록
-set mouse=a											" 마우스 사용가능
-set encoding=utf-8							" 인코딩 한글깨짐 방지
-set fileencoding=utf-8					" 파일 인코딩 한글깨짐 방지
-set cmdheight=2									" --INSERT--나오는 부분 높이 2로 설정
-set ruler												" 우측 하단에 커서위치 표시
-set number											" 라인번호 표시
-set pumheight=10								" 팝업리스트 10개까지 보이도록 함
-set autoindent									" 자동 들여쓰기 활성화
-set smartindent									" 조금 더 똑똑한 들여쓰기 활성화
-set shiftwidth=2								" 자동 들여쓰기 2칸
-set smarttab										" 조금 더 똑똑한 탭 활성화
-set tabstop=2										" 탭 한번 = 띄어쓰기 2번 설정
-set laststatus=2								" 상태바 표시(항상 표시)
-set showmatch										" 괄호쌍 보이기
-set cursorline									" 커서있는곳 라인으로 표시해줌
-set t_Co=256										" 256색 적용
-set noshowmode									" --INSERT-- 안보이게 하기
-set nobackup										" 백업파일 안생기도록 함
-set nowritebackup								" 백업파일 안생기게 함
-set shortmess+=c								" 사용자가 정의한 메세지 숨기기
-set updatetime=300							" completion 속도 증가
-set timeoutlen=1000							" 타임아웃시간 1초로 지정
-set clipboard=unnamedplus				" 복사 붙여넣기 어디든 되도록 함
-set autochdir										" 현재 디렉토리를 자동으로 working dir로 설정
-set incsearch										" 한글자 입력할때마다 매칭되는부분 알려주도록 함
-set hlsearch										" 검색결과에 하이라이트 표시
-set showtabline=2								" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
+syntax on			                     		" 구문강조 하이라이팅 킴
+set nowrap			                   		" 자동 줄바꿈 안되도록 함
+set splitbelow			               		" 가로로 창 분할 시, 새 창은 아래에 생기도록
+set splitright			    	          	" 세로로 창 분할 시, 새 창은 오른쪽에 생기도록
+set mouse=a			                  		" 마우스 사용가능
+set encoding=utf-8			            	" 인코딩 한글깨짐 방지
+set fileencoding=utf-8			        	" 파일 인코딩 한글깨짐 방지
+set cmdheight=2			              		" --INSERT--나오는 부분 높이 2로 설정
+set ruler			                    		" 우측 하단에 커서위치 표시
+set number				                  	" 라인번호 표시
+set pumheight=10		               		" 팝업리스트 10개까지 보이도록 함
+set autoindent				              	" 자동 들여쓰기 활성화
+set smartindent		              			" 조금 더 똑똑한 들여쓰기 활성화
+set shiftwidth=2		              		" 자동 들여쓰기 2칸
+set smarttab				                	" 조금 더 똑똑한 탭 활성화
+set tabstop=2			                		" 탭 한번 = 띄어쓰기 2번 설정
+set laststatus=2		              		" 상태바 표시(항상 표시)
+set showmatch				                	" 괄호쌍 보이기
+set cursorline			              		" 커서있는곳 라인으로 표시해줌
+set t_Co=256			                		" 256색 적용
+set noshowmode		              			" --INSERT-- 안보이게 하기
+set nobackup			                		" 백업파일 안생기도록 함
+set nowritebackup			              	" 백업파일 안생기게 함
+set shortmess+=c			              	" 사용자가 정의한 메세지 숨기기
+set updatetime=300		            		" completion 속도 증가
+set timeoutlen=1000			            	" 타임아웃시간 1초로 지정
+set clipboard=unnamedplus			        " 복사 붙여넣기 어디든 되도록 함
+set autochdir			                		" 현재 디렉토리를 자동으로 working dir로 설정
+set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
+set hlsearch		                			" 검색결과에 하이라이트 표시
+set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
 
 " =============================================================================
 
@@ -106,37 +106,40 @@ autocmd VimEnter *
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-  " 주석처리 플러그인
-  " <space>/ 로 주석처리 가능
-  Plug 'tpope/vim-commentary'
-	" 주석처리 시 파일따라 주석문자 알아서 판단
-	Plug 'suy/vim-context-commentstring'
+    " 주석처리 플러그인
+    " <space>/ 로 주석처리 가능
+    Plug 'tpope/vim-commentary'
+    " 주석처리 시 파일따라 주석문자 알아서 판단
+    Plug 'suy/vim-context-commentstring'
 
-	" 테마 플러그인
-	Plug 'rafi/awesome-vim-colorschemes'
-	" airline테마 플러그인
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+    " 테마 플러그인
+    Plug 'rafi/awesome-vim-colorschemes'
+    " airline테마 플러그인
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
-	" 날짜 빠르게 바꿔주는 플로그인
-	" ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
-	Plug 'tpope/vim-speeddating'
-	" speeddating에 필요
-	Plug 'tpope/vim-repeat'
+    " 날짜 빠르게 바꿔주는 플로그인
+    " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
+    Plug 'tpope/vim-speeddating'
+    " speeddating에 필요
+    Plug 'tpope/vim-repeat'
 
-	" f,F,t,T 사용 시 이동단어 하이라이트해줌
-	Plug 'unblevable/quick-scope'
+    " f,F,t,T 사용 시 이동단어 하이라이트해줌
+    Plug 'unblevable/quick-scope'
 
-	" 간단한 커맨드 사용으로 단어이동하는 플러그인
-	Plug 'easymotion/vim-easymotion'
-	" 여러가지 기호로 단어 감싸는 커맨드 플러그인
-	Plug 'tpope/vim-surround'
+    " 간단한 커맨드 사용으로 단어이동하는 플러그인
+    Plug 'easymotion/vim-easymotion'
+    " 여러가지 기호로 단어 감싸는 커맨드 플러그인
+    Plug 'tpope/vim-surround'
 
-	" 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
-	Plug 'edkolev/promptline.vim'
+    " 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
+    Plug 'edkolev/promptline.vim'
 
-	" root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
-	Plug 'airblade/vim-rooter'
+    " root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
+    Plug 'airblade/vim-rooter'
+
+    " 들여쓰기 자동세팅해줌(파일따라 다르게 잘해준다!)
+    Plug 'tpope/vim-sleuth'
 
 call plug#end()
 
@@ -147,11 +150,11 @@ call plug#end()
 
 " <space>/ : 자동 주석처리
 function! Comment()
-	if(mode() == "n")
-		execute "Commentary"
-	else
-		execute "'<,'>Commentary"
-	endif
+  if(mode() == "n")
+    execute "Commentary"
+  else
+    execute "'<,'>Commentary"
+  endif
 endfunction
 " gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
 nnoremap <silent> <space>/ :call Comment()<CR>
@@ -163,20 +166,19 @@ vnoremap <silent> <space>/ :call Comment()<CR> gv
 " ======================[(Plug)awesome-vim-colorschemes]=======================
 
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
-" colorscheme alduin									" Dark rustic colors
-" colorscheme iceberg									" Dark blue color scheme
-" colorscheme onedark									" Inspired by Atom's One Dark syntax theme
-" colorscheme gruvbox									" Retro groove color scheme
-" colorscheme hybrid									" A dark color scheme for vim/gvim
-colorscheme lucius									" Lucius color scheme
-" colorscheme minimalist							" Darker version of material theme inspired by Sublime Text
-" colorscheme molokai									" Molokai color scheme
-" colorscheme nord										" An arctic, north-bluish clean and elegant theme
-" colorscheme purify									" Clean & vibrant color schemes for Vim, Terminals...
-" colorscheme seoul256								" Low-contrast color scheme based on Seoul Colors
-" colorscheme sierra									" Dark vintage colors
-" colorscheme sonokai									" Vivid and high contrast based on Monokai Pro
-" colorscheme tender									" 24bit colorscheme for Vim
+" colorscheme alduin                    " Dark rustic colors
+" colorscheme iceberg                   " Dark blue color scheme
+" colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
+" colorscheme gruvbox                   " Retro groove color scheme
+" colorscheme hybrid                    " A dark color scheme for vim/gvim
+colorscheme lucius                    " Lucius color scheme
+" colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
+" colorscheme molokai                   " Molokai color scheme
+" colorscheme nord                      " An arctic, north-bluish clean and elegant theme
+" colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
+" colorscheme sierra                    " Dark vintage colors
+" colorscheme tender                    " 24bit colorscheme for Vim
+" colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro
 
 " =============================================================================
 
@@ -282,11 +284,11 @@ let g:promptline_theme = 'airline'
 " section별 보여줄 것들 설정
 " sections (a, b, c, x, y, z, warn) are optional
 let g:promptline_preset = {
-        \'a' : [ promptline#slices#host() ],
-        \'b' : [ promptline#slices#user() ],
-        \'c' : [ promptline#slices#cwd() ],
-        \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
-        \'warn' : [ promptline#slices#last_exit_code() ]}
+      \'a' : [ promptline#slices#host() ],
+      \'b' : [ promptline#slices#user() ],
+      \'c' : [ promptline#slices#cwd() ],
+      \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
+      \'warn' : [ promptline#slices#last_exit_code() ]}
 
 " TODO .promptline.sh 생성 및 적용하기
 " ref) https://github.com/edkolev/promptline.vim
