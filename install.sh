@@ -42,16 +42,7 @@ installpynvim() { \
   pip3 install pynvim --user
 }
 
-# install pynvim
-pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
-
 echo "Welcome to JNvim2.0"
-
-# Installing pip
-which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
-
-# install node and neovim support
-which node > /dev/null && echo "node installed, moving on..." || asktoinstallnode
 
 echo "Start Installing JNvim2.0..."
 sudo apt update
@@ -62,8 +53,17 @@ echo "Install neovim 5.0..."
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt install neovim -y
 
-echo "Install prerequisites..."
-sudo apt install clang -y
+# Installing pip
+which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
+
+# install node and neovim support
+which node > /dev/null && echo "node installed, moving on..." || asktoinstallnode
+
+# install pynvim
+pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
+
+# echo "Install prerequisites..."
+# sudo apt install clang -y
 
 echo "Cloning JNvim2.0 Configuration..."
 git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
