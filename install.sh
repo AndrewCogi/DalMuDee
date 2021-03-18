@@ -27,7 +27,7 @@ asktoinstallnode() { \
   echo "node not found"
   echo -n "Would you like to install node now (y/n)? "
   read answer
-  [ "$answer" != "${answer#[Yy]}" ] && installnode && installcocextensions
+  [ "$answer" != "${answer#[Yy]}" ] && installnode
 }
 
 asktoinstallpip() { \
@@ -40,15 +40,6 @@ asktoinstallpip() { \
 installpynvim() { \
   echo "Installing pynvim..."
   pip3 install pynvim --user
-}
-
-installcocextensions() { \
-  # Install extensions
-  mkdir -p ~/.config/coc/extensions
-  cd ~/.config/coc/extensions
-  [ ! -f package.json ] && echo '{"dependencies":{}}'> package.json
-  # Change extension names to the extensions you need
-  sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
 installonubuntu() { \
@@ -104,8 +95,6 @@ read answer
 
 echo "Installing Plugins..."
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
-
-installcocextensions
 
 echo "Installation Done!!"
 echo "help: whgustlr0326@gmail.com"
