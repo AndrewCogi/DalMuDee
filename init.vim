@@ -137,9 +137,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Treesitter - language parsers & queries & modules!
     " LSP랑 연결해주는 다리역할 겸 하이라이팅 등 다양한 모듈 지원
-    " treesitter.lua 파일에 세팅있음
-    Plug 'nvim-treesitter/nvim-treesitter'
-    Plug 'nvim-treesitter/playground'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 
 call plug#end()
 
@@ -302,9 +301,3 @@ let g:promptline_preset = {
 " =============================================================================
 
 
-" ==============================[(Plug)surround]===============================
-
-" treesitter 사항 설치 및 setting파일들 적용
-luafile $HOME/.config/nvim/treesitter.lua
-
-" =============================================================================
