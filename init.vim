@@ -116,7 +116,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " airline테마 플러그인
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    " 날짜 빠르게 바꿔주는 플로그인
+    " 날짜 빠르게 바꿔주는 플러그인
     " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
     Plug 'tpope/vim-speeddating'
     " speeddating에 필요
