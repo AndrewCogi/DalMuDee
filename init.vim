@@ -135,10 +135,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-sleuth'
     " syntax support 플러그인
     Plug 'sheerun/vim-polyglot'
-    " Treesitter - language parsers & queries & modules!
-    " LSP랑 연결해주는 다리역할 겸 하이라이팅 등 다양한 모듈 지원
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
 
 call plug#end()
 
