@@ -5,8 +5,8 @@ set nowrap			                   		" 자동 줄바꿈 안되도록 함
 set splitbelow			               		" 가로로 창 분할 시, 새 창은 아래에 생기도록
 set splitright			    	          	" 세로로 창 분할 시, 새 창은 오른쪽에 생기도록
 set mouse=a			                  		" 마우스 사용가능
-set encoding=utf-8			            	" 인코딩 한글깨짐 방지
-set fileencoding=utf-8			        	" 파일 인코딩 한글깨짐 방지
+set encoding=UTF-8			            	" 인코딩 한글깨짐 방지
+set fileencoding=UTF-8			        	" 파일 인코딩 한글깨짐 방지
 set cmdheight=2			              		" --INSERT--나오는 부분 높이 2로 설정
 set ruler			                    		" 우측 하단에 커서위치 표시
 set number				                  	" 라인번호 표시
@@ -135,8 +135,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-sleuth'
     " syntax support 플러그인
     Plug 'sheerun/vim-polyglot'
+    " vim 아이콘 플러그인
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'bryanmylee/vim-colorscheme-icons'
 
 call plug#end()
+
 
 " =============================================================================
 
@@ -166,11 +170,11 @@ vnoremap <silent> <space>/ :call Comment()<CR> gv
 " colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme gruvbox                   " Retro groove color scheme
 " colorscheme hybrid                    " A dark color scheme for vim/gvim
-" colorscheme lucius                    " Lucius color scheme
+colorscheme lucius                    " Lucius color scheme
 " colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
 " colorscheme molokai                   " Molokai color scheme
 " colorscheme nord                      " An arctic, north-bluish clean and elegant theme
-colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
+" colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
 " colorscheme sierra                    " Dark vintage colors
 " colorscheme tender                    " 24bit colorscheme for Vim
 " colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro
@@ -297,3 +301,8 @@ let g:promptline_preset = {
 " =============================================================================
 
 
+" =============================[(Plug)treesitter]==============================
+
+
+
+" =============================================================================
