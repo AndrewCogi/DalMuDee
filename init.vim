@@ -137,8 +137,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " syntax support 플러그인
     Plug 'sheerun/vim-polyglot'
     " vim 아이콘 플러그인
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'bryanmylee/vim-colorscheme-icons'
+    " 나중에 데스크탑에서 해보기로
+    " Plug 'ryanoasis/vim-devicons'
+    " Plug 'bryanmylee/vim-colorscheme-icons'
+
 
 call plug#end()
 
