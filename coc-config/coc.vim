@@ -12,4 +12,4 @@ function! s:check_back_space() abort
 endfunction
 
 " <C-e> 누르면 explorer키고 끄도록 함
-nnoremap <C-e> :CocCommand explorer<CR>
+nnoremap <silent> <C-e> :CocCommand explorer --toggle --sources=file+<CR>

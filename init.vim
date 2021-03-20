@@ -18,7 +18,6 @@ set smarttab				                	" 조금 더 똑똑한 탭 활성화
 set tabstop=2			                		" 탭 한번 = 띄어쓰기 2번 설정
 set laststatus=2		              		" 상태바 표시(항상 표시)
 set showmatch				                	" 괄호쌍 보이기
-set cursorline			              		" 커서있는곳 라인으로 표시해줌
 set t_Co=256			                		" 256색 적용
 set noshowmode		              			" --INSERT-- 안보이게 하기
 set nobackup			                		" 백업파일 안생기도록 함
@@ -31,7 +30,6 @@ set autochdir			                		" 현재 디렉토리를 자동으로 working 
 set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch		                			" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
-set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 " =============================================================================
 
@@ -161,8 +159,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-
-    call plug#end()
+call plug#end()
 
 
 " =============================================================================
@@ -190,10 +187,10 @@ vnoremap <silent> <space>/ :call Comment()<CR> gv
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
 " colorscheme alduin                    " Dark rustic colors
 " colorscheme iceberg                   " Dark blue color scheme
-" colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
+colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme gruvbox                   " Retro groove color scheme
 " colorscheme hybrid                    " A dark color scheme for vim/gvim
-colorscheme lucius                    " Lucius color scheme
+" colorscheme lucius                    " Lucius color scheme
 " colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
 " colorscheme molokai                   " Molokai color scheme
 " colorscheme nord                      " An arctic, north-bluish clean and elegant theme
@@ -342,7 +339,7 @@ let g:closetag_filetypes = 'html,xhtml,phtml,javascript'
 " =============================================================================
 
 
-"=========================[(Plug)coc & coc-extention]==========================
+" ========================[(Plug)coc & coc-extention]==========================
 
 " coc configuration 적용
 source $HOME/.config/nvim/coc-config/coc.vim
@@ -350,3 +347,5 @@ source $HOME/.config/nvim/coc-config/coc.vim
 source $HOME/.config/nvim/coc-config/coc-extentions.vim
 
 " =============================================================================
+
+
