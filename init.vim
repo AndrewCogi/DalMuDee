@@ -110,39 +110,59 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 주석처리 플러그인
     " <space>/ 로 주석처리 가능
     Plug 'tpope/vim-commentary'
+
     " 주석처리 시 파일따라 주석문자 알아서 판단
     Plug 'suy/vim-context-commentstring'
+
     " 테마 플러그인
     Plug 'rafi/awesome-vim-colorschemes'
+
     " airline테마 플러그인
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+
     " 날짜 빠르게 바꿔주는 플러그인
     " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
     Plug 'tpope/vim-speeddating'
-    " speeddating에 필요
     Plug 'tpope/vim-repeat'
+
     " f,F,t,T 사용 시 이동단어 하이라이트해줌
     Plug 'unblevable/quick-scope'
+
     " 간단한 커맨드 사용으로 단어이동하는 플러그인
     Plug 'easymotion/vim-easymotion'
+
     " 여러가지 기호로 단어 감싸는 커맨드 플러그인
     Plug 'tpope/vim-surround'
+
     " 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
     Plug 'edkolev/promptline.vim'
+
     " root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
     Plug 'airblade/vim-rooter'
+
     " 들여쓰기 자동세팅해줌(파일따라 다르게 잘해준다!)
     Plug 'tpope/vim-sleuth'
+
     " syntax support 플러그인
     Plug 'sheerun/vim-polyglot'
+
     " vim 아이콘 플러그인
     " 나중에 데스크탑에서 해보기로
     " Plug 'ryanoasis/vim-devicons'
     " Plug 'bryanmylee/vim-colorscheme-icons'
+    
+    " 괄호쌍 자동매칭해주는 플러그인
+    Plug 'jiangmiao/auto-pairs'
+
+    " HTML등 <??></??>자동적으로 닫아주는 플러그인
+    Plug 'alvan/vim-closetag'
+
+    " Intellisense
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
-call plug#end()
+    call plug#end()
 
 
 " =============================================================================
@@ -277,7 +297,7 @@ xmap S VSurround
 " =============================================================================
 
 
-" ============================[(Plug)vim-airline]==============================
+" ============================[(Plug)promptline]===============================
 
 " 프롬프트 테마 airline 테마랑 같도록 함.
 let g:promptline_theme = 'airline'
@@ -303,7 +323,26 @@ let g:promptline_preset = {
 " =============================================================================
 
 
-" =============================[(Plug)????]==============================
+" =============================[(Plug)vim-rooter]==============================
+
+" vim-rooter가 project directory echo하는거 끄기(조용히 바뀜)
+let g:rooter_silent_chdir = 1
+
+" =============================================================================
+
+" =============================[(Plug)vim-rooter]==============================
+
+" <foo| 에서 >누르면 <foo></foo>가 된다
+" 한번 더 >누르면 <foo><enter+indent></foo>가 된다
+" close tags 플러그인 적용시킬 파일타입 설정
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js'
+let g:closetag_filetypes = 'html,xhtml,phtml,javascript'
+
+" =============================================================================
+
+
+"=========================[(Plug)coc & coc-extention]==========================
 
 
 

@@ -62,6 +62,15 @@ installextrapackages() { \
   [  -n "$(uname -a | grep Ubuntu)" ] && installonubuntu
 }
 
+installcocextensions() { \
+  # Install extensions
+  mkdir -p ~/.config/coc/extensions
+  cd ~/.config/coc/extensions
+  [ ! -f package.json ] && echo '{"dependencies":{}}'> package.json
+  # Change extension names to the extensions you need
+  sudo npm install coc-explorer
+}
+
 echo "Welcome to JNvim2.0"
 
 echo "Start Installing JNvim2.0..."
@@ -95,6 +104,9 @@ read answer
 
 echo "Installing Plugins..."
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
+
+echo "Installing coc-extensions..."
+installcocextensions
 
 echo "Installation Done!!"
 echo "help: whgustlr0326@gmail.com"
