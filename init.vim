@@ -199,13 +199,12 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " airline 레이아웃설정
-let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['z', 'waring', 'error']]
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['z']]
 
 " 레이아웃 section별 설정
 let g:airline_section_a = "JNvim2.0"
 let g:airline_section_b = '%t'
 let g:airline_section_c = '%{getcwd()}'
-let g:airline_section_y = ''
 let g:webdevicons_enable_airline_tabline = 1
 
 " tabline버퍼에 close버튼 없애기
@@ -276,7 +275,7 @@ xmap S VSurround
 " =============================================================================
 
 
-" ==============================[(Plug)surround]===============================
+" ============================[(Plug)vim-airline]==============================
 
 " 프롬프트 테마 airline 테마랑 같도록 함.
 let g:promptline_theme = 'airline'
