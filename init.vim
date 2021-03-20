@@ -1,6 +1,6 @@
 "==============================[기본세팅 관리]================================
 
-syntax on			                     		" 구문강조 하이라이팅 킴
+syntax enable                         " 구문강조 하이라이팅 킴
 set nowrap			                   		" 자동 줄바꿈 안되도록 함
 set splitbelow			               		" 가로로 창 분할 시, 새 창은 아래에 생기도록
 set splitright			    	          	" 세로로 창 분할 시, 새 창은 오른쪽에 생기도록
@@ -31,6 +31,7 @@ set autochdir			                		" 현재 디렉토리를 자동으로 working 
 set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch		                			" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
+set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 " =============================================================================
 
@@ -188,10 +189,10 @@ colorscheme lucius                    " Lucius color scheme
 let g:airline#extensions#tabline#enabled = 1
 
 " | 모양으로 airline 설정
-let g:airline_powerline_fonts = 0			" 구분자 활성화(0=|)
-let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값)
-let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값)
-let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값)
+let g:airline_powerline_fonts = 1			" 구분자 활성화(0=|, 1=>)
+" let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값=0)
+" let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값=0)
+" let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값=0)
 
 " 버퍼 보이는 형식 지정(이름과 확장자만 보이도록 했음)
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -301,7 +302,7 @@ let g:promptline_preset = {
 " =============================================================================
 
 
-" =============================[(Plug)treesitter]==============================
+" =============================[(Plug)????]==============================
 
 
 
