@@ -179,7 +179,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 함수 및 변수 리스트 보여주는 플러그인   
     Plug 'liuchengxu/vista.vim'
 
-call plug#end()
+    " 내가 고쳤던 과거기록 보여주는 플러그인
+    Plug 'mbbill/undotree'
+
+    " smooth move
+    Plug 'psliwka/vim-smoothie'
+
+    " Git 플러그인 세트
+    " git diff 보여주는 플러그인(어디가 바뀌었는지 라인별로 보여준다)
+    Plug 'airblade/vim-gitgutter'
+
+    call plug#end()
 
 
 " =============================================================================
@@ -586,5 +596,23 @@ nnoremap <silent> <leader>vx :Vista!<CR>
 nnoremap <silent> <leader>vf :Vista finder<CR>
 
 " 변수에 대보고 p누르면 팝업으로 미리보기
+
+" =============================================================================
+
+
+" ===========================[(Plug)gitgutter]===============================
+
+let g:gitgutter_sign_added              = '▎'
+let g:gitgutter_sign_modified           = '▎'
+let g:gitgutter_sign_removed            = 'x'
+let g:gitgutter_sign_removed_first_line = 'x'
+let g:gitgutter_sign_modified_removed   = '▎'
+let g:gitgutter_preview_win_floating = 1
+
+let g:gitgutter_enabled = 1
+
+highlight GitGutterAdd    guifg=#587C0C ctermfg=2
+highlight GitGutterChange guifg=#0C7D9D ctermfg=3
+highlight GitGutterDelete guifg=#94151B ctermfg=1
 
 " =============================================================================
