@@ -176,6 +176,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " terminal in neovim 플러그인
     Plug 'voldikss/vim-floaterm'
 
+    " Vista 플러그인(LSP symbols 이랑 tags 보여줌)
+    Plug 'liuchengxu/vista.vim'
+
     call plug#end()
 
 
@@ -560,5 +563,24 @@ let g:floaterm_width=0.8
 let g:floaterm_height=0.8
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
+
+" =============================================================================
+
+
+" ==========================[(Plug)vista(Vista)]===============================
+
+" To enable fzf's preview window set g:vista_fzf_preview.
+" The elements of g:vista_fzf_preview will be passed as arguments to fzf#vim#with_preview()
+let g:vista_fzf_preview = ['right:50%']
+
+" Ensure you have installed some decent font to show these pretty symbols, then you can enable icon for the kind.
+let g:vista#renderer#enable_icon = 1
+
+" The default icons can't be suitable for all the filetypes, you can extend it as you wish.
+let g:vista#renderer#icons = {
+\   "function": "☆",
+\   "variable": "♢",
+\   "command": "€",
+\  }
 
 " =============================================================================
