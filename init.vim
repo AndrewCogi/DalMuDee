@@ -615,4 +615,13 @@ highlight GitGutterAdd    guifg=#587C0C ctermfg=2
 highlight GitGutterChange guifg=#0C7D9D ctermfg=3
 highlight GitGutterDelete guifg=#94151B ctermfg=1
 
+" 달라진 부분 찾아가는 키세팅
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+
+" 달라진 부분 add시킨다
+nmap ghs <Plug>(GitGutterStageHunk)
+" 달라진 부분 원래대로 돌려놓는다
+nmap ghu <Plug>(GitGutterUndoHunk)
+
 " =============================================================================
