@@ -643,5 +643,6 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 
 nmap gha :Git add %<CR>
 nmap ghc :Git commit -m 
+nmap ghP :Git push<CR>
 
 " =============================================================================
