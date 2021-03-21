@@ -164,6 +164,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " buffer 관리하는 플러그인
     Plug 'romgrk/barbar.nvim'
+    Plug 'moll/vim-bbye'
 
     " Floating Window 지원해주는 플러그인
     Plug 'kevinhwang91/rnvimr'
@@ -451,7 +452,7 @@ nnoremap <silent> <leader>b7 :BufferGoto 7<CR>
 nnoremap <silent> <leader>b8 :BufferGoto 8<CR>
 nnoremap <silent> <leader>b9 :BufferGoto 9<CR>
 
-nnoremap <silent> <leader>bd :BufferDelete<CR>
+nnoremap <silent> <leader>bd :Bdelete<CR>
 nnoremap <silent> <leader>bn :BufferNext<CR>
 nnoremap <silent> <leader>bp :BufferPrevious<CR>
 nnoremap <silent> <leader>bb :Buffers<CR>
