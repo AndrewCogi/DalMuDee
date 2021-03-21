@@ -81,6 +81,9 @@ inoremap <expr> <c-k> ("\<C-p>")
 vnoremap > >gv
 vnoremap < <gv
 
+" <leader>. : init.vim 키기
+nnoremap <silent> <leader>. :e $MYVIMRC<CR>
+
 " =============================================================================
 
 
@@ -170,9 +173,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
 
-    " 
+    " terminal in neovim 플러그인
+    Plug 'voldikss/vim-floaterm'
 
-call plug#end()
+    call plug#end()
 
 
 " =============================================================================
@@ -541,5 +545,20 @@ command! -bang -nargs=* GGrep
 
 map <leader>o :Files<CR>
 nnoremap <leader>g :Rg<CR>
+
+" =============================================================================
+
+
+" ===========================[(Plug)vim-floaterm]==============================
+
+" float terminal 실행 및 숨김 (종료는 <C-d>)
+let g:floaterm_keymap_toggle = '<leader>t'
+
+let g:floaterm_gitcommit='floaterm'
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
 
 " =============================================================================
