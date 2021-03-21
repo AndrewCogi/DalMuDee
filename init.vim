@@ -558,7 +558,7 @@ command! -bang -nargs=* GGrep
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 map <leader>p :Files<CR>
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>rg :Rg<CR>
 
 " =============================================================================
 
