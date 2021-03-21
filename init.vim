@@ -196,8 +196,8 @@ function! Comment()
   endif
 endfunction
 " gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
-nnoremap <silent> <space>/ :call Comment()<CR>
-vnoremap <silent> <space>/ :call Comment()<CR> gv
+nnoremap <silent> <leader>/ :call Comment()<CR>
+vnoremap <silent> <leader>/ :call Comment()<CR> gv
 
 " =============================================================================
 
@@ -428,23 +428,23 @@ let bufferline.icon_close_tab_modified = '◎'
 " For the shadow in buffer-picking mode
 hi default BufferShadow guifg=#000000 guibg=#000000
 
-nnoremap <silent> <space>b> :BufferMoveNext<CR>
-nnoremap <silent> <space>b< :BufferMovePrevious<CR>
+nnoremap <silent> <leader>b> :BufferMoveNext<CR>
+nnoremap <silent> <leader>b< :BufferMovePrevious<CR>
 
-nnoremap <silent> <space>b1 :BufferGoto 1<CR>
-nnoremap <silent> <space>b2 :BufferGoto 2<CR>
-nnoremap <silent> <space>b3 :BufferGoto 3<CR>
-nnoremap <silent> <space>b4 :BufferGoto 4<CR>
-nnoremap <silent> <space>b5 :BufferGoto 5<CR>
-nnoremap <silent> <space>b6 :BufferGoto 6<CR>
-nnoremap <silent> <space>b7 :BufferGoto 7<CR>
-nnoremap <silent> <space>b8 :BufferGoto 8<CR>
-nnoremap <silent> <space>b9 :BufferGoto 9<CR>
+nnoremap <silent> <leader>b1 :BufferGoto 1<CR>
+nnoremap <silent> <leader>b2 :BufferGoto 2<CR>
+nnoremap <silent> <leader>b3 :BufferGoto 3<CR>
+nnoremap <silent> <leader>b4 :BufferGoto 4<CR>
+nnoremap <silent> <leader>b5 :BufferGoto 5<CR>
+nnoremap <silent> <leader>b6 :BufferGoto 6<CR>
+nnoremap <silent> <leader>b7 :BufferGoto 7<CR>
+nnoremap <silent> <leader>b8 :BufferGoto 8<CR>
+nnoremap <silent> <leader>b9 :BufferGoto 9<CR>
 
-nnoremap <silent> <space>bd :BufferDelete<CR>
-nnoremap <silent> <space>bn :BufferNext<CR>
-nnoremap <silent> <space>bp :BufferPrevious<CR>
-nnoremap <silent> <space>bb :Buffers<CR>
+nnoremap <silent> <leader>bd :BufferDelete<CR>
+nnoremap <silent> <leader>bn :BufferNext<CR>
+nnoremap <silent> <leader>bp :BufferPrevious<CR>
+nnoremap <silent> <leader>bb :Buffers<CR>
 
 " =============================================================================
 
@@ -584,5 +584,7 @@ autocmd bufenter * if winnr("$") == 1 && vista#sidebar#IsOpen() | execute "norma
 nnoremap <silent> <leader>vo :Vista<CR>
 nnoremap <silent> <leader>vx :Vista!<CR>
 nnoremap <silent> <leader>vf :Vista finder<CR>
+
+" 변수에 대보고 p누르면 팝업으로 미리보기
 
 " =============================================================================
