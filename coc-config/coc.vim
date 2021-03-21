@@ -11,5 +11,5 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" <C-e> 누르면 explorer키고 끄도록 함
-nnoremap <silent> <C-e> :CocCommand explorer --toggle --sources=file+<CR>
+" <leader>e 누르면 explorer키고 끄도록 함
+nnoremap <silent> <leader>e :CocCommand explorer --toggle --sources=file+<CR>

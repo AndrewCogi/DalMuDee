@@ -1,4 +1,4 @@
-"==============================[기본세팅 관리]================================
+" ==============================[기본세팅 관리]================================
 
 syntax on                             " 구문강조 하이라이팅 킴
 set nowrap			                   		" 자동 줄바꿈 안되도록 함
@@ -49,8 +49,8 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 " visual모드에서
 " shift + k = 그 줄 올리기
 " shift + j = 그 줄 내리기
-xnoremap K :move '<-2<CR>gv-gv
-xnoremap J :move '>+1<CR>gv-gv
+xnoremap <silent> K :move '<-2<CR>gv-gv
+xnoremap <silent> J :move '>+1<CR>gv-gv
 
 " <C-s>: :w로 동작하도록
 nnoremap <silent> <C-s> :w<CR>
@@ -161,6 +161,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " buffer 관리하는 플러그인
     Plug 'romgrk/barbar.nvim'
+
+    " Floating Window 지원해주는 플러그인
+    Plug 'kevinhwang91/rnvimr'
+
+    " fzf 플러그인
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+    Plug 'junegunn/fzf.vim'
+
+    " 
 
 call plug#end()
 
@@ -405,8 +415,8 @@ exe 'hi default BufferInactiveTarget   guifg=red gui=bold guibg=' . bg_inactive
 " Configure icons on the bufferline.
 let bufferline.icon_separator_active = '▎'
 let bufferline.icon_separator_inactive = '▎'
-let bufferline.icon_close_tab = 'x'
-let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_close_tab = '⤬'
+let bufferline.icon_close_tab_modified = '◎'
 
 " For the shadow in buffer-picking mode
 hi default BufferShadow guifg=#000000 guibg=#000000
@@ -427,7 +437,109 @@ nnoremap <silent> <space>b9 :BufferGoto 9<CR>
 nnoremap <silent> <space>bd :BufferDelete<CR>
 nnoremap <silent> <space>bn :BufferNext<CR>
 nnoremap <silent> <space>bp :BufferPrevious<CR>
-nnoremap <silent> <space>bb :BufferPick<CR>
+nnoremap <silent> <space>bb :Buffers<CR>
 
+" =============================================================================
+
+
+" ==============================[(Plug)rnvimr]=================================
+
+" Make Ranger replace netrw and be the file explorer
+let g:rnvimr_ex_enable = 1
+let g:rnvimr_draw_border = 1
+
+" Make Ranger to be hidden after picking a file
+let g:rnvimr_pick_enable = 1
+
+" Make Neovim to wipe the buffers corresponding to the files deleted by Ranger
+let g:rnvimr_bw_enable = 1
+
+let g:rnvimr_ranger_cmd = 'ranger --cmd="set column_ratios 1,1"'
+            " \ --cmd="set draw_borders separators"'
+
+let g:rnvimr_layout = { 'relative': 'editor',
+            \ 'width': float2nr(round(0.6 * &columns)),
+            \ 'height': float2nr(round(0.6 * &lines)),
+            \ 'col': float2nr(round(0.2 * &columns)),
+            \ 'row': float2nr(round(0.2 * &lines)),
+            \ 'style': 'minimal' }
+
+let g:rnvimr_presets = [
+            \ {'width': 0.800, 'height': 0.800}]
+
+nmap <silent> <leader>r :RnvimrToggle<CR>
+
+" =============================================================================
+
+
+" ================================[(Plug)fzf]==================================
+
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Enable per-command history.
+" CTRL-N and CTRL-P will be automatically bound to next-history and
+" previous-history instead of down and up. If you don't like the change,
+" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+let g:fzf_buffers_jump = 1
+let g:fzf_tags_command = 'ctags -R'
+
+" Border color
+let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+
+let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
+let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+"Get Files
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--inline-info']}), <bang>0)
+
+ " Make Ripgrep ONLY search file contents and not filenames
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --hidden --smart-case --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4.. -e'}, 'right:50%', '?'),
+  \   <bang>0)
+
+" Ripgrep advanced
+function! RipgrepFzf(query, fullscreen)
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
+  let initial_command = printf(command_fmt, shellescape(a:query))
+  let reload_command = printf(command_fmt, '{q}')
+  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+endfunction
+
+command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+
+" Git grep
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number '.shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
+map <leader>o :Files<CR>
+nnoremap <leader>g :Rg<CR>
 
 " =============================================================================
