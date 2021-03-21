@@ -630,5 +630,7 @@ nmap [h <Plug>(GitGutterPrevHunk)
 nmap ghs <Plug>(GitGutterStageHunk)
 " 달라진 부분 원래대로 돌려놓는다
 nmap ghu <Plug>(GitGutterUndoHunk)
+" 어떻게 달라졌는지 preview한다
+nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " =============================================================================
