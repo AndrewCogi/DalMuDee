@@ -189,6 +189,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Git 플러그인 세트
     " git diff 보여주는 플러그인(어디가 바뀌었는지 라인별로 보여준다)
     Plug 'airblade/vim-gitgutter'
+    " git wrapper 플러그인(nvim에서 git add, commit, push 등 가능하게 함)
+    Plug 'tpope/vim-fugitive'
 
     call plug#end()
 
