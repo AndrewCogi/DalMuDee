@@ -641,6 +641,7 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " =========================[(Plug)git-fugitive]================================
 
+" git status,add,commit,push commands
 nmap ght :Git status<CR>
 nmap gha :Git add %<CR>
 nmap ghc :Git commit -m 
