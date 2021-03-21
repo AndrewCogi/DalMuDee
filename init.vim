@@ -179,7 +179,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 함수 및 변수 리스트 보여주는 플러그인   
     Plug 'liuchengxu/vista.vim'
 
-    call plug#end()
+call plug#end()
 
 
 " =============================================================================
@@ -569,7 +569,6 @@ let g:floaterm_autoclose=1
 
 " ==============================[(Plug)vista]==================================
 
-let g:vista_default_executive = 'coc'
 let g:vista_fzf_preview = ['right:50%']
 
 let g:vista#renderer#enable_icon = 1
