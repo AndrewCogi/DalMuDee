@@ -546,7 +546,7 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
-map <leader>o :Files<CR>
+map <leader>p :Files<CR>
 nnoremap <leader>g :Rg<CR>
 
 " =============================================================================
@@ -582,5 +582,9 @@ let g:vista#renderer#icons = {
 \   "variable": "♢",
 \   "command": "€",
 \  }
+
+nnoremap <silent> <leader>vo :Vista<CR>
+nnoremap <silent> <leader>vx :Vista!<CR>
+nnoremap <silent> <leader>vf :Vista finder<CR>
 
 " =============================================================================
