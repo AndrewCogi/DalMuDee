@@ -103,7 +103,7 @@ read answer
 [ "$answer" != "${answer#[Yy]}" ] && installextrapackages || echo "not installing extra packages"
 
 echo "Installing Plugins..."
-nvim --headless +PlugInstall +qall > /dev/null 2>&1
+nvim +PlugInstall +qall 
 
 echo "Installing coc-extensions..."
 installcocextensions
