@@ -634,7 +634,6 @@ nmap ghP :Git push<CR>
 
 
 
-
 " ======================[(Plug)awesome-vim-colorschemes]=======================
 
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
