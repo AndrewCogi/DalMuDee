@@ -215,26 +215,6 @@ vnoremap <silent> <leader>/ :call Comment()<CR> gv
 " =============================================================================
 
 
-" ======================[(Plug)awesome-vim-colorschemes]=======================
-
-" https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
-" colorscheme alduin                    " Dark rustic colors
-" colorscheme iceberg                   " Dark blue color scheme
-colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
-" colorscheme gruvbox                   " Retro groove color scheme
-" colorscheme hybrid                    " A dark color scheme for vim/gvim
-" colorscheme lucius                    " Lucius color scheme
-" colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
-" colorscheme molokai                   " Molokai color scheme
-" colorscheme nord                      " An arctic, north-bluish clean and elegant theme
-" colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
-" colorscheme sierra                    " Dark vintage colors
-" colorscheme tender                    " 24bit colorscheme for Vim
-" colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro
-
-" =============================================================================
-
-
 " ====================[(Plug)vim-airline & airline-themes]=====================
 
 " 탭라인(버퍼)테마구분 활성화
@@ -646,5 +626,25 @@ nmap ght :Git status<CR>
 nmap gha :Git add %<CR>
 nmap ghc :Git commit -m 
 nmap ghP :Git push<CR>
+
+" =============================================================================
+
+
+" ======================[(Plug)awesome-vim-colorschemes]=======================
+
+" https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
+" colorscheme alduin                    " Dark rustic colors
+" colorscheme iceberg                   " Dark blue color scheme
+colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
+" colorscheme gruvbox                   " Retro groove color scheme
+" colorscheme hybrid                    " A dark color scheme for vim/gvim
+" colorscheme lucius                    " Lucius color scheme
+" colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
+" colorscheme molokai                   " Molokai color scheme
+" colorscheme nord                      " An arctic, north-bluish clean and elegant theme
+" colorscheme seoul256                  " Low-contrast color scheme based on Seoul Colors
+" colorscheme sierra                    " Dark vintage colors
+" colorscheme tender                    " 24bit colorscheme for Vim
+" colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro
 
 " =============================================================================
