@@ -83,7 +83,7 @@ vnoremap < <gv
 
 " <leader>. : init.vim 키기
 nnoremap <silent> <leader>. :e $MYVIMRC<CR>
-" <leader>n : hightlight 지우기
+" <leader>n : highlight 지우기
 nnoremap <silent> <leader>n :let @/ = ""<CR>
 
 " =============================================================================
