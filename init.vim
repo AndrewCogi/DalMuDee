@@ -172,7 +172,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " fzf 플러그인
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
 
     " terminal in neovim 플러그인
