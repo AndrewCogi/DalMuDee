@@ -173,6 +173,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " fzf 플러그인
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    " :Rg +fzf 해주는 플러그인
+    Plug 'wookayin/fzf-ripgrep.vim'
 
     " terminal in neovim 플러그인
     Plug 'voldikss/vim-floaterm'
@@ -540,7 +542,7 @@ command! -bang -nargs=* GGrep
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 map <silent> <leader>p :Files<CR>
-nnoremap <silent> <leader>rg :Rg<CR>
+nnoremap <silent> <leader>rg :RgFzf<CR>
 
 " =============================================================================
 
