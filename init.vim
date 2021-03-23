@@ -614,7 +614,7 @@ highlight GitGutterDelete guifg=#94151B ctermfg=1
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
-" 달라진 부분 add * 시킨다
+" 달라진 부분 add 시킨다
 nmap ghs <Plug>(GitGutterStageHunk)
 " 달라진 부분 원래대로 돌려놓는다
 nmap ghu <Plug>(GitGutterUndoHunk)
