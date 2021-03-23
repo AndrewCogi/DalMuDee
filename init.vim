@@ -193,6 +193,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
     " git wrapper 플러그인(nvim에서 git add, commit, push 등 가능하게 함)
     Plug 'tpope/vim-fugitive'
+    " 누가 언제 commit한 내용인지 보여주는 플러그인
+    Plug 'rhysd/git-messenger.vim'
 
 call plug#end()
 
@@ -648,5 +650,12 @@ colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme sierra                    " Dark vintage colors
 " colorscheme tender                    " 24bit colorscheme for Vim
 " colorscheme sonokai                   " Vivid and high contrast based on Monokai Pro
+
+" =============================================================================
+
+
+" ============================[(Plug)git-messenger]============================
+
+" <leader>gm : commit 팝업 열고 닫는다. 
 
 " =============================================================================
