@@ -194,10 +194,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " git wrapper 플러그인(nvim에서 git add, commit, push 등 가능하게 함)
     Plug 'tpope/vim-fugitive'
 
-    " 코드에만 집중하게 해주는 플러그인
-    Plug 'junegunn/goyo.vim'
-
-    call plug#end()
+call plug#end()
 
 
 " =============================================================================
@@ -631,13 +628,6 @@ nmap ght :Git status<CR>
 nmap gha :Git add %<CR>
 nmap ghc :Git commit -m 
 nmap ghP :Git push<CR>
-
-" =============================================================================
-
-
-" ==============================[(Plug)goyo]===================================
-
-nmap <silent> <leader>z :Goyo<CR>
 
 " =============================================================================
 
