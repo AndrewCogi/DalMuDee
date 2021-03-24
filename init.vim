@@ -154,9 +154,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 나중에 데스크탑에서 해보기로
     " Plug 'ryanoasis/vim-devicons'
     " Plug 'bryanmylee/vim-colorscheme-icons'
-    
-    " 괄호쌍 자동매칭해주는 플러그인
-    Plug 'jiangmiao/auto-pairs'
 
     " HTML등 <??></??>자동적으로 닫아주는 플러그인
     Plug 'alvan/vim-closetag'
@@ -201,7 +198,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html코딩
-    "
+    " Plug 'iamcco/markdown-preview.nvim' ->실시간 html코딩
 
 
     call plug#end()
