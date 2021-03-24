@@ -195,13 +195,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " git commit 디테일 모두 보여주는 플러그인
     Plug 'int3/vim-extradite'
 
+    " 창 위치 <leader>ww로 변경해주는 플러그인
+    Plug 'wesQ3/vim-windowswap'
+
+    " python을 위한 출력 및 변수변화 미리보기
+    Plug 'metakirby5/codi.vim'
+
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html코딩
     " Plug 'iamcco/markdown-preview.nvim' ->실시간 html코딩
 
-    " 창 위치 <leader>ww로 변경해주는 플러그인
-    Plug 'wesQ3/vim-windowswap'
     call plug#end()
 
 
@@ -679,5 +683,18 @@ nmap <silent> <leader>gv :Extradite!<CR>
 
 let g:windowswap_map_keys = 0 "prevent default bindings
 nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
+
+" =============================================================================
+
+
+" ==============================[(Plug)codi.vim]===============================
+
+highlight CodiVirtualText guifg='#98C379'
+
+let g:codi#virtual_text_prefix = "❯ "
+
+let g:codi#aliases = {
+                   \ 'javascript.jsx': 'javascript',
+                   \ }
 
 " =============================================================================
