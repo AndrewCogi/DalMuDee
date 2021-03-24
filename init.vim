@@ -658,6 +658,6 @@ colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 
 " ============================[(Plug)git-messenger]============================
 
-" <leader>gm : commit 팝업 열고 닫는다. 
+nmap <silent> <leader>gm : commit 팝업 열고 닫는다. 
 
 " =============================================================================
