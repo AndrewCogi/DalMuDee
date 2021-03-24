@@ -195,6 +195,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     " 누가 언제 commit한 내용인지 보여주는 플러그인
     Plug 'rhysd/git-messenger.vim'
+    " git commit 디테일 모두 보여주는 플러그인
+    Plug 'int3/vim-extradite'
 
 call plug#end()
 
