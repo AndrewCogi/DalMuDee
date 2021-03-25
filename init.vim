@@ -201,13 +201,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 창 위치 <leader>ww로 변경해주는 플러그인
     Plug 'wesQ3/vim-windowswap'
 
+    " 시작화면 플러그인
+    Plug 'mhinz/vim-startify'
+
     " python을 위한 출력 및 변수변화 미리보기
     Plug 'metakirby5/codi.vim'
 
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html코딩
-    " Plug 'iamcco/markdown-preview.nvim' ->실시간 html코딩
+    " Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
+    " Plug 'puremourning/vimspector' -> 디버깅툴
 
     call plug#end()
 
