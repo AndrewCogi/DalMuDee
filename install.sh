@@ -97,7 +97,7 @@ pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || 
 echo "Cloning JNvim2.0 Configuration..."
 git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
 
-echo "JNvim is better with at least ripgrep, ueberzug and ranger...etc"
+echo "JNvim2.0 is better with at least ripgrep, ueberzug and ranger...etc"
 echo -n "Would you like to install these now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installextrapackages || echo "not installing extra packages"
