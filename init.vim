@@ -30,6 +30,7 @@ set autochdir			                		" 현재 디렉토리를 자동으로 working 
 set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch		                			" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
+set shortmess+=c                      " Don't pass messages to |ins-completion-menu|
 
 " =============================================================================
 
