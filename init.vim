@@ -213,6 +213,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mattn/emmet-vim' -> 빠른 html코딩
     " Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
     " Plug 'puremourning/vimspector' -> 디버깅툴
+    " Plug 'skywind3000/asynctasks.vim' -> 컴파일 툴
+    " Plug 'skywind3000/asyncrun.vim' -> 실행 툴
 
     call plug#end()
 
