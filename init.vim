@@ -155,6 +155,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'ryanoasis/vim-devicons'
     " Plug 'bryanmylee/vim-colorscheme-icons'
 
+    " 괄호쌍 자동매칭해주는 플러그인
+    Plug 'jiangmiao/auto-pairs'
+
     " HTML등 <??></??>자동적으로 닫아주는 플러그인
     Plug 'alvan/vim-closetag'
 
