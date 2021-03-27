@@ -125,6 +125,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    " airline에 시계 추가하는 플러그인
+    Plug 'enricobacis/vim-airline-clock'
+
     " 날짜 빠르게 바꿔주는 플러그인
     " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
     Plug 'tpope/vim-speeddating'
@@ -255,7 +258,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " airline 레이아웃설정
-let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['z']]
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['y', 'z']]
 
 " 레이아웃 section별 설정
 let g:airline_section_a = "JNvim2.0"
@@ -274,6 +277,16 @@ let g:airline#extensions#tabline#fnamecollapse = 1
 " let g:airline#extensions#tabline#buffers_label = ''
 " let g:airline#extensions#tabline#tabs_label = ''
 " let g:airline#extensions#coc#enabled = 1
+
+" =============================================================================
+
+
+" ====================[(Plug)vim-airline & airline-themes]=====================
+
+" airline 시계 format
+let g:airline#extensions#clock#format = '%H:%M:%S'
+" updatetime
+let g:airline#extensions#clock#updatetime = 1000
 
 " =============================================================================
 
