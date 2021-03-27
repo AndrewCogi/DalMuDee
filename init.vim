@@ -208,14 +208,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 시작화면 플러그인
     Plug 'mhinz/vim-startify'
 
+    " 디버깅 플러그인
+    Plug 'puremourning/vimspector'
+
     " python을 위한 출력 및 변수변화 미리보기
     Plug 'metakirby5/codi.vim'
 
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
-    " Plug 'mattn/emmet-vim' -> 빠른 html코딩
+    " Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
     " Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
-    " Plug 'puremourning/vimspector' -> 디버깅툴
     " Plug 'skywind3000/asynctasks.vim' -> 컴파일 툴
     " Plug 'skywind3000/asyncrun.vim' -> 실행 툴
 
@@ -752,5 +754,18 @@ let g:startify_bookmarks = [
             \ ]
 " Goto main buffer
 nmap <silent> <leader>bh :Startify<CR>
+
+" =============================================================================
+
+
+" ==============================[(Plug)vimspector]=============================
+
+" ref) https://github.com/puremourning/vimspector
+
+let g:vimspector_base_dir=expand( '$HOME/.config/nvim/vimspector-config' )
+let g:vimspector_enable_mappings='VISUAL_STUDIO'
+
+" :VimspectorInstall 실행하면 아랫것들 다 설치됨(cpp,python,java설치)
+let g:vimspector_install_gadgets = [ 'vscode-cpptools', 'debugpy', 'vscode-java-debug' ]
 
 " =============================================================================
