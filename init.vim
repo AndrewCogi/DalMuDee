@@ -766,5 +766,4 @@ nmap <silent> <leader>bh :Startify<CR>
 " :VimspectorInstall 실행하면 아랫것들 다 설치됨(cpp,python,java설치)
 " let g:vimspector_install_gadgets = [ 'vscode-cpptools', 'debugpy', 'vscode-java-debug' ]
 
-
 " =============================================================================
