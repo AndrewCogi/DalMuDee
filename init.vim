@@ -208,6 +208,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 시작화면 플러그인
     Plug 'mhinz/vim-startify'
 
+   " 컴파일, 실행 툴
+    Plug 'skywind3000/asynctasks.vim'
+    Plug 'skywind3000/asyncrun.vim'
+
     " python을 위한 출력 및 변수변화 미리보기
     Plug 'metakirby5/codi.vim'
 
