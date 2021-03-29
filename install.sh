@@ -71,6 +71,25 @@ installcocextensions() { \
   sudo npm install coc-explorer
 }
 
+installCppLSP(){
+  sudo apt install ccls -y
+}
+
+installPythonLSP(){
+  echo "install Nodejs"
+  sudo apt-get install curl
+  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  sudo apt install build-essential
+
+  echo "install jedi"
+  sudo apt-get install vim-python-jedi
+  vim-addons install python-jedi
+
+  echo "install formatter 'black'"
+  sudo pip3 install black
+}
+
 echo "Welcome to JNvim2.0"
 
 echo "Start Installing JNvim2.0..."
@@ -108,5 +127,15 @@ nvim +PlugInstall +qall
 echo "Installing coc-extensions..."
 installcocextensions
 
+echo -n "Would you like to install c,c++ LSP now?  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installCppLSP || echo "not installing CppLSP"
+
+echo -n "Would you like to install python LSP now?  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installPythonLSP || echo "not installing PythonLSP"
+
 echo "Installation Done!!"
+echo "Recommand: Install JAVA and setting path"
+echo "ref: https://all-record.tistory.com/181"
 echo "help: whgustlr0326@gmail.com"
