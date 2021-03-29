@@ -722,6 +722,9 @@ let g:codi#aliases = {
                    \ 'javascript.jsx': 'javascript',
                    \ }
 
+nmap <silent> <leader>co :Codi<CR>
+nmap <silent> <leader>cx :Codi!<CR>
+
 " =============================================================================
 
 
