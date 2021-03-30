@@ -215,6 +215,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " python을 위한 출력 및 변수변화 미리보기
     Plug 'metakirby5/codi.vim'
 
+    " JAVA를 위한 자동완성 플러그인
+    Plug 'artur-shaik/vim-javacomplete2'
+
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
@@ -223,6 +226,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     call plug#end()
 
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " =============================================================================
 
