@@ -226,7 +226,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     call plug#end()
 
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " =============================================================================
 
@@ -850,4 +849,10 @@ nmap <silent> <leader>kr :AsyncTask file-run<CR>
 " let g:vimspector_install_gadgets = [ 'vscode-cpptools', 'debugpy', 'vscode-java-debug' ]
 
 " =============================================================================
-"
+
+
+" ==========================[(Plug)vim-javacomplete2]==========================
+
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" =============================================================================
