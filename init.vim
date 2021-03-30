@@ -212,9 +212,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
 
-    " python을 위한 출력 및 변수변화 미리보기
-    Plug 'metakirby5/codi.vim'
-
     " JAVA를 위한 자동완성 플러그인
     Plug 'artur-shaik/vim-javacomplete2'
 
@@ -711,22 +708,6 @@ nmap <silent> <leader>gv :Extradite!<CR>
 
 let g:windowswap_map_keys = 0 "prevent default bindings
 nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
-
-" =============================================================================
-
-
-" ==============================[(Plug)codi.vim]===============================
-
-highlight CodiVirtualText guifg='#98C379'
-
-let g:codi#virtual_text_prefix = "❯ "
-
-let g:codi#aliases = {
-                   \ 'javascript.jsx': 'javascript',
-                   \ }
-
-nmap <silent> <leader>co :Codi<CR>
-nmap <silent> <leader>cx :Codi!<CR>
 
 " =============================================================================
 
