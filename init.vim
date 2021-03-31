@@ -309,7 +309,7 @@ let g:qs_max_chars=150
 
 " ============================[(Plug)easy motion]==============================
 
-" 기본 키바인딩 사용
+" 기본 키바인딩 -> 필요한것만 세팅
 nmap <leader>s <Plug>(easymotion-overwin-f2)
 nmap <leader>jj <Plug>(easymotion-j)
 vmap <leader>jj <Plug>(easymotion-j)
