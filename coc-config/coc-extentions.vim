@@ -2,17 +2,18 @@ let g:coc_global_extensions = [
   \ 'coc-explorer',
   \ 'coc-vimlsp',
   \ 'coc-pyright',
+  \ 'coc-java',
+  \ 'coc-tsserver',
   \ ]
   " coc-explorer : 파일 탐색기
   " coc-vimlsp : Language Server Protocol
   " coc-pyright : LSP for python3
-  " 
+  " coc-java : Syntax checker for JAVA 
+  " coc-tsserver : LSP for JAVA
   " \ 'coc-snippets',
-  " \ 'coc-tsserver',
   " \ 'coc-actions',
   " \ 'coc-sh',
   " \ 'coc-java-debug',
-  " \ 'coc-java',
   " \ 'coc-lists',
   " \ 'coc-emmet',
   " \ 'coc-tasks',
