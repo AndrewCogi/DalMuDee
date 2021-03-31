@@ -310,7 +310,12 @@ let g:qs_max_chars=150
 " ============================[(Plug)easy motion]==============================
 
 " 기본 키바인딩 사용
-map <leader> <Plug>(easymotion-prefix)
+nmap <leader>s <Plug>(easymotion-overwin-f2)
+nmap <leader>jj <Plug>(easymotion-j)
+vmap <leader>jj <Plug>(easymotion-j)
+nmap <leader>kk <Plug>(easymotion-k)
+vmap <leader>kk <Plug>(easymotion-k)
+" map <leader> <Plug>(easymotion-prefix)
 
 " [ 이정도만 숙지하자 ]
 
@@ -834,21 +839,24 @@ nmap <silent> <leader>kr :AsyncTask file-run<CR>
 
 " ==========================[(Plug)vim-javacomplete2]==========================
 
+" 자동 경로세팅
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" 기본매핑 비활성화
+let g:JavaComplete_EnableDefaultMappings = 0
 
-nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)
-nmap <leader>jR <Plug>(JavaComplete-Imports-RemoveUnused)
-nmap <leader>ji <Plug>(JavaComplete-Imports-AddSmart)
-nmap <leader>jii <Plug>(JavaComplete-Imports-Add)
+nmap <leader>ji <Plug>(JavaComplete-Imports-AddMissing)
+nmap <leader>jr <Plug>(JavaComplete-Imports-RemoveUnused)
+" nmap <leader>ji <Plug>(JavaComplete-Imports-AddSmart)
+" nmap <leader>jii <Plug>(JavaComplete-Imports-Add)
 
-imap <C-j>I <Plug>(JavaComplete-Imports-AddMissing)
-imap <C-j>R <Plug>(JavaComplete-Imports-RemoveUnused)
-imap <C-j>i <Plug>(JavaComplete-Imports-AddSmart)
-imap <C-j>ii <Plug>(JavaComplete-Imports-Add)
+imap <C-j>i <Plug>(JavaComplete-Imports-AddMissing)
+imap <C-j>r <Plug>(JavaComplete-Imports-RemoveUnused)
+" imap <C-j>i <Plug>(JavaComplete-Imports-AddSmart)
+" imap <C-j>ii <Plug>(JavaComplete-Imports-Add)
 
-nmap <leader>jM <Plug>(JavaComplete-Generate-AbstractMethods)
-
-imap <C-j>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+" 작동법을 모르겠다
+" nmap <leader>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+" imap <C-j>jM <Plug>(JavaComplete-Generate-AbstractMethods)
 
 nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)
 nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
@@ -863,11 +871,13 @@ imap <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
 imap <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
 imap <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 
-vmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
-vmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
-vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+" visual모드에서 쓸일이 있을까?
+" vmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+" vmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+" vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 
-nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)
-nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)
+" 작동법을 모르겠다
+" nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)
+" nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)
 
 " =============================================================================
