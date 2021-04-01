@@ -155,3 +155,8 @@ ref: https://github.com/palantir/python-language-server/issues/543
 python.setInterpreter
 
 여기에서 /bin/python3 골라주기!!
+
+
+## Install gradle
+
+ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
