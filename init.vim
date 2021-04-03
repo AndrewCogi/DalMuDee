@@ -817,7 +817,8 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 " 기본매핑 비활성화
 let g:JavaComplete_EnableDefaultMappings = 0
 
-nmap <leader>ji <Plug>(JavaComplete-Imports-AddMissing)
+nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)
+nmap <leader>ji <Plug>(JavaComplete-Imports-Add)
 nmap <leader>jr <Plug>(JavaComplete-Imports-RemoveUnused)
 nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)
 nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
