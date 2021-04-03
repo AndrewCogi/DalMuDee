@@ -608,12 +608,7 @@ let g:floaterm_autoclose=1
 
 let g:vista_fzf_preview = ['right:50%']
 
-let g:vista#renderer#enable_icon = 1
-let g:vista#renderer#icons = {
-\   "function": "§",
-\   "variable": "♢",
-\   "command": "€",
-\  }
+let g:vista#renderer#enable_icon = 0
 
 " Vista 혼자 열려있다면 자동 닫기
 autocmd bufenter * if winnr("$") == 1 && vista#sidebar#IsOpen() | execute "normal! :q!\<CR>" | endif
@@ -763,7 +758,7 @@ let g:asynctasks_extra_config = ['~/.config/nvim/tasks.ini']
 " 단축키지정
 nmap <silent> <leader>ko :copen<CR>
 nmap <silent> <leader>kx :cclose<CR>
-nmap <silent> <leader>kc :AsyncTask file-compile<CR>
+nmap <silent> <leader>kc :w<CR>:!rm -r ../build<CR>:AsyncTask file-compile<CR>
 nmap <silent> <leader>kr :AsyncTask file-run<CR>
 nmap <silent> <leader>kn :cnext<CR>
 nmap <silent> <leader>kp :cprevious<CR>
