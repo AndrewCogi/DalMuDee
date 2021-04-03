@@ -758,7 +758,7 @@ let g:asynctasks_extra_config = ['~/.config/nvim/tasks.ini']
 " 단축키지정
 nmap <silent> <leader>ko :copen<CR>
 nmap <silent> <leader>kx :cclose<CR>
-nmap <silent> <leader>kc :w<CR>:!rm -r ../build<CR>:AsyncTask file-compile<CR>
+nmap <silent> <leader>kc :w<CR>:AsyncTask file-compile<CR>
 nmap <silent> <leader>kr :AsyncTask file-run<CR>
 nmap <silent> <leader>kn :cnext<CR>
 nmap <silent> <leader>kp :cprevious<CR>
