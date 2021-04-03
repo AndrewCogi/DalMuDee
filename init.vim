@@ -592,7 +592,7 @@ nnoremap <silent> <leader>rg :RgFzf<CR>
 " ===========================[(Plug)vim-floaterm]==============================
 
 " float terminal 실행 및 숨김 (종료는 <C-d>)
-let g:floaterm_keymap_toggle = '<leader>t'
+let g:floaterm_keymap_toggle = '<leader>to'
 
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
