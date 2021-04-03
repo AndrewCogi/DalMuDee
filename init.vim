@@ -239,7 +239,7 @@ function! Comment()
 endfunction
 " gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
 nnoremap <silent> <leader>/ :call Comment()<CR>
-vnoremap <silent> <leader>/ :call Comment()<CR> gv
+vnoremap <silent> <leader>/ :call Comment()<CR>
 
 " =============================================================================
 
