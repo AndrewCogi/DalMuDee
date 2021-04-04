@@ -829,12 +829,16 @@ nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)
 " =============================[(Plug)coc-snippets]============================
 
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
+" <c-j>누르면 다음 고칠 곳으로 이동
 let g:coc_snippet_next = '<c-j>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+" <c-k>누르면 이전 고칠 곳으로 이동
 let g:coc_snippet_prev = '<c-k>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
+" insert mode에서 <c-j>누르면 snippets가능한 아이들 보여주고, 그 단어랑 
+" 똑같이 입력한 다음 <c-j>누르면 expanding되도록 함
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " =============================================================================
