@@ -43,9 +43,9 @@ let mapleader = " "
 nnoremap <space> <Nop>
 
 " normal모드에서 <TAB>누르면 다음버퍼로
-nnoremap <silent> <TAB> :bnext<CR>
+nmap <silent> <TAB> :bnext<CR>
 " normal모드에서 <Shift-TAB>누르면 이전버퍼로
-nnoremap <silent> <S-TAB> :bprevious<CR>
+nmap <silent> <S-TAB> :bprevious<CR>
 
 " visual모드에서
 " shift + k = 그 줄 올리기
@@ -74,7 +74,6 @@ nnoremap <silent> <C-Right>	:vertical resize +2<CR>
 
 " insert모드에서 자동완성 팝업 움직이기
 " <TAB> = 다음
-inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " <c-k> = 이전
 inoremap <expr> <c-k> ("\<C-p>")
 
@@ -823,5 +822,19 @@ nmap <leader>jts <Plug>(JavaComplete-Generate-ToString)
 nmap <leader>jeq <Plug>(JavaComplete-Generate-EqualsAndHashCode)
 nmap <leader>jc <Plug>(JavaComplete-Generate-Constructor)
 nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)
+
+" =============================================================================
+
+
+" =============================[(Plug)coc-snippets]============================
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " =============================================================================
