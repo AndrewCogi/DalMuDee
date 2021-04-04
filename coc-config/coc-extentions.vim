@@ -3,12 +3,15 @@ let g:coc_global_extensions = [
   \ 'coc-vimlsp',
   \ 'coc-pyright',
   \ 'coc-java',
+  \ 'coc-yank',
   \ ]
   " coc-explorer : 파일 탐색기
-  " coc-vimlsp : Language Server Protocol
+  " coc-vimlsp : LSP for vim
   " coc-pyright : LSP for python3
-  " coc-java : Syntax checker & LSP for JAVA 
+  " coc-java : LSP for JAVA 
+  " coc-yank : yy highlighting
   " \ 'coc-snippets',
+  " \ 'coc-json',
   " \ 'coc-tsserver',
   " \ 'coc-actions',
   " \ 'coc-sh',
@@ -27,8 +30,6 @@ let g:coc_global_extensions = [
   " \ 'coc-svg',
   " \ 'coc-prettier',
   " \ 'coc-xml',
-  " \ 'coc-yank',
-  " \ 'coc-json',
   " \ 'coc-marketplace',
   " \ 'coc-tabnine',
   " \ 'coc-highlight',
