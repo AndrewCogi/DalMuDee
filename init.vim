@@ -206,7 +206,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 시작화면 플러그인
     Plug 'mhinz/vim-startify'
 
-   " 컴파일, 실행 툴
+    " 컴파일, 실행 툴
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
 
