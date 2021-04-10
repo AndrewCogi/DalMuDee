@@ -13,3 +13,13 @@ endfunction
 
 " <leader>e 누르면 explorer키고 끄도록 함
 nnoremap <silent> <leader>e :CocCommand explorer --toggle --sources=file+<CR>
+
+" 오류찾아 이동
+" nmap <silent> <Leader>dn <Plug>(coc-diagnostic-next-error)
+" nmap <silent> <Leader>dp <Plug>(coc-diagnostic-prev-error)
+
+" better 오류(경고도 포함!!)찾아 이동
+try
+    nmap <silent> ]c :call CocAction('diagnosticNext')<cr>
+    nmap <silent> [c :call CocAction('diagnosticPrevious')<cr>
+endtry
