@@ -206,6 +206,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 시작화면 플러그인
     Plug 'mhinz/vim-startify'
 
+    " 함수, 변수 등 위치 및 이름 바꾸는 플러그인
+    Plug 'dkprice/vim-easygrep'
+
     " 컴파일, 실행 툴
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
@@ -611,8 +614,8 @@ let g:vista#renderer#enable_icon = 0
 " Vista 혼자 열려있다면 자동 닫기
 autocmd bufenter * if winnr("$") == 1 && vista#sidebar#IsOpen() | execute "normal! :q!\<CR>" | endif
 
-nnoremap <silent> <leader>vo :Vista<CR>
-nnoremap <silent> <leader>vx :Vista!<CR>
+nnoremap <silent> <leader>vio :Vista<CR>
+nnoremap <silent> <leader>vix :Vista!<CR>
 nnoremap <silent> <leader>vf :Vista finder<CR>
 
 " 변수에 대보고 p누르면 팝업으로 미리보기
@@ -839,5 +842,26 @@ let g:coc_snippet_prev = '<c-k>'
 " insert mode에서 <c-j>누르면 snippets가능한 아이들 보여주고, 그 단어랑 
 " 똑같이 입력한 다음 <c-j>누르면 expanding되도록 함
 imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+" =============================================================================
+
+
+" ===============================[(Plug)easygrep]==============================
+
+" ref) https://github.com/dkprice/vim-easygrep
+"<leader>vv  - Grep for the word under the cursor, match all occurences,
+              " like |gstar|
+" <leader>vV  - Grep for the word under the cursor, match whole word, like
+              " |star|
+" <leader>va  - Like vv, but add to existing list
+" <leader>vA  - Like vV, but add to existing list
+" <leader>vr  - Perform a global search on the word under the cursor
+              " and prompt for a pattern with which to replace it.
+" <leader>vo  - Select the files to search in and set grep options
+" <leader>vy* - Invoke any option from the options explorer, where * is the
+              " shortcut for that option.
+              " e.g. <leader>vyr - toggles recursion
+                   " <leader>vyb - sets buffer grepping mode
+                   " etc.
 
 " =============================================================================
