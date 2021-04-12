@@ -675,9 +675,9 @@ nmap ghP :Git push<CR>
 " https://github.com/rafi/awesome-vim-colorschemes 에서 골라 사용하면 됨
 " colorscheme alduin                    " Dark rustic colors
 " colorscheme iceberg                   " Dark blue color scheme
-colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
+" colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme gruvbox                   " Retro groove color scheme
-" colorscheme hybrid                    " A dark color scheme for vim/gvim
+colorscheme hybrid                    " A dark color scheme for vim/gvim
 " colorscheme lucius                    " Lucius color scheme
 " colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
 " colorscheme molokai                   " Molokai color scheme
