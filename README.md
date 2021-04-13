@@ -161,7 +161,7 @@ python.setInterpreter
 
 ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
 
-##### Gradle Info
+#### Gradle Info
 
 executing bar 없애고 실행하기
 
@@ -169,5 +169,5 @@ ref: https://stackoverflow.com/questions/52690759/how-do-i-get-rid-of-the-execut
 
 Scanner NoSuchInputException 해결
 
-fer: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuchelementexception-when-application-is-started-with
+ref: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuchelementexception-when-application-is-started-with
 
