@@ -161,7 +161,7 @@ python.setInterpreter
 
 ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
 
-#### Gradle Info
+### Gradle Info
 
 executing bar 없애고 실행하기
 
