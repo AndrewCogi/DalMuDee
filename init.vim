@@ -761,6 +761,8 @@ nmap <silent> <leader>ko :copen<CR>
 nmap <silent> <leader>kx :cclose<CR>
 nmap <silent> <leader>kc :w<CR>:AsyncTask file-compile<CR>
 nmap <silent> <leader>kr :AsyncTask file-run<CR>
+nmap <silent> <leader>kb :w<CR>:AsyncTask project-build<CR>
+nmap <silent> <leader>kR :w<CR>:AsyncTask project-run<CR>
 nmap <silent> <leader>kn :cnext<CR>
 nmap <silent> <leader>kp :cprevious<CR>
 
