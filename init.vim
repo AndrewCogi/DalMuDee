@@ -677,8 +677,8 @@ nmap ghP :Git push<CR>
 " colorscheme iceberg                   " Dark blue color scheme
 " colorscheme onedark                   " Inspired by Atom's One Dark syntax theme
 " colorscheme gruvbox                   " Retro groove color scheme
-colorscheme hybrid                    " A dark color scheme for vim/gvim
-" colorscheme lucius                    " Lucius color scheme
+" colorscheme hybrid                    " A dark color scheme for vim/gvim
+colorscheme lucius                    " Lucius color scheme
 " colorscheme minimalist                " Darker version of material theme inspired by Sublime Text
 " colorscheme molokai                   " Molokai color scheme
 " colorscheme nord                      " An arctic, north-bluish clean and elegant theme
