@@ -382,6 +382,8 @@ let g:promptline_preset = {
 
 " vim-rooter가 project directory echo하는거 끄기(조용히 바뀜)
 let g:rooter_silent_chdir = 1
+" rooter위치로 삼을 위치에 있는 파일
+let g:rooter_patterns = ['.git', 'gradlew']
 
 " =============================================================================
 
@@ -584,7 +586,7 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
-map <silent> <leader>p :Files<CR>
+map <silent> <leader>p :Files ~<CR>
 nnoremap <silent> <leader>rg :RgFzf<CR>
 
 " =============================================================================
