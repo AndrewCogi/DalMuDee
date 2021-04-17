@@ -102,6 +102,11 @@ ref: https://github.com/jesseduffield/lazydocker
 
 ❗️ sudo apt install fzf
 
+
+## Vim command
+ref: https://lhjin.tistory.com/entry/VI-VIM명령어-정리
+
+
 ## Install c++/c LSP
 
 ❗️ sudo apt install ccls
