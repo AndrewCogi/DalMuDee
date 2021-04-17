@@ -136,6 +136,6 @@ read answer
 [ "$answer" != "${answer#[Yy]}" ] && installPythonLSP || echo "not installing PythonLSP"
 
 echo "Installation Done!!"
-echo "Recommand: Install JAVA and setting path"
+echo "Recommand: Install JAVA and setting path + Gradle"
 echo "ref: https://all-record.tistory.com/181"
 echo "help: whgustlr0326@gmail.com"
