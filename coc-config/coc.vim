@@ -23,3 +23,7 @@ try
     nmap <silent> ]c :call CocAction('diagnosticNext')<cr>
     nmap <silent> [c :call CocAction('diagnosticPrevious')<cr>
 endtry
+
+" coc-clock command
+nmap <silent> <leader>clo :CocCommand clock.enable<CR>
+nmap <silent> <leader>clx :CocCommand clock.disable<CR>
