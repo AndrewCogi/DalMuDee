@@ -250,8 +250,8 @@ vnoremap <silent> <leader>/ :call Comment()<CR>
 " 탭라인(버퍼)테마구분 활성화
 let g:airline#extensions#tabline#enabled = 1
 
-" | 모양으로 airline 설정
-let g:airline_powerline_fonts = 1			" 구분자 활성화(0=|, 1=>)
+" airline 설정
+let g:airline_powerline_fonts = 1		  	" 구분자 활성화(0=|, 1=>)
 " let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값=0)
@@ -284,7 +284,7 @@ let g:airline#extensions#tabline#fnamecollapse = 1
 " =============================================================================
 
 
-" ====================[(Plug)vim-airline & airline-themes]=====================
+" ========================[(Plug)vim-airline-clock]==========================
 
 " airline 시계 format
 let g:airline#extensions#clock#format = '%H:%M:%S'
