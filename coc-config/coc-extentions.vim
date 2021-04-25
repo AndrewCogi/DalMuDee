@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
   \ 'coc-java',
   \ 'coc-json',
   \ 'coc-clock',
+  \ 'coc-html',
   \ ]
   " coc-explorer : 파일 탐색기
   " coc-yank : yy highlighting
@@ -16,6 +17,7 @@ let g:coc_global_extensions = [
   " coc-java : LSP for JAVA 
   " coc-json : LSP for json
   " coc-clock : floating big clock
+  " coc-html : LSP for html
   " \ 'coc-tsserver',
   " \ 'coc-actions',
   " \ 'coc-sh',
@@ -25,7 +27,6 @@ let g:coc_global_extensions = [
   " \ 'coc-tasks',
   " \ 'coc-floaterm',
   " \ 'coc-fzf-preview',
-  " \ 'coc-html',
   " \ 'coc-css',
   " \ 'coc-cssmodules',
   " \ 'coc-stylelintplus',
