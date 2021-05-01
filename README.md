@@ -176,3 +176,23 @@ Scanner NoSuchInputException 해결
 
 ref: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuchelementexception-when-application-is-started-with
 
+### VSCode (Code-Server)
+
+설치
+❗️ sudo curl -fsSL https://code-server.dev/install.sh | sh
+
+자동실행 on
+
+❗️ systemctl --user enable --now code-server
+
+자동실행 off
+
+❗️ systemctl --user disable --now code-server
+
+설정파일
+
+❗️ vim .config/code-server/config.yaml
+
+WAS를 사용하여 https 설정까지
+
+ref: http://hakawati.co.kr/445
