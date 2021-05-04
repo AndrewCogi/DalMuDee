@@ -6,7 +6,6 @@ let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-java',
   \ 'coc-json',
-  \ 'coc-clock',
   \ 'coc-html',
   \ ]
   " coc-explorer : 파일 탐색기
@@ -16,7 +15,6 @@ let g:coc_global_extensions = [
   " coc-pyright : LSP for python3
   " coc-java : LSP for JAVA 
   " coc-json : LSP for json
-  " coc-clock : floating big clock
   " coc-html : LSP for html
   " \ 'coc-tsserver',
   " \ 'coc-actions',
