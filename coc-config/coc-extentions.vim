@@ -7,6 +7,9 @@ let g:coc_global_extensions = [
   \ 'coc-java',
   \ 'coc-json',
   \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-cssmodules',
+  \ 'coc-tsserver',
   \ ]
   " coc-explorer : 파일 탐색기
   " coc-yank : yy highlighting
@@ -16,7 +19,9 @@ let g:coc_global_extensions = [
   " coc-java : LSP for JAVA 
   " coc-json : LSP for json
   " coc-html : LSP for html
-  " \ 'coc-tsserver',
+  " coc-css : LSP for css
+  " coc-cssmodules : LSP for css
+  " coc-tsserver : LSP for typescript/javascript
   " \ 'coc-actions',
   " \ 'coc-sh',
   " \ 'coc-java-debug',
@@ -25,8 +30,6 @@ let g:coc_global_extensions = [
   " \ 'coc-tasks',
   " \ 'coc-floaterm',
   " \ 'coc-fzf-preview',
-  " \ 'coc-css',
-  " \ 'coc-cssmodules',
   " \ 'coc-stylelintplus',
   " \ 'coc-emoji',
   " \ 'coc-yaml',
