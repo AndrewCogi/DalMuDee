@@ -161,13 +161,13 @@ python.setInterpreter
 
 여기에서 /bin/python3 골라주기!!
 
-##HTML live-server
+## HTML live-server
 
-#####Installation
+##### Installation
 
 ❗️ sudo npm i -g live-server
 
-#####실행
+##### 실행
 
 ref: https://www.chrisatmachine.com/Neovim/20-live-server/
 

@@ -216,8 +216,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " JAVA를 위한 자동 import, getter/setter 생성 등 아주 유용한  플러그인
     Plug 'artur-shaik/vim-javacomplete2'
 
-    " html live server
-    Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
