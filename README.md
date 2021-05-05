@@ -163,6 +163,8 @@ python.setInterpreter
 
 ## HTML live-server
 
+### portforwarding required!!
+
 ##### Installation
 
 ❗️ sudo npm i -g live-server
