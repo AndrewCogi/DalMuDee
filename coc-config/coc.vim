@@ -12,7 +12,9 @@ function! s:check_back_space() abort
 endfunction
 
 " <leader>e 누르면 explorer키고 끄도록 함
-nnoremap <silent> <leader>e :CocCommand explorer --toggle --sources=file+<CR>
+nmap <silent> <leader>e :CocCommand explorer --toggle --sources=file+<CR>
+" <leader>E 누르면 ~/에서 키고 끄도록 함
+nmap <silent> <leader>E :CocCommand explorer ~ --toggle --sources=file+<CR>
 
 " 오류찾아 이동
 " nmap <silent> <Leader>dn <Plug>(coc-diagnostic-next-error)
