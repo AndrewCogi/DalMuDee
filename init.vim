@@ -163,7 +163,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " HTML등 <??></??>자동적으로 닫아주는 플러그인
     Plug 'alvan/vim-closetag'
 
-    " Intellisense
+    " just explorer & yank highlight
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " buffer 관리하는 플러그인
