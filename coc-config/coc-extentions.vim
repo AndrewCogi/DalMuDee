@@ -8,7 +8,6 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-html',
   \ 'coc-css',
-  \ 'coc-cssmodules',
   \ 'coc-tsserver',
   \ ]
   " coc-explorer : 파일 탐색기
@@ -20,7 +19,6 @@ let g:coc_global_extensions = [
   " coc-json : LSP for json
   " coc-html : LSP for html
   " coc-css : LSP for css
-  " coc-cssmodules : LSP for css
   " coc-tsserver : LSP for typescript/javascript
   " \ 'coc-actions',
   " \ 'coc-sh',
