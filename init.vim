@@ -45,8 +45,6 @@ nnoremap <space> <Nop>
 
 " normal모드에서 <TAB>누르면 다음버퍼로
 nmap <silent> <TAB> :bnext<CR>
-" normal모드에서 <Shift-TAB>누르면 이전버퍼로
-nmap <silent> <S-TAB> :bprevious<CR>
 
 " visual모드에서
 " shift + k = 그 줄 올리기
