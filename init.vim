@@ -9,7 +9,8 @@ set encoding=UTF-8			            	" 인코딩 한글깨짐 방지
 set fileencoding=UTF-8			        	" 파일 인코딩 한글깨짐 방지
 set cmdheight=2			              		" --INSERT--나오는 부분 높이 2로 설정
 set ruler			                    		" 우측 하단에 커서위치 표시
-set number				                  	" 라인번호 표시
+set number                            " 라인번호 표시
+set relativenumber				           	" 거리에 따른 라인번호 표시
 set pumheight=10		               		" 팝업리스트 10개까지 보이도록 함
 set autoindent				              	" 자동 들여쓰기 활성화
 set smartindent		              			" 조금 더 똑똑한 들여쓰기 활성화
@@ -30,6 +31,7 @@ set autochdir			                		" 현재 디렉토리를 자동으로 working 
 set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
 set hlsearch		                			" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
+set signcolumn=yes:1                  " 왼쪽 숫자 padding 거리
 
 " =============================================================================
 
