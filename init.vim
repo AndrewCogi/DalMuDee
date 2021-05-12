@@ -417,7 +417,7 @@ source $HOME/.config/nvim/coc-config/coc-extentions.vim
 let bufferline = {}
 
 " Show a shadow over the editor in buffer-pick mode
-let bufferline.shadow = v:true
+let bufferline.shadow = v:false
 
 " Enable/disable icons
 let bufferline.icons = v:false
@@ -652,8 +652,8 @@ highlight GitGutterChange guifg=#0C7D9D ctermfg=3
 highlight GitGutterDelete guifg=#94151B ctermfg=1
 
 " 달라진 부분 찾아가는 키세팅
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
+nmap ]g <Plug>(GitGutterNextHunk)
+nmap [g <Plug>(GitGutterPrevHunk)
 
 " 달라진 부분 add 시킨다
 nmap ghs <Plug>(GitGutterStageHunk)
