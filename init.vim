@@ -276,7 +276,7 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#fnamecollapse = 1
 
-" extention options
+" extension options
 " let g:airline_extensions = ['branch', 'hunks', 'coc']
 " let g:airline#extensions#tabline#buffers_label = ''
 " let g:airline#extensions#tabline#tabs_label = ''
@@ -400,12 +400,12 @@ let g:closetag_filetypes = 'html,xhtml,phtml,javascript'
 " =============================================================================
 
 
-" ========================[(Plug)coc & coc-extention]==========================
+" ========================[(Plug)coc & coc-extension]==========================
 
 " coc configuration 적용
 source $HOME/.config/nvim/coc-config/coc.vim
-" 자동 설치될 coc-extentions 리스트 (설치되어있지 않다면 자동 설치되도록 함)
-source $HOME/.config/nvim/coc-config/coc-extentions.vim
+" 자동 설치될 coc-extensions 리스트 (설치되어있지 않다면 자동 설치되도록 함)
+source $HOME/.config/nvim/coc-config/coc-extensions.vim
 
 " =============================================================================
 
