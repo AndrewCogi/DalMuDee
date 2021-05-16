@@ -90,6 +90,12 @@ installPythonLSP(){
   sudo pip3 install black
 }
 
+installLiveServer(){
+  echo "install live-server"
+  sudo npm i -g live-server
+  echo "you should do portforwarding!!!"
+}
+
 echo "Welcome to JNvim2.0"
 
 echo "Start Installing JNvim2.0..."
@@ -135,7 +141,12 @@ echo -n "Would you like to install python LSP now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installPythonLSP || echo "not installing PythonLSP"
 
+echo -n "Would you like to install live-server now?  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installLiveServer || echo "not installing live-server"
+
 echo "Installation Done!!"
 echo "Recommand: Install JAVA and setting path + Gradle"
-echo "ref: https://all-record.tistory.com/181"
+echo "JAVA ref: https://all-record.tistory.com/181"
+echo "Gradle ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/"
 echo "help: whgustlr0326@gmail.com"
