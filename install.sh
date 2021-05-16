@@ -83,8 +83,9 @@ installPythonLSP(){
   sudo apt install build-essential
 
   echo "install jedi"
-  sudo apt-get install vim-python-jedi
-  vim-addons install python-jedi
+  sudo pip3 install -U jedi
+  # sudo apt-get install vim-python-jedi
+  # vim-addons install python-jedi
 
   echo "install formatter 'black'"
   sudo pip3 install black
