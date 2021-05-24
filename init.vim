@@ -361,8 +361,8 @@ let g:promptline_theme = 'airline'
 " section별 보여줄 것들 설정
 " sections (a, b, c, x, y, z, warn) are optional
 let g:promptline_preset = {
-      \'a' : [ promptline#slices#host() ],
-      \'b' : [ promptline#slices#user() ],
+      \'a' : [ promptline#slices#user() ],
+      \'b' : [  promptline#slices#python_virtualenv() ],
       \'c' : [ promptline#slices#cwd() ],
       \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
       \'warn' : [ promptline#slices#last_exit_code() ]}

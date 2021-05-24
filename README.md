@@ -215,3 +215,7 @@ ref: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuc
 WAS를 사용하여 https 설정까지
 
 ref: http://hakawati.co.kr/445
+
+## Selenium venv (가상환경 python)
+
+ref: https://docs.python.org/ko/3/library/venv.html
