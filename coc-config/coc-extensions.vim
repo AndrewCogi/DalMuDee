@@ -9,6 +9,7 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-css',
   \ 'coc-tsserver',
+  \ 'coc-prettier',
   \ ]
   " coc-explorer : 파일 탐색기
   " coc-yank : yy highlighting
@@ -21,6 +22,7 @@ let g:coc_global_extensions = [
   " coc-html : LSP for html
   " coc-css : LSP for css
   " coc-tsserver : LSP for typescript/javascript
+  " coc-prettier : 코드 예쁘게 만들어주는 친구
   " \ 'coc-actions',
   " \ 'coc-sh',
   " \ 'coc-java-debug',
@@ -33,7 +35,6 @@ let g:coc_global_extensions = [
   " \ 'coc-emoji',
   " \ 'coc-yaml',
   " \ 'coc-svg',
-  " \ 'coc-prettier',
   " \ 'coc-xml',
   " \ 'coc-marketplace',
   " \ 'coc-tabnine',
