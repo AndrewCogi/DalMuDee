@@ -152,6 +152,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " syntax support 플러그인(cpp,python,java)
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'hdima/python-syntax'
+    Plug 'uiiaoo/java-syntax.vim'
 
     " vim 아이콘 플러그인
     " 나중에 데스크탑에서 해보기로
@@ -217,15 +218,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 화면 확장 플러그인
     Plug 'szw/vim-maximizer'
 
-    " JAVA를 위한 자동 import, getter/setter 생성 등 아주 유용한  플러그인
-    Plug 'artur-shaik/vim-javacomplete2'
-
-
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
     " Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
-    " Plug 'puremourning/vimspector' -> 디버깅 툴
 
     call plug#end()
 
@@ -409,6 +405,15 @@ let g:cpp_experimental_simple_template_highlight = 1
 
 " enable all highlights
 let python_highlight_all = 1
+
+" =============================================================================
+
+
+" ===========================[(Plug)java-syntax.vim]============================
+
+" disable variable,delimiter highlights
+highlight link javaIdentifier NONE
+highlight link javaDelimiter NONE
 
 " =============================================================================
 
@@ -835,29 +840,6 @@ nmap <silent> <leader>kp :cprevious<CR>
 
 " :VimspectorInstall 실행하면 아랫것들 다 설치됨(cpp,python,java설치)
 " let g:vimspector_install_gadgets = [ 'vscode-cpptools', 'debugpy', 'vscode-java-debug' ]
-
-" =============================================================================
-
-
-" ==========================[(Plug)vim-javacomplete2]==========================
-
-" ref: https://github.com/artur-shaik/vim-javacomplete2
-" 자동 경로세팅
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-" 기본매핑 비활성화
-let g:JavaComplete_EnableDefaultMappings = 0
-
-nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)
-nmap <leader>ji <Plug>(JavaComplete-Imports-Add)
-nmap <leader>jr <Plug>(JavaComplete-Imports-RemoveUnused)
-nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)
-nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
-nmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
-nmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
-nmap <leader>jts <Plug>(JavaComplete-Generate-ToString)
-nmap <leader>jeq <Plug>(JavaComplete-Generate-EqualsAndHashCode)
-nmap <leader>jc <Plug>(JavaComplete-Generate-Constructor)
-nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)
 
 " =============================================================================
 
