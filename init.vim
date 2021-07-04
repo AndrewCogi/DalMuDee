@@ -849,7 +849,7 @@ nmap <silent> <leader>kp :cprevious<CR>
 
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
 " <c-j>누르면 다음 고칠 곳으로 이동
-let g:coc_snippet_next = '<c-j>'
+" let g:coc_snippet_next = '<c-j>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 " <c-k>누르면 이전 고칠 곳으로 이동
