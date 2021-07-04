@@ -213,6 +213,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 디버깅 툴
     Plug 'puremourning/vimspector'
 
+    " 화면 확장 플러그인
+    Plug 'szw/vim-maximizer'
+
     " JAVA를 위한 자동 import, getter/setter 생성 등 아주 유용한  플러그인
     Plug 'artur-shaik/vim-javacomplete2'
 
@@ -855,11 +858,18 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " =============================================================================
 
 
-" =============================[(Plug)vimspector]============================
+" ==============================[(Plug)vimspector]=============================
 
 " TODO :VimspectorInstall 실행하기
 let g:vimspector_base_dir=expand( '$HOME/.config/nvim/vimspector-config' )
 let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'vscode-java-debug' ]
 let g:vimspector_enable_mappings = 'HUMAN'
+
+" =============================================================================
+
+
+" ============================[(Plug)vim-maximizer]============================
+
+nmap <silent><leader>m :MaximizerToggle<CR>
 
 " =============================================================================
