@@ -206,12 +206,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 시작화면 플러그인
     Plug 'mhinz/vim-startify'
 
-    " 함수, 변수 등 위치 및 이름 바꾸는 플러그인
-    Plug 'dkprice/vim-easygrep'
-
     " 컴파일, 실행 툴
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
+
+    " 디버깅 툴
+    Plug 'puremourning/vimspector'
 
     " JAVA를 위한 자동 import, getter/setter 생성 등 아주 유용한  플러그인
     Plug 'artur-shaik/vim-javacomplete2'
@@ -855,22 +855,11 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " =============================================================================
 
 
-" ===============================[(Plug)easygrep]==============================
+" =============================[(Plug)vimspector]============================
 
-" ref) https://github.com/dkprice/vim-easygrep
-"<leader>vv  - Grep for the word under the cursor, match all occurences,
-              " like |gstar|
-" <leader>vV  - Grep for the word under the cursor, match whole word, like
-              " |star|
-" <leader>va  - Like vv, but add to existing list
-" <leader>vA  - Like vV, but add to existing list
-" <leader>vr  - Perform a global search on the word under the cursor
-              " and prompt for a pattern with which to replace it.
-" <leader>vo  - Select the files to search in and set grep options
-" <leader>vy* - Invoke any option from the options explorer, where * is the
-              " shortcut for that option.
-              " e.g. <leader>vyr - toggles recursion
-                   " <leader>vyb - sets buffer grepping mode
-                   " etc.
+" TODO :VimspectorInstall 실행하기
+let g:vimspector_base_dir=expand( '$HOME/.config/nvim/vimspector-config' )
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'vscode-java-debug' ]
+let g:vimspector_enable_mappings = 'HUMAN'
 
 " =============================================================================
