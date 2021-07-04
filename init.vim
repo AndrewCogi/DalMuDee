@@ -149,8 +149,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 들여쓰기 자동세팅해줌(파일따라 다르게 잘해준다!)
     Plug 'tpope/vim-sleuth'
 
-    " syntax support 플러그인
-    Plug 'sheerun/vim-polyglot'
+    " syntax support 플러그인(cpp,python,java)
+    Plug 'octol/vim-cpp-enhanced-highlight'
 
     " vim 아이콘 플러그인
     " 나중에 데스크탑에서 해보기로
@@ -391,7 +391,19 @@ let g:rooter_patterns = ['.git', 'gradlew']
 
 " =============================================================================
 
-" =============================[(Plug)vim-rooter]==============================
+
+" =====================[(Plug)vim-cpp-enhanced-highlight]======================
+
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_experimental_simple_template_highlight = 1
+
+" =============================================================================
+
+
+" ============================[(Plug)vim-closetag]=============================
 
 " <foo| 에서 >누르면 <foo></foo>가 된다
 " 한번 더 >누르면 <foo><enter+indent></foo>가 된다
