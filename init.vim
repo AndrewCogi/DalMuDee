@@ -776,6 +776,7 @@ let g:startify_enable_special = 0
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
+            \ { 'c': '~/.config/nvim/coc-config/coc.vim' },
             \ ]
 " Goto main buffer
 nmap <silent> <leader>bh :Startify<CR>
