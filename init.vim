@@ -151,6 +151,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " syntax support 플러그인(cpp,python,java)
     Plug 'octol/vim-cpp-enhanced-highlight'
+    Plug 'hdima/python-syntax'
 
     " vim 아이콘 플러그인
     " 나중에 데스크탑에서 해보기로
@@ -394,11 +395,20 @@ let g:rooter_patterns = ['.git', 'gradlew']
 
 " =====================[(Plug)vim-cpp-enhanced-highlight]======================
 
+" highlight settings (default: disable)
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_posix_standard = 1
 let g:cpp_experimental_simple_template_highlight = 1
+
+" =============================================================================
+
+
+" ============================[(Plug)python-syntax]============================
+
+" enable all highlights
+let python_highlight_all = 1
 
 " =============================================================================
 
