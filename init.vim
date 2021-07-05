@@ -832,19 +832,6 @@ nmap <silent> <leader>kp :cprevious<CR>
 " =============================================================================
 
 
-" ==============================[(Plug)vimspector]=============================
-
-" ref) https://github.com/puremourning/vimspector
-
-" let g:vimspector_base_dir=expand( '$HOME/.config/nvim/vimspector-config' )
-" let g:vimspector_enable_mappings='VISUAL_STUDIO'
-
-" :VimspectorInstall 실행하면 아랫것들 다 설치됨(cpp,python,java설치)
-" let g:vimspector_install_gadgets = [ 'vscode-cpptools', 'debugpy', 'vscode-java-debug' ]
-
-" =============================================================================
-
-
 " =============================[(Plug)coc-snippets]============================
 
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
@@ -867,7 +854,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " TODO :VimspectorInstall 실행하고 실행파일과 같은 위치에 두기
 " 설치되는 친구들 정의(TODO 다른 언어 추가하기)
-let g:vimspector_install_gadgets = [ 'debugpy' ]
+let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
 " command 정의(Github 참고)
 let g:vimspector_enable_mappings = 'HUMAN'
 
