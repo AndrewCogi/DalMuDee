@@ -96,11 +96,6 @@ installCppDebug(){
   sudo apt install sed gdb -y
 }
 
-installPythonDebug(){
-  echo "install python debugger"
-  nvim +VimspectorInstall +qall
-}
-
 installLiveServer(){
   echo "install live-server"
   sudo npm i -g live-server
@@ -155,10 +150,6 @@ read answer
 echo -n "Would you like to install c,c++ Debugger now?(gdb)  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installCppDebug || echo "not installing CppDebugger"
-
-echo -n "Would you like to install python Debugger now?(debugpy)  (y/n)? "
-read answer
-[ "$answer" != "${answer#[Yy]}" ] && installPythonDebug || echo "not installing PythonDebugger"
 
 echo -n "Would you like to install live-server now?  (y/n)? "
 read answer
