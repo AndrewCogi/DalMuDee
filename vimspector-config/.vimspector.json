@@ -13,10 +13,6 @@
         "cwd": "${cwd}",
         "program": "${file}"
       }
-    },
-    "C - Launch": {
-    },
-    "Java - Launch": {
     }
   }
 }
