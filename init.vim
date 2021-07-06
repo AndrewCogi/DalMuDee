@@ -853,6 +853,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " ==============================[(Plug)vimspector]=============================
 
 " TODO vimspector.json파일 실행파일과 같은 위치에 두기
+" :VimspectorInstall 하면 debugpy 설치됨
 " 설치되는 친구들 정의(TODO 다른 언어 추가하기)
 let g:vimspector_install_gadgets = [ 'debugpy' ]
 " command 정의(Github 참고)
