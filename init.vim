@@ -84,6 +84,9 @@ vnoremap < <gv
 nnoremap <silent> <leader>. :e $MYVIMRC<CR>
 " <leader>n : highlight 지우기
 nnoremap <silent> <leader>n :let @/ = ""<CR>
+" terminal 실행
+" TODO: gdb / pdb 사용을 위함
+nmap <silent><leader>t. :sp<CR>:terminal<CR>i
 
 " =============================================================================
 
@@ -211,9 +214,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 컴파일, 실행 툴
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
-
-    " 디버깅 툴
-    Plug 'puremourning/vimspector'
 
     " 화면 확장 플러그인
     Plug 'szw/vim-maximizer'
@@ -846,18 +846,6 @@ let g:coc_snippet_prev = '<c-k>'
 " insert mode에서 <c-j>누르면 snippets가능한 아이들 보여주고, 그 단어랑 
 " 똑같이 입력한 다음 <c-j>누르면 expanding되도록 함
 imap <C-j> <Plug>(coc-snippets-expand-jump)
-
-" =============================================================================
-
-
-" ==============================[(Plug)vimspector]=============================
-
-" TODO vimspector.json파일 실행파일과 같은 위치에 두기
-" :VimspectorInstall 하면 debugpy 설치됨
-" 설치되는 친구들 정의(TODO 다른 언어 추가하기)
-let g:vimspector_install_gadgets = [ 'debugpy' ]
-" command 정의(Github 참고)
-let g:vimspector_enable_mappings = 'HUMAN'
 
 " =============================================================================
 
