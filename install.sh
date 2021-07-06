@@ -98,7 +98,7 @@ installCppDebug(){
 
 installPythonDebug(){
   echo "install python debugger"
-  nvim +VimspectorInstall --enable-python +qall
+  nvim +VimspectorInstall +qall
 }
 
 installLiveServer(){
