@@ -91,6 +91,16 @@ installPythonLSP(){
   sudo pip3 install black
 }
 
+installCppDebug(){
+  echo "install cpp debugger"
+  sudo apt install sed gdb -y
+}
+
+installPythonDebug(){
+  echo "install python debugger"
+  nvim +VimspectorInstall --enable-python +qall
+}
+
 installLiveServer(){
   echo "install live-server"
   sudo npm i -g live-server
@@ -104,7 +114,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-echo "Install neovim 5.0..."
+echo "Install neovim..."
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt install neovim -y
 
@@ -141,6 +151,14 @@ read answer
 echo -n "Would you like to install python LSP now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installPythonLSP || echo "not installing PythonLSP"
+
+echo -n "Would you like to install c,c++ Debugger now?(gdb)  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installCppDebug || echo "not installing CppDebugger"
+
+echo -n "Would you like to install python Debugger now?(debugpy)  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installPythonDebug || echo "not installing PythonDebugger"
 
 echo -n "Would you like to install live-server now?  (y/n)? "
 read answer
