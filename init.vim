@@ -218,6 +218,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 화면 확장 플러그인
     Plug 'szw/vim-maximizer'
 
+    " python syntax highlight
+    Plug 'vim-python/python-syntax'
+
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
     " Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
@@ -853,5 +856,12 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " ============================[(Plug)vim-maximizer]============================
 
 nmap <silent><leader>m :MaximizerToggle<CR>
+
+" =============================================================================
+
+
+" =============================[(Plug)python-syntax]===========================
+
+let g:python_highlight_all = 1
 
 " =============================================================================
