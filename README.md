@@ -1,5 +1,9 @@
 # Neovim in ubuntu 20.04 (CHOHYUNSIK)
 
+## Install my settings in one Command
+
+❗️ bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/JNvim2.0/master/install.sh)
+
 ## How to ssh key fingerprint delete (Blink Shell)
 
 ❗️ ssh-keygen -R [host name]
@@ -16,10 +20,6 @@
 
 ❗️ sudo apt install python3-pip
 
-## Install my settings in one Command
-
-❗️ bash <(curl -s [my NVC install.sh URL])
-
 ## Install nvim
 
 ❗️ sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -27,16 +27,6 @@
 ❗️ sudo apt update
 
 ❗️ sudo apt install neovim
-
-## Start nvim
-
-❗️ nvim
--> The first time you run nvim, you will get a lot of errors and the settings will be installed at the same time.
-
-## Restart nvim
-
-❗️ nvim
--> coc-extension installed
 
 ## Required Installation List
 
