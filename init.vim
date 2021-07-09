@@ -32,6 +32,8 @@ set incsearch			                		" 한글자 입력할때마다 매칭되는부
 set hlsearch		                			" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
 set signcolumn=yes:1                  " 왼쪽 숫자 padding 거리
+set hidden                            " 버퍼저장안하고도 다른버퍼 이동가능
+set termguicolors                     " colorscheme 색상 그대로 적용되도록 함
 
 " =============================================================================
 
@@ -539,8 +541,8 @@ nnoremap <silent> <leader>b8 :BufferGoto 8<CR>
 nnoremap <silent> <leader>b9 :BufferGoto 9<CR>
 
 nnoremap <silent> <leader>bd :BufferDelete<CR>
-nnoremap <silent> <leader>bn :BufferNext<CR>
-nnoremap <silent> <leader>bp :BufferPrevious<CR>
+nnoremap <silent> <leader>bn :bnext<CR>
+nnoremap <silent> <leader>bp :bprevious<CR>
 nnoremap <silent> <leader>bb :Buffers<CR>
 
 " =============================================================================
