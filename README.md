@@ -185,6 +185,14 @@ Scanner NoSuchInputException 해결
 
 ref: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuchelementexception-when-application-is-started-with
 
+gradle resources 파일 추가해서 빌드하기
+
+ref: https://wfreud.tistory.com/m/280
+
+gradle jar 파일 만들기
+
+ref: https://gyrfalcon.tistory.com/m/entry/Gradle-Executable-jar
+
 ## VSCode (Code-Server)
 
 설치
