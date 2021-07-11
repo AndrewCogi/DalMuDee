@@ -14,7 +14,7 @@ So I started this project with the idea of creating my own development environme
 * Increase convenience by installing Plugins.
 * Auto completion
 * Works perfectly in CommandLine Interface
-* Use ssh,mosh to access and program anytime, anywhere
+* Use ssh,mosh to access and programing anytime, anywhere
 * Code-Server (VSCode)
 * Debugging
 * Can use Gradle to manage projects (Java,C++ etc.)
@@ -23,6 +23,6 @@ So I started this project with the idea of creating my own development environme
 ## Prerequisites
 
 * Ubuntu 16.04 or higher
-* Python3 ('sudo apt install python3')
-* pip3 ('sudo apt install python3-pip')
+* Python3 (`sudo apt install python3`)
+* pip3 (`sudo apt install python3-pip`)
 
