@@ -35,17 +35,17 @@ So I started this project with the idea of creating my own development environme
 
 **Install my settings in ONE command**
 
-❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/DalMuDee/master/install.sh)
+❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/DalMuDee/master/install.sh)`
 
 ## Required Installation List
 
-##### 1. ranger
+#### 1. ranger
 
 ❗️ `sudo apt install ranger`
 
 ref: https://www.chrisatmachine.com/Neovim/07-ranger/
 
-##### 2. ueberzug
+#### 2. ueberzug
 
 ***⚠️ must be installed before installing ueberzug***
 
@@ -57,7 +57,7 @@ ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19
 
 ref: https://github.com/seebye/ueberzug
 
-##### 3. ripgrep
+#### 3. ripgrep
 
 ❗️ `sudo apt-get update`
 
@@ -65,23 +65,23 @@ ref: https://github.com/seebye/ueberzug
 
 ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html
 
-##### 4. silver_searcher
+#### 4. silver_searcher
 
 ❗️ `sudo apt-get install silversearcher-ag`
 
 ref: https://github.com/ggreer/the_silver_searcher
 
-##### 5. fd
+#### 5. fd
 
 ❗️ `sudo apt install fd-find`
 
 ref: https://github.com/sharkdp/fd
 
-##### 6. universal-ctags
+#### 6. universal-ctags
 
 ❗️ `sudo apt install universal-ctags`
 
-##### 7. lazy git
+#### 7. lazy git
 
 ❗️ `sudo add-apt-repository ppa:lazygit-team/release`
 
@@ -91,12 +91,12 @@ ref: https://github.com/sharkdp/fd
 
 ref: https://github.com/jesseduffield/lazygit
 
-##### 8. lazy docker
+#### 8. lazy docker
 
 ❗️ `curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash`
 
 ref: https://github.com/jesseduffield/lazydocker
 
-##### 9. fzf
+#### 9. fzf
 
 ❗️ `sudo apt install fzf`
