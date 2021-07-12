@@ -39,13 +39,13 @@ So I started this project with the idea of creating my own development environme
 
 ## Required Installation List (Automatic)
 
-#### 1. ranger
+### 1. ranger
 
 ❗️ `sudo apt install ranger`
 
 ref: https://www.chrisatmachine.com/Neovim/07-ranger/ 
 
-#### 2. ueberzug
+### 2. ueberzug
 
 ***⚠️ must be installed before installing ueberzug***
 
@@ -57,7 +57,7 @@ ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19
 
 ref: https://github.com/seebye/ueberzug 
 
-#### 3. ripgrep
+### 3. ripgrep
 
 ❗️ `sudo apt-get update`
 
@@ -65,23 +65,23 @@ ref: https://github.com/seebye/ueberzug
 
 ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html 
 
-#### 4. silver_searcher
+### 4. silver_searcher
 
 ❗️ `sudo apt-get install silversearcher-ag`
 
 ref: https://github.com/ggreer/the_silver_searcher 
 
-#### 5. fd
+### 5. fd
 
 ❗️ `sudo apt install fd-find`
 
 ref: https://github.com/sharkdp/fd 
 
-#### 6. universal-ctags
+### 6. universal-ctags
 
 ❗️ `sudo apt install universal-ctags` 
 
-#### 7. lazy git
+### 7. lazy git
 
 ❗️ `sudo add-apt-repository ppa:lazygit-team/release`
 
@@ -91,17 +91,17 @@ ref: https://github.com/sharkdp/fd
 
 ref: https://github.com/jesseduffield/lazygit 
 
-#### 8. lazy docker
+### 8. lazy docker
 
 ❗️ `curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash`
 
 ref: https://github.com/jesseduffield/lazydocker 
 
-#### 9. fzf
+### 9. fzf
 
 ❗️ `sudo apt install fzf` 
 
-#### 10. Nodejs(for python LSP)
+### 10. Nodejs(for python LSP)
 
 ❗️ `sudo apt-get install curl`
 
@@ -113,7 +113,7 @@ ref: https://github.com/jesseduffield/lazydocker
 
 ref: https://soojae.tistory.com/25 
 
-#### 11. jedi(for python LSP)
+### 11. jedi(for python LSP)
 
 ❗️ `sudo apt-get install vim-python-jedi`
 
@@ -125,7 +125,7 @@ ref: https://askubuntu.com/questions/462841/how-to-install-and-use-jedi-vim-pyth
 
 ref: https://github.com/palantir/python-language-server/issues/543 
 
-#### 12. black (python formatter)
+### 12. black (python formatter)
 
 ❗️ `sudo pip3 install black`
 
@@ -135,7 +135,7 @@ ref: https://github.com/palantir/python-language-server/issues/543
 
 choose `/bin/python3` 
 
-#### 13. ccls(for C/C++ LSP)
+### 13. ccls(for C/C++ LSP)
 
 ❗️ `sudo apt install ccls`
 
@@ -143,7 +143,7 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 
 ## Required Installation List (Manual)
 
-#### 1. Java
+### 1. Java
 
 ⚠️ **jdk jre >= 11 (for jdtls)**
 
@@ -191,7 +191,7 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ref: https://all-record.tistory.com/181 
 
-#### 2. live-server
+### 2. live-server
 
 ⚠️ **portforwarding required!**
 
@@ -207,7 +207,7 @@ ref: https://all-record.tistory.com/181
 
 ref: https://www.chrisatmachine.com/Neovim/20-live-server/ 
 
-#### 3. Gradle
+### 3. Gradle
 
 **_1._** Downloading Gradle
 
@@ -219,6 +219,7 @@ Downloading the Gradle binary-only zip file in the `/tmp`
 directory using the following `wget` command:
 
 ❗️ `VERSION=6.5.1`
+
 ❗️ `wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp`
 
 Once the download is completed, unzip the file in the
@@ -253,17 +254,17 @@ Save and close the file. This script will be sourced at shell startup.
 
 Make the script executable:
 
-`sudo chmod +x /etc/profile.d/gradle.sh`
+❗️ `sudo chmod +x /etc/profile.d/gradle.sh`
 
 Load the environment variables in the current shell session using the `source` command:
 
-`source /etc/profile.d/gradle.sh`
+❗️ `source /etc/profile.d/gradle.sh`
 
 **_3._** Verifying the Gradle Installation
 
 To validate that Gradle is installed properly use the `gradle -v` command which will display the Gradle version:
 
-`gradle -v`
+❗️ `gradle -v`
 
 You should see something like the following:
 
@@ -297,6 +298,6 @@ on your Ubuntu system, and you can start using it.
 
 ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
 
-#### 4. Code-Server (VSCode)
+### 4. Code-Server (VSCode)
 
-#### 5. Selenium
+### 5. Selenium
