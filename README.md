@@ -43,7 +43,7 @@ So I started this project with the idea of creating my own development environme
 
 ❗️ `sudo apt install ranger`
 
-ref: https://www.chrisatmachine.com/Neovim/07-ranger/ 
+🖇 ref: https://www.chrisatmachine.com/Neovim/07-ranger/ 
 
 ### 2. ueberzug
 
@@ -51,11 +51,11 @@ ref: https://www.chrisatmachine.com/Neovim/07-ranger/
 
 ❗️ `sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev`
 
-ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/
+🖇 ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/
 
 ❗️ `sudo pip3 install ueberzug`
 
-ref: https://github.com/seebye/ueberzug 
+🖇 ref: https://github.com/seebye/ueberzug 
 
 ### 3. ripgrep
 
@@ -63,19 +63,19 @@ ref: https://github.com/seebye/ueberzug
 
 ❗️ `sudo apt-get install ripgrep`
 
-ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html 
+🖇 ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html 
 
 ### 4. silver_searcher
 
 ❗️ `sudo apt-get install silversearcher-ag`
 
-ref: https://github.com/ggreer/the_silver_searcher 
+🖇 ref: https://github.com/ggreer/the_silver_searcher 
 
 ### 5. fd
 
 ❗️ `sudo apt install fd-find`
 
-ref: https://github.com/sharkdp/fd 
+🖇 ref: https://github.com/sharkdp/fd 
 
 ### 6. universal-ctags
 
@@ -89,13 +89,13 @@ ref: https://github.com/sharkdp/fd
 
 ❗️ `sudo apt-get install lazygit`
 
-ref: https://github.com/jesseduffield/lazygit 
+🖇 ref: https://github.com/jesseduffield/lazygit 
 
 ### 8. lazy docker
 
 ❗️ `curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash`
 
-ref: https://github.com/jesseduffield/lazydocker 
+🖇 ref: https://github.com/jesseduffield/lazydocker 
 
 ### 9. fzf
 
@@ -111,7 +111,7 @@ ref: https://github.com/jesseduffield/lazydocker
 
 ❗️ `sudo apt install build-essential`
 
-ref: https://soojae.tistory.com/25 
+🖇 ref: https://soojae.tistory.com/25 
 
 ### 11. jedi(for python LSP)
 
@@ -119,11 +119,11 @@ ref: https://soojae.tistory.com/25
 
 ❗️ `vim-addons install python-jedi`
 
-ref: https://askubuntu.com/questions/462841/how-to-install-and-use-jedi-vim-python-ide-for-vim-on-ubuntu
+🖇 ref: https://askubuntu.com/questions/462841/how-to-install-and-use-jedi-vim-python-ide-for-vim-on-ubuntu
 
 ***🔑 it's not working?***
 
-ref: https://github.com/palantir/python-language-server/issues/543 
+🖇 ref: https://github.com/palantir/python-language-server/issues/543 
 
 ### 12. black (python formatter)
 
@@ -189,7 +189,7 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ❗️ `$JAVA_HOME/bin/javac -version` -> If you get the same result as `javac-version`, you succeed!
 
-ref: https://all-record.tistory.com/181 
+🖇 ref: https://all-record.tistory.com/181 
 
 ### 2. live-server
 
@@ -205,7 +205,7 @@ ref: https://all-record.tistory.com/181
 
 ❗️ `live-server -h`
 
-ref: https://www.chrisatmachine.com/Neovim/20-live-server/ 
+🖇 ref: https://www.chrisatmachine.com/Neovim/20-live-server/ 
 
 ### 3. Gradle
 
@@ -296,7 +296,7 @@ OS:           Linux 5.4.0-26-generic amd64
 That’s it. You have installed the latest version of Gradle
 on your Ubuntu system, and you can start using it.
 
-ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
+🖇 ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
 
 ### 4. Code-Server (VSCode)
 
