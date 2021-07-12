@@ -37,7 +37,7 @@ So I started this project with the idea of creating my own development environme
 
 ❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/DalMuDee/master/install.sh)`
 
-## Required Installation List
+## Required Installation List (auto installed by runnung ONE command)
 
 #### 1. ranger
 
@@ -100,3 +100,37 @@ ref: https://github.com/jesseduffield/lazydocker
 #### 9. fzf
 
 ❗️ `sudo apt install fzf`
+
+#### 10. Nodejs
+
+❗️ `sudo apt-get install curl`
+
+❗️ `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
+
+❗️ `sudo apt-get install -y nodejs`
+
+❗️ `sudo apt install build-essential`
+
+ref: https://soojae.tistory.com/25
+
+#### 11. jedi
+
+❗️ `sudo apt-get install vim-python-jedi`
+
+❗️ `vim-addons install python-jedi`
+
+ref: https://askubuntu.com/questions/462841/how-to-install-and-use-jedi-vim-python-ide-for-vim-on-ubuntu
+
+***🔑 it's not working?***
+
+ref: https://github.com/palantir/python-language-server/issues/543
+
+#### 12. black (python formatter)
+
+❗️ `sudo pip3 install black`
+
+##### 혹시나 선택지에서 1. yes를 선택했었다면, 수동설정해주자
+
+❗️ nvim -> :CocCommand python.setInterpreter
+
+choose `/bin/python3`
