@@ -1,6 +1,11 @@
-# DalMuDee🌙
 
+<h1 align="center">
+DalMuDee🌙
+</h1>
+
+<p align="center">
 My Personal Integrated Development Environment
+</p>
 
 ## Introduction
 
@@ -23,6 +28,73 @@ So I started this project with the idea of creating my own development environme
 ## Prerequisites
 
 * Ubuntu 16.04 or higher
-* Python3 (`sudo apt install python3`)
-* pip3 (`sudo apt install python3-pip`)
+* Python3 (❗️ `sudo apt install python3`)
+* pip3 (❗️ `sudo apt install python3-pip`)
 
+## Installation
+
+**Install my settings in ONE command**
+
+❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/JNvim2.0/master/install.sh)`
+
+## Required Installation List
+
+##### 1. ranger
+
+❗️ `sudo apt install ranger`
+
+ref: https://www.chrisatmachine.com/Neovim/07-ranger/
+
+##### 2. ueberzug
+
+##### (downthings) must be installed before installing ueberzug
+
+`sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev
+sudo pip3 install ueberzug`
+
+ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/
+ref: https://github.com/seebye/ueberzug
+
+##### 3. ripgrep
+
+❗️ sudo apt-get update
+
+❗️ sudo apt-get install ripgrep
+
+ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html
+
+##### 4. silver_searcher
+
+❗️ sudo apt-get install silversearcher-ag
+
+ref: https://github.com/ggreer/the_silver_searcher
+
+##### 5. fd
+
+❗️ sudo apt install fd-find
+
+ref: https://github.com/sharkdp/fd
+
+##### 6. universal-ctags
+
+❗️ sudo apt install universal-ctags
+
+##### 7. lazy git
+
+❗️ sudo add-apt-repository ppa:lazygit-team/release
+
+❗️ sudo apt-get update
+
+❗️ sudo apt-get install lazygit
+
+ref: https://github.com/jesseduffield/lazygit
+
+##### 8. lazy docker
+
+❗️ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+
+ref: https://github.com/jesseduffield/lazydocker
+
+##### 9. fzf
+
+❗️ sudo apt install fzf
