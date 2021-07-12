@@ -37,7 +37,9 @@ So I started this project with the idea of creating my own development environme
 
 ❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/DalMuDee/master/install.sh)`
 
-## Required Installation List (auto installed by runnung ONE command)
+## Required Installation List
+
+**(auto installed by runnung ONE command)**
 
 #### 1. ranger
 
@@ -129,7 +131,7 @@ ref: https://github.com/palantir/python-language-server/issues/543
 
 ❗️ `sudo pip3 install black`
 
-##### 혹시나 선택지에서 1. yes를 선택했었다면, 수동설정해주자
+***🔑 Have you already set up the interpreter?***
 
 ❗️ nvim -> :CocCommand python.setInterpreter
 
