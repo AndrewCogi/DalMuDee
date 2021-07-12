@@ -15,7 +15,7 @@ let g:coc_global_extensions = [
   " coc-snippets : 자동완성
   " coc-vimlsp : LSP for vim
   " coc-pyright : LSP for python3
-  " coc-python : LSP for python3
+  " coc-python : LSP for python3(deprecated)
   " coc-java : LSP for JAVA 
   " coc-json : LSP for json
   " coc-html : LSP for html
