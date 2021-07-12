@@ -35,7 +35,7 @@ So I started this project with the idea of creating my own development environme
 
 **Install my settings in ONE command**
 
-❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/JNvim2.0/master/install.sh)`
+❗️ `bash <(curl -s https://raw.githubusercontent.com/CHOHYUNSIK/DalMuDee/master/install.sh)
 
 ## Required Installation List
 
@@ -47,7 +47,7 @@ ref: https://www.chrisatmachine.com/Neovim/07-ranger/
 
 ##### 2. ueberzug
 
-##### ⚠️ must be installed before installing ueberzug
+***⚠️ must be installed before installing ueberzug***
 
 ❗️ `sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev`
 
