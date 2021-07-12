@@ -213,8 +213,7 @@ ref: https://www.chrisatmachine.com/Neovim/20-live-server/
 
 At the time of writing this article, the latest version of
 Gradle is 6.5.1. Before continuing with the next step, check the 
-[Gradle releases page][https://gradle.org/releases/]
-to see if a newer version is available.
+https://gradle.org/releases/ to see if a newer version is available.
 
 #### 4. Code-Server (VSCode)
 
