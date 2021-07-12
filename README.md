@@ -145,16 +145,18 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 
 #### 1. Java
 
-**jdk jre >= 11 (for jdtls)**
+⚠️ **jdk jre >= 11 (for jdtls)**
 
 **_1._** Execute the JDK and JRE installation commands.
 
 ❗️ `sudo apt-get install openjdk-11-jre`
+
 ❗️ `sudo apt-get install openjdk-11-jdk`
 
 **_2._** Check java installation
 
 ❗️ `java -version` -> openjdk version "${VAJA_VERSION}"...
+
 ❗️ `javac -version` -> javac "${JAVA_VERSION}"
 
 **_3._** Setting Java environment variables(PATH)
@@ -162,6 +164,7 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 **_3-1._** Check javac location & setting ${JAVA_HOME}
 
 ❗️ `which javac` -> ${temp}
+
 ❗️ `readlink -f ${temp}` -> it will be show the full javac location(I'll call this result as ${RESULT})
 
 **_3-2._** Add PATH in `/etc/profile`
@@ -169,9 +172,10 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 ❗️ `sudo nano /etc/profile`
 
 (append this things)
-	```vim
-	export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-	export PATH=$JAVA_HOME/bin:$PATH
+
+	```bash
+	export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64  
+	export PATH=$JAVA_HOME/bin:$PATH  
 	export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 	```
 
@@ -180,7 +184,9 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 **_4._** Reboot ubuntu server & check $JAVA_HOME
 
 ❗️ `sudo reboot now`
+
 ❗️ `echo JAVA_HOME`
+
 ❗️ `$JAVA_HOME/bin/javac -version` -> If you get the same result as `javac-version`, you succeed!
 
 ref: https://all-record.tistory.com/181
