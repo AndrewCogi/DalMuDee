@@ -141,7 +141,6 @@ choose `/bin/python3`
 
 also setting LSP for C/C++ is in `./coc-settings.json` file
 
-
 ## Required Installation List (Manual)
 
 #### 1. Java
@@ -192,4 +191,24 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ref: https://all-record.tistory.com/181
 
-#### 2. 
+#### 2. live-server
+
+⚠️ **portforwarding required!**
+
+❗️ `sudo npm i -g live-server`
+
+***🔑 How to use this?***
+
+❗️ `live-server [filePath] --port=[portNumber] --host=[ipAddress]`
+
+***🔑 help?***
+
+❗️ `live-server -h`
+
+ref: https://www.chrisatmachine.com/Neovim/20-live-server/
+
+#### 3. Gradle
+
+#### 4. Code-Server (VSCode)
+
+#### 5. Selenium
