@@ -67,36 +67,36 @@ ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_
 
 ##### 4. silver_searcher
 
-❗️ sudo apt-get install silversearcher-ag
+❗️ `sudo apt-get install silversearcher-ag`
 
 ref: https://github.com/ggreer/the_silver_searcher
 
 ##### 5. fd
 
-❗️ sudo apt install fd-find
+❗️ `sudo apt install fd-find`
 
 ref: https://github.com/sharkdp/fd
 
 ##### 6. universal-ctags
 
-❗️ sudo apt install universal-ctags
+❗️ `sudo apt install universal-ctags`
 
 ##### 7. lazy git
 
-❗️ sudo add-apt-repository ppa:lazygit-team/release
+❗️ `sudo add-apt-repository ppa:lazygit-team/release`
 
-❗️ sudo apt-get update
+❗️ `sudo apt-get update`
 
-❗️ sudo apt-get install lazygit
+❗️ `sudo apt-get install lazygit`
 
 ref: https://github.com/jesseduffield/lazygit
 
 ##### 8. lazy docker
 
-❗️ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+❗️ `curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash`
 
 ref: https://github.com/jesseduffield/lazydocker
 
 ##### 9. fzf
 
-❗️ sudo apt install fzf
+❗️ `sudo apt install fzf`
