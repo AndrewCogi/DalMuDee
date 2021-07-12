@@ -47,19 +47,21 @@ ref: https://www.chrisatmachine.com/Neovim/07-ranger/
 
 ##### 2. ueberzug
 
-##### (downthings) must be installed before installing ueberzug
+##### ⚠️ must be installed before installing ueberzug
 
-`sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev
-sudo pip3 install ueberzug`
+❗️ `sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev`
 
 ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/
+
+❗️ `sudo pip3 install ueberzug`
+
 ref: https://github.com/seebye/ueberzug
 
 ##### 3. ripgrep
 
-❗️ sudo apt-get update
+❗️ `sudo apt-get update`
 
-❗️ sudo apt-get install ripgrep
+❗️ `sudo apt-get install ripgrep`
 
 ref: https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/ripgrep_11.0.2-1build1_amd64.deb.html
 
