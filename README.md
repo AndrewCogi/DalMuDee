@@ -300,4 +300,21 @@ on your Ubuntu system, and you can start using it.
 
 ### 4. Code-Server (VSCode)
 
+`sudo curl -fsSL https://code-server.dev/install.sh | sh`
+
+***🔑 How to use?***
+
+auto execution on
+
+`systemctl --user enable --now code-server`
+
+auto execution off
+
+`systemctl --user disable --now code-server`
+
+The configuration file is in `~/.config/code-server/config.yaml`
+Also, you can set `https` using AWS.
+
+🖇 ref: http://hakawati.co.kr/445
+
 ### 5. Selenium
