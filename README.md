@@ -300,21 +300,37 @@ on your Ubuntu system, and you can start using it.
 
 ### 4. Code-Server (VSCode)
 
-`sudo curl -fsSL https://code-server.dev/install.sh | sh`
+❗️ `sudo curl -fsSL https://code-server.dev/install.sh | sh`
 
 ***🔑 How to use?***
 
 auto execution on
 
-`systemctl --user enable --now code-server`
+❗️ `systemctl --user enable --now code-server`
 
 auto execution off
 
-`systemctl --user disable --now code-server`
+❗️ `systemctl --user disable --now code-server`
 
 The configuration file is in `~/.config/code-server/config.yaml`
-Also, you can set `https` using AWS.
+Also, you can set https using AWS.
 
 🖇 ref: http://hakawati.co.kr/445
 
-### 5. Selenium
+### 5. Selenium (venv)
+
+❗️ `python3 -m venv ${YOUR_DIR}`
+
+ex) python3 -m venv ~/selenium
+
+***🔑 How to use?***
+
+activate venv
+
+❗️ `source <venv>/bin/activate`
+
+deactivate venv
+
+❗️ `deactivate`
+
+🖇 ref: https://docs.python.org/ko/3/library/venv.html
