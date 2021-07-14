@@ -381,7 +381,7 @@ deactivate venv
 | [skywind3000/asyncrun.vim] | Run Async Shell Commands
 | [szw/vim-maximizer] | Maximizes and restores the current window
 
-[tpope/vim-commentary]: https://github.com/Shougo/dein.vim
+[tpope/vim-commentary]: https://github.com/tpope/vim-commentary
 [suy/vim-context-commentstring]: https://github.com/suy/vim-context-commentstring
 [rafi/awesome-colorschemes]: https://github.com/rafi/awesome-vim-colorschemes
 [vim-airline/vim-airline]: https://github.com/vim-airline/vim-airline
