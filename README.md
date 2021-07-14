@@ -334,3 +334,90 @@ deactivate venv
 ❗️ `deactivate`
 
 🖇 ref: https://docs.python.org/ko/3/library/venv.html
+
+## Plugins Included
+
+<details open>
+  <summary><strong>List</strong> <small><i>(Click to expand/collapse)</i></small></summary>
+
+| Name           | Description
+| -------------- | ----------------------
+| [tpope/vim-commentary] | Comment maker
+| [suy/vim-context-commentstring] | Determining the right character at comment
+| [rafi/awesome-colorschemes] | Awesome color-schemes
+| [vim-airline/vim-airline] | Lean & mean status/tabline for vim that's light as air
+| [vim-airline/vim-airline-themes] | A collection of themes for vim-airline
+| [enricobacis/vim-airline-clock] | Vim-airline clock extension
+| [tpope/vim-speeddating] | Increment dates, times, and more
+| [tpope/vim-repeat] | Enable repeating supported plugin maps
+| [unblevable/quick-scope] | Lightning fast left-right movement in Vim
+| [easymotion/vim-easymotion] | Vim motions on speed!
+| [tpope/vim-surround] | Quoting/parenthesizing made simple
+| [edkolev/promptline.vim] | Generate a fast shell prompt with powerline symbols and airline colors
+| [airblade/vim-rooter] | Changes Vim working directory to project root
+| [tpope/vim-sleuth] | Heuristically set buffer options
+| [octol/vim-cpp-enhanced-highlight] | C/C++ syntax highlight
+| [vim-python/python-syntax] | Python syntax highlighting script
+| [uiiaoo/java-syntax.vim] | java syntax highlight
+| [jiangmiao/auto-pairs] | Insert or delete brackets, parens, quotes in pair
+| [alvan/vim-closetag] | Auto close (X)HTML tags
+| [neoclide/coc.nvim] | Intelliscence
+| [romgrk/barbar.nvim] | Tabline manager
+| [kevinhwang91/rnvimr] | Make Ranger running in a floating window to communicate with Neovim via RPC
+| [junegunn/fzf] | Command-line fuzzy finder
+| [junegunn/fzf.vim] | Command-line fuzzy finder for Vim
+| [wookayin/fzf-ripgrep.vim] | +fzf-ripgrep
+| [voldikss/vim-floaterm] | Terminal manager
+| [liuchengxu/vista.vim] | Viewer & Finder for LSP symbols and tags
+| [mbbill/undotree] | The undo history visualizer
+| [psliwka/vim-smoothie] | Smooth scrolling
+| [airblade/vim-gitgutter] | Git gutter
+| [tpope/vim-fugitive] | Awesome git wrapper
+| [rhysd/git-messenger.vim] | Reveal the commit messages under the cursor
+| [int3/vim-extradite] | A git commit browser
+| [wesQ3/vim-windowswap] | Swap your windows without ruining your layout
+| [mhinz/vim-startify] | The fancy start screen
+| [skywind3000/asynctasks.vim] | Modern Task System for Project Building, Testing and Deploying
+| [skywind3000/asyncrun.vim] | Run Async Shell Commands
+| [szw/vim-maximizer] | Maximizes and restores the current window
+
+[tpope/vim-commentary]: https://github.com/Shougo/dein.vim
+[suy/vim-context-commentstring]: https://github.com/suy/vim-context-commentstring
+[rafi/awesome-colorschemes]: https://github.com/rafi/awesome-vim-colorschemes
+[vim-airline/vim-airline]: https://github.com/vim-airline/vim-airline
+[vim-airline/vim-airline-themes]: https://github.com/vim-airline/vim-airline-themes
+[enricobacis/vim-airline-clock]: https://github.com/enricobacis/vim-airline-clock
+[tpope/vim-speeddating]: https://github.com/tpope/vim-speeddating
+[tpope/vim-repeat]: https://github.com/tpope/vim-repeat
+[unblevable/quick-scope]: https://github.com/unblevable/quick-scope
+[easymotion/vim-easymotion]: https://github.com/easymotion/vim-easymotion
+[tpope/vim-surround]: https://github.com/tpope/vim-surround
+[edkolev/promptline.vim]: https://github.com/edkolev/promptline.vim
+[airblade/vim-rooter]: https://github.com/airblade/vim-rooter
+[tpope/vim-sleuth]: https://github.com/tpope/vim-sleuth
+[octol/vim-cpp-enhanced-highlight]: https://github.com/octol/vim-cpp-enhanced-highlight
+[vim-python/python-syntax]: https://github.com/vim-python/python-syntax
+[uiiaoo/java-syntax.vim]: https://github.com/uiiaoo/java-syntax.vim
+[jiangmiao/auto-pairs]: https://github.com/jiangmiao/auto-pairs
+[alvan/vim-closetag]: https://github.com/alvan/vim-closetag
+[neoclide/coc.nvim]: https://github.com/neoclide/coc.nvim
+[romgrk/barbar.nvim]: https://github.com/romgrk/barbar.nvim
+[kevinhwang91/rnvimr]: https://github.com/kevinhwang91/rnvimr
+[junegunn/fzf]: https://github.com/junegunn/fzf
+[junegunn/fzf.vim]: https://github.com/junegunn/fzf.vim
+[wookayin/fzf-ripgrep.vim]: https://github.com/wookayin/fzf-ripgrep.vim
+[voldikss/vim-floaterm]: https://github.com/voldikss/vim-floaterm
+[liuchengxu/vista.vim]: https://github.com/liuchengxu/vista.vim
+[mbbill/undotree]: https://github.com/mbbill/undotree
+[psliwka/vim-smoothie]: https://github.com/psliwka/vim-smoothie
+[airblade/vim-gitgutter]: https://github.com/airblade/vim-gitgutter
+[tpope/vim-fugitive]: https://github.com/tpope/vim-fugitive
+[rhysd/git-messenger.vim]: https://github.com/rhysd/git-messenger.vim
+[int3/vim-extradite]: https://github.com/int3/vim-extradite
+[wesQ3/vim-windowswap]: https://github.com/wesQ3/vim-windowswap
+[mhinz/vim-startify]: https://github.com/mhinz/vim-startify
+[skywind3000/asynctasks.vim]: https://github.com/skywind3000/asynctasks.vim
+[skywind3000/asyncrun.vim]: https://github.com/skywind3000/asyncrun.vim
+[szw/vim-maximizer]: https://github.com/szw/vim-maximizer
+
+</details>

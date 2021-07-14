@@ -156,7 +156,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " syntax support 플러그인(cpp,python,java)
     Plug 'octol/vim-cpp-enhanced-highlight'
-    Plug 'hdima/python-syntax'
+    Plug 'vim-python/python-syntax'
     Plug 'uiiaoo/java-syntax.vim'
 
     " vim 아이콘 플러그인
@@ -219,9 +219,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " 화면 확장 플러그인
     Plug 'szw/vim-maximizer'
-
-    " python syntax highlight
-    Plug 'vim-python/python-syntax'
 
     " 추후에 도전해볼 가치 있는 플러그인들
     " Plug 'honza/vim-snippets' -> 쉬운 자동완성
