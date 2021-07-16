@@ -421,3 +421,9 @@ deactivate venv
 [szw/vim-maximizer]: https://github.com/szw/vim-maximizer
 
 </details>
+
+## Commands
+
+| Command<keyboard>     | Command<actual>    | Operation Description
+| --------------------- | ------------------ | ---------------------
+| a | b | c

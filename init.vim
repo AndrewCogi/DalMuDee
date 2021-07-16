@@ -778,6 +778,7 @@ let g:startify_enable_special = 0
 
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 'r': '~/.config/nvim/README.md' },
             \ { 'b': '~/.bashrc' },
             \ { 'c': '~/.config/nvim/coc-config/coc.vim' },
             \ ]
