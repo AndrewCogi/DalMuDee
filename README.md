@@ -424,6 +424,6 @@ deactivate venv
 
 ## Commands
 
-| Command<keyboard>     | Command<actual>    | Operation Description
-| --------------------- | ------------------ | ---------------------
+| Command(keyboard) | Command(actual)                 | Operation Description
+| ----------------- | ------------------------------- | -------------------------------------------------------
 | a | b | c
