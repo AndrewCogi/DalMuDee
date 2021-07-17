@@ -298,6 +298,16 @@ on your Ubuntu system, and you can start using it.
 
 🖇 ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/
 
+***🔑 Help***
+
+Execute without executing bar
+
+🖇 ref: https://stackoverflow.com/questions/52690759/how-do-i-get-rid-of-the-executing-progress-bar-when-running-a-gradle-application
+
+Scanner NoSuchInputException?
+
+🖇 ref: https://stackoverflow.com/questions/36723447/java-util-scanner-throws-nosuchelementexception-when-application-is-started-with
+
 ### 4. Code-Server (VSCode)
 
 ❗️ `sudo curl -fsSL https://code-server.dev/install.sh | sh`
