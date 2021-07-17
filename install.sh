@@ -102,14 +102,14 @@ installLiveServer(){
   echo "you should do portforwarding!!!"
 }
 
-echo "Welcome to JNvim2.0"
+echo "Welcome to DalMuDee"
 
-echo "Start Installing JNvim2.0..."
+echo "Start Installing DalMuDee..."
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-echo "Install neovim..."
+echo "Start Installing neovim..."
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt install neovim -y
 
@@ -125,10 +125,10 @@ pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || 
 # echo "Install prerequisites..."
 # sudo apt install clang -y
 
-echo "Cloning JNvim2.0 Configuration..."
-git clone https://github.com/CHOHYUNSIK/JNvim2.0.git ~/.config/nvim
+echo "Cloning DalMuDee Configuration..."
+git clone https://github.com/CHOHYUNSIK/DalMuDee.git ~/.config/nvim
 
-echo "JNvim2.0 is better with at least ripgrep, ueberzug and ranger...etc"
+echo "DalMuDee is better with at least ripgrep, ueberzug and ranger...etc"
 echo -n "Would you like to install these now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installextrapackages || echo "not installing extra packages"
