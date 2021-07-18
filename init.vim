@@ -1,6 +1,6 @@
 " ==============================[기본세팅 관리]================================
 
-syntax on                             " 구문강조 하이라이팅 킴
+syntax on                     		        " 구문강조 하이라이팅 킴
 set nowrap			                   		" 자동 줄바꿈 안되도록 함
 set splitbelow			               		" 가로로 창 분할 시, 새 창은 아래에 생기도록
 set splitright			    	          	" 세로로 창 분할 시, 새 창은 오른쪽에 생기도록
@@ -8,32 +8,32 @@ set mouse=a			                  		" 마우스 사용가능
 set encoding=UTF-8			            	" 인코딩 한글깨짐 방지
 set fileencoding=UTF-8			        	" 파일 인코딩 한글깨짐 방지
 set cmdheight=2			              		" --INSERT--나오는 부분 높이 2로 설정
-set ruler			                    		" 우측 하단에 커서위치 표시
-set number                            " 라인번호 표시
+set ruler			                   		" 우측 하단에 커서위치 표시
+set number 									" 라인번호 표시
 set relativenumber				           	" 거리에 따른 라인번호 표시
 set pumheight=10		               		" 팝업리스트 10개까지 보이도록 함
 set autoindent				              	" 자동 들여쓰기 활성화
 set smartindent		              			" 조금 더 똑똑한 들여쓰기 활성화
-set shiftwidth=2		              		" 자동 들여쓰기 2칸
-set smarttab				                	" 조금 더 똑똑한 탭 활성화
-set tabstop=2			                		" 탭 한번 = 띄어쓰기 2번 설정
+set shiftwidth=4		              		" 자동 들여쓰기 4칸
+set smarttab				               	" 조금 더 똑똑한 탭 활성화
+set tabstop=4			                	" 탭 한번 = 띄어쓰기 4번 설정
 set laststatus=2		              		" 상태바 표시(항상 표시)
-set showmatch				                	" 괄호쌍 보이기
-set t_Co=256			                		" 256색 적용
+set showmatch				               	" 괄호쌍 보이기
+set t_Co=256			                	" 256색 적용
 set noshowmode		              			" --INSERT-- 안보이게 하기
-set nobackup			                		" 백업파일 안생기도록 함
+set nobackup			                	" 백업파일 안생기도록 함
 set nowritebackup			              	" 백업파일 안생기게 함
 set shortmess+=c			              	" 사용자가 정의한 메세지 숨기기
 set updatetime=300		            		" completion 속도 증가
 set timeoutlen=1000			            	" 타임아웃시간 1초로 지정
 set clipboard=unnamedplus			        " 복사 붙여넣기 어디든 되도록 함
-set autochdir			                		" 현재 디렉토리를 자동으로 working dir로 설정
-set incsearch			                		" 한글자 입력할때마다 매칭되는부분 알려주도록 함
-set hlsearch		                			" 검색결과에 하이라이트 표시
+set autochdir			                	" 현재 디렉토리를 자동으로 working dir로 설정
+set incsearch			                	" 한글자 입력할때마다 매칭되는부분 알려주도록 함
+set hlsearch		                		" 검색결과에 하이라이트 표시
 set showtabline=2	              			" 무조건적으로 퍼버(열려있는 친구들) 보이도록 하기
-set signcolumn=yes:1                  " 왼쪽 숫자 padding 거리
-set hidden                            " 버퍼저장안하고도 다른버퍼 이동가능
-set termguicolors                     " colorscheme 색상 그대로 적용되도록 함
+set signcolumn=yes:1           				" 왼쪽 숫자 padding 거리
+set hidden                       		    " 버퍼저장안하고도 다른버퍼 이동가능
+set termguicolors             		        " colorscheme 색상 그대로 적용되도록 함
 
 " =============================================================================
 
@@ -68,7 +68,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " normal모드에서 창 크기 조절
-nnoremap <silent> <C-Up>		:resize -2<CR>
+nnoremap <silent> <C-Up>	:resize -2<CR>
 nnoremap <silent> <C-Down>	:resize +2<CR>
 nnoremap <silent> <C-Left>	:vertical resize -2<CR>
 nnoremap <silent> <C-Right>	:vertical resize +2<CR>
@@ -97,15 +97,15 @@ nmap <silent><leader>t. :sp<CR>:terminal<CR>i
 
 " vim-plug 자동 설치
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
+	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 " neovim 시작 시 안깔려있는 플러그인 있으면 설치되도록 하기
 autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
+			\  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+			\|   PlugInstall --sync | q
+			\| endif
 
 " =============================================================================
 
@@ -114,115 +114,115 @@ autocmd VimEnter *
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " 주석처리 플러그인
-    " <space>/ 로 주석처리 가능
-    Plug 'tpope/vim-commentary'
+" 주석처리 플러그인
+" <space>/ 로 주석처리 가능
+Plug 'tpope/vim-commentary'
 
-    " 주석처리 시 파일따라 주석문자 알아서 판단
-    Plug 'suy/vim-context-commentstring'
+" 주석처리 시 파일따라 주석문자 알아서 판단
+Plug 'suy/vim-context-commentstring'
 
-    " 테마 플러그인
-    Plug 'rafi/awesome-vim-colorschemes'
+" 테마 플러그인
+Plug 'rafi/awesome-vim-colorschemes'
 
-    " airline테마 플러그인
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+" airline테마 플러그인
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-    " airline에 시계 추가하는 플러그인
-    Plug 'enricobacis/vim-airline-clock'
+" airline에 시계 추가하는 플러그인
+Plug 'enricobacis/vim-airline-clock'
 
-    " 날짜 빠르게 바꿔주는 플러그인
-    " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
-    Plug 'tpope/vim-speeddating'
-    Plug 'tpope/vim-repeat'
+" 날짜 빠르게 바꿔주는 플러그인
+" ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-repeat'
 
-    " f,F,t,T 사용 시 이동단어 하이라이트해줌
-    Plug 'unblevable/quick-scope'
+" f,F,t,T 사용 시 이동단어 하이라이트해줌
+Plug 'unblevable/quick-scope'
 
-    " 간단한 커맨드 사용으로 단어이동하는 플러그인
-    Plug 'easymotion/vim-easymotion'
+" 간단한 커맨드 사용으로 단어이동하는 플러그인
+Plug 'easymotion/vim-easymotion'
 
-    " 여러가지 기호로 단어 감싸는 커맨드 플러그인
-    Plug 'tpope/vim-surround'
+" 여러가지 기호로 단어 감싸는 커맨드 플러그인
+Plug 'tpope/vim-surround'
 
-    " 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
-    Plug 'edkolev/promptline.vim'
+" 터미널을 nvim theme과 같이 사용하게 해주는 플러그인
+Plug 'edkolev/promptline.vim'
 
-    " root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
-    Plug 'airblade/vim-rooter'
+" root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
+Plug 'airblade/vim-rooter'
 
-    " syntax support 플러그인(cpp,python,java)
-    Plug 'octol/vim-cpp-enhanced-highlight'
-    Plug 'vim-python/python-syntax'
-    Plug 'uiiaoo/java-syntax.vim'
+" syntax support 플러그인(cpp,python,java)
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'vim-python/python-syntax'
+Plug 'uiiaoo/java-syntax.vim'
 
-    " vim 아이콘 플러그인
-    " 나중에 데스크탑에서 해보기로
-    " Plug 'ryanoasis/vim-devicons'
-    " Plug 'bryanmylee/vim-colorscheme-icons'
+" vim 아이콘 플러그인
+" 나중에 데스크탑에서 해보기로
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'bryanmylee/vim-colorscheme-icons'
 
-    " 괄호쌍 자동매칭해주는 플러그인
-    Plug 'jiangmiao/auto-pairs'
+" 괄호쌍 자동매칭해주는 플러그인
+Plug 'jiangmiao/auto-pairs'
 
-    " HTML등 <??></??>자동적으로 닫아주는 플러그인
-    Plug 'alvan/vim-closetag'
+" HTML등 <??></??>자동적으로 닫아주는 플러그인
+Plug 'alvan/vim-closetag'
 
-    " Intelliscence
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Intelliscence
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    " buffer 관리하는 플러그인
-    Plug 'romgrk/barbar.nvim'
+" buffer 관리하는 플러그인
+Plug 'romgrk/barbar.nvim'
 
-    " Floating Window 지원해주는 플러그인
-    Plug 'kevinhwang91/rnvimr'
+" Floating Window 지원해주는 플러그인
+Plug 'kevinhwang91/rnvimr'
 
-    " fzf 플러그인
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    " :Rg +fzf 해주는 플러그인
-    Plug 'wookayin/fzf-ripgrep.vim'
+" fzf 플러그인
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" :Rg +fzf 해주는 플러그인
+Plug 'wookayin/fzf-ripgrep.vim'
 
-    " terminal in neovim 플러그인
-    Plug 'voldikss/vim-floaterm'
+" terminal in neovim 플러그인
+Plug 'voldikss/vim-floaterm'
 
-    " 함수 및 변수 리스트 보여주는 플러그인   
-    Plug 'liuchengxu/vista.vim'
+" 함수 및 변수 리스트 보여주는 플러그인   
+Plug 'liuchengxu/vista.vim'
 
-    " 내가 고쳤던 과거기록 보여주는 플러그인
-    Plug 'mbbill/undotree'
+" 내가 고쳤던 과거기록 보여주는 플러그인
+Plug 'mbbill/undotree'
 
-    " smooth move
-    Plug 'psliwka/vim-smoothie'
+" smooth move
+Plug 'psliwka/vim-smoothie'
 
-    " Git 플러그인 세트
-    " git diff 보여주는 플러그인(어디가 바뀌었는지 라인별로 보여준다)
-    Plug 'airblade/vim-gitgutter'
-    " git wrapper 플러그인(nvim에서 git add, commit, push 등 가능하게 함)
-    Plug 'tpope/vim-fugitive'
-    " 누가 언제 commit한 내용인지 보여주는 플러그인
-    Plug 'rhysd/git-messenger.vim'
-    " git commit 디테일 모두 보여주는 플러그인
-    Plug 'int3/vim-extradite'
+" Git 플러그인 세트
+" git diff 보여주는 플러그인(어디가 바뀌었는지 라인별로 보여준다)
+Plug 'airblade/vim-gitgutter'
+" git wrapper 플러그인(nvim에서 git add, commit, push 등 가능하게 함)
+Plug 'tpope/vim-fugitive'
+" 누가 언제 commit한 내용인지 보여주는 플러그인
+Plug 'rhysd/git-messenger.vim'
+" git commit 디테일 모두 보여주는 플러그인
+Plug 'int3/vim-extradite'
 
-    " 창 위치 <leader>ww로 변경해주는 플러그인
-    Plug 'wesQ3/vim-windowswap'
+" 창 위치 <leader>ww로 변경해주는 플러그인
+Plug 'wesQ3/vim-windowswap'
 
-    " 시작화면 플러그인
-    Plug 'mhinz/vim-startify'
+" 시작화면 플러그인
+Plug 'mhinz/vim-startify'
 
-    " 컴파일, 실행 툴
-    Plug 'skywind3000/asynctasks.vim'
-    Plug 'skywind3000/asyncrun.vim'
+" 컴파일, 실행 툴
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
 
-    " 화면 확장 플러그인
-    Plug 'szw/vim-maximizer'
+" 화면 확장 플러그인
+Plug 'szw/vim-maximizer'
 
-    " 추후에 도전해볼 가치 있는 플러그인들
-    " Plug 'honza/vim-snippets' -> 쉬운 자동완성
-    " Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
-    " Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
+" 추후에 도전해볼 가치 있는 플러그인들
+" Plug 'honza/vim-snippets' -> 쉬운 자동완성
+" Plug 'mattn/emmet-vim' -> 빠른 html, css코딩
+" Plug 'iamcco/markdown-preview.nvim' -> 실시간 html코딩
 
-    call plug#end()
+call plug#end()
 
 
 " =============================================================================
@@ -232,11 +232,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 " <space>/ : 자동 주석처리
 function! Comment()
-  if(mode() == "n")
-    execute "Commentary"
-  else
-    execute "'<,'>Commentary"
-  endif
+	if(mode() == "n")
+		execute "Commentary"
+	else
+		execute "'<,'>Commentary"
+	endif
 endfunction
 " gv 붙이면 행동 후에도 전에 선택했던 블럭 다시 선택해줌
 nnoremap <silent> <leader>/ :call Comment()<CR>
@@ -360,11 +360,11 @@ let g:promptline_theme = 'airline'
 " section별 보여줄 것들 설정
 " sections (a, b, c, x, y, z, warn) are optional
 let g:promptline_preset = {
-      \'a' : [ promptline#slices#user() ],
-      \'b' : [  promptline#slices#python_virtualenv() ],
-      \'c' : [ promptline#slices#cwd() ],
-      \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
-      \'warn' : [ promptline#slices#last_exit_code() ]}
+			\'a' : [ promptline#slices#user() ],
+			\'b' : [  promptline#slices#python_virtualenv() ],
+			\'c' : [ promptline#slices#cwd() ],
+			\'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
+			\'warn' : [ promptline#slices#last_exit_code() ]}
 
 " TODO .promptline.sh 생성 및 적용하기
 " ref) https://github.com/edkolev/promptline.vim
@@ -485,7 +485,7 @@ let bufferline.semantic_letters = v:true
 " optimal for the qwerty keyboard layout but might need adjustement
 " for other layouts.
 let bufferline.letters = 
-  \ 'asdfjkl;ghnmxcbziowerutyqpASDFJKLGHNMXCBZIOWERUTYQP'
+			\ 'asdfjkl;ghnmxcbziowerutyqpASDFJKLGHNMXCBZIOWERUTYQP'
 
 let bg_current = get(nvim_get_hl_by_name('Normal',     1), 'background', '#000000')
 let bg_visible = get(nvim_get_hl_by_name('TabLineSel', 1), 'background', '#000000')
@@ -555,17 +555,17 @@ let g:rnvimr_pick_enable = 1
 let g:rnvimr_bw_enable = 1
 
 let g:rnvimr_ranger_cmd = 'ranger --cmd="set column_ratios 1,1"'
-            " \ --cmd="set draw_borders separators"'
+" \ --cmd="set draw_borders separators"'
 
 let g:rnvimr_layout = { 'relative': 'editor',
-            \ 'width': float2nr(round(0.6 * &columns)),
-            \ 'height': float2nr(round(0.6 * &lines)),
-            \ 'col': float2nr(round(0.2 * &columns)),
-            \ 'row': float2nr(round(0.2 * &lines)),
-            \ 'style': 'minimal' }
+			\ 'width': float2nr(round(0.6 * &columns)),
+			\ 'height': float2nr(round(0.6 * &lines)),
+			\ 'col': float2nr(round(0.2 * &columns)),
+			\ 'row': float2nr(round(0.2 * &lines)),
+			\ 'style': 'minimal' }
 
 let g:rnvimr_presets = [
-            \ {'width': 0.800, 'height': 0.800}]
+			\ {'width': 0.800, 'height': 0.800}]
 
 nmap <silent> <leader>r :RnvimrToggle<CR>
 
@@ -576,9 +576,9 @@ nmap <silent> <leader>r :RnvimrToggle<CR>
 
 " This is the default extra key bindings
 let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
+			\ 'ctrl-t': 'tab split',
+			\ 'ctrl-x': 'split',
+			\ 'ctrl-v': 'vsplit' }
 
 " Enable per-command history.
 " CTRL-N and CTRL-P will be automatically bound to next-history and
@@ -596,48 +596,48 @@ let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+			\ { 'fg':      ['fg', 'Normal'],
+			\ 'bg':      ['bg', 'Normal'],
+			\ 'hl':      ['fg', 'Comment'],
+			\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+			\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+			\ 'hl+':     ['fg', 'Statement'],
+			\ 'info':    ['fg', 'PreProc'],
+			\ 'border':  ['fg', 'Ignore'],
+			\ 'prompt':  ['fg', 'Conditional'],
+			\ 'pointer': ['fg', 'Exception'],
+			\ 'marker':  ['fg', 'Keyword'],
+			\ 'spinner': ['fg', 'Label'],
+			\ 'header':  ['fg', 'Comment'] }
 
 "Get Files
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--inline-info']}), <bang>0)
+			\ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--inline-info']}), <bang>0)
 
- " Make Ripgrep ONLY search file contents and not filenames
+" Make Ripgrep ONLY search file contents and not filenames
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --hidden --smart-case --no-heading --color=always '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
-  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4.. -e'}, 'right:50%', '?'),
-  \   <bang>0)
+			\ call fzf#vim#grep(
+			\   'rg --column --line-number --hidden --smart-case --no-heading --color=always '.shellescape(<q-args>), 1,
+			\   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+			\           : fzf#vim#with_preview({'options': '--delimiter : --nth 4.. -e'}, 'right:50%', '?'),
+			\   <bang>0)
 
 " Ripgrep advanced
 function! RipgrepFzf(query, fullscreen)
-  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
-  let initial_command = printf(command_fmt, shellescape(a:query))
-  let reload_command = printf(command_fmt, '{q}')
-  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
-  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+	let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
+	let initial_command = printf(command_fmt, shellescape(a:query))
+	let reload_command = printf(command_fmt, '{q}')
+	let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+	call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 " Git grep
 command! -bang -nargs=* GGrep
-  \ call fzf#vim#grep(
-  \   'git grep --line-number '.shellescape(<q-args>), 0,
-  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+			\ call fzf#vim#grep(
+			\   'git grep --line-number '.shellescape(<q-args>), 0,
+			\   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 map <silent> <leader>p :Files <CR>
 map <silent> <leader>P :Files ~<CR>
@@ -752,33 +752,33 @@ nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
 " =============================[(Plug)vim-startify]============================
 
 let g:startify_custom_header = [
-      \'    ____              ___                      ____                           ',
-      \'   /\  _`\           /\_ \    /`\_/`\         /\  _`\                         ',
-      \'   \ \ \/\ \     __  \//\ \  /\      \  __  __\ \ \/\ \     __     __         ',
-      \'    \ \ \ \ \  /`__`\  \ \ \ \ \ \__\ \/\ \/\ \\ \ \ \ \  /`__`\ /`__`\       ',
-      \'     \ \ \_\ \/\ \L\.\_ \_\ \_\ \ \_/\ \ \ \_\ \\ \ \_\ \/\  __//\  __/       ',
-      \'      \ \____/\ \__/.\_\/\____\\ \_\\ \_\ \____/ \ \____/\ \____\ \____\      ',
-      \'       \/___/  \/__/\/_/\/____/ \/_/ \/_/\/___/   \/___/  \/____/\/____/      ',
-      \]
+			\'    ____              ___                      ____                           ',
+			\'   /\  _`\           /\_ \    /`\_/`\         /\  _`\                         ',
+			\'   \ \ \/\ \     __  \//\ \  /\      \  __  __\ \ \/\ \     __     __         ',
+			\'    \ \ \ \ \  /`__`\  \ \ \ \ \ \__\ \/\ \/\ \\ \ \ \ \  /`__`\ /`__`\       ',
+			\'     \ \ \_\ \/\ \L\.\_ \_\ \_\ \ \_/\ \ \ \_\ \\ \ \_\ \/\  __//\  __/       ',
+			\'      \ \____/\ \__/.\_\/\____\\ \_\\ \_\ \____/ \ \____/\ \____\ \____\      ',
+			\'       \/___/  \/__/\/_/\/____/ \/_/ \/_/\/___/   \/___/  \/____/\/____/      ',
+			\]
 
 let g:startify_session_dir = '~/.config/nvim/session'
 
 let g:startify_lists = [
-          \ { 'type': 'files',     'header': ['   Files']                        },
-          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']                    },
-          \ ]
+			\ { 'type': 'files',     'header': ['   Files']                        },
+			\ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
+			\ { 'type': 'bookmarks', 'header': ['   Bookmarks']                    },
+			\ ]
 
 let g:startify_change_to_vcs_root = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_enable_special = 0
 
 let g:startify_bookmarks = [
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'r': '~/.config/nvim/README.md' },
-            \ { 'b': '~/.bashrc' },
-            \ { 'c': '~/.config/nvim/coc-config/coc.vim' },
-            \ ]
+			\ { 'i': '~/.config/nvim/init.vim' },
+			\ { 'r': '~/.config/nvim/README.md' },
+			\ { 'b': '~/.bashrc' },
+			\ { 'c': '~/.config/nvim/coc-config/coc.vim' },
+			\ ]
 " Goto main buffer
 nmap <silent> <leader>bh :Startify<CR>
 
