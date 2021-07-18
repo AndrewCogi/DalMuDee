@@ -151,9 +151,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " root에서 nvim켜도 여기설정 따라가게 해주는 플러그인
     Plug 'airblade/vim-rooter'
 
-    " 들여쓰기 자동세팅해줌(파일따라 다르게 잘해준다!)
-    Plug 'tpope/vim-sleuth'
-
     " syntax support 플러그인(cpp,python,java)
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'vim-python/python-syntax'

@@ -365,7 +365,6 @@ deactivate venv
 | [tpope/vim-surround] | Quoting/parenthesizing made simple
 | [edkolev/promptline.vim] | Generate a fast shell prompt with powerline symbols and airline colors
 | [airblade/vim-rooter] | Changes Vim working directory to project root
-| [tpope/vim-sleuth] | Heuristically set buffer options
 | [octol/vim-cpp-enhanced-highlight] | C/C++ syntax highlight
 | [vim-python/python-syntax] | Python syntax highlighting script
 | [uiiaoo/java-syntax.vim] | java syntax highlight
@@ -404,7 +403,6 @@ deactivate venv
 [tpope/vim-surround]: https://github.com/tpope/vim-surround
 [edkolev/promptline.vim]: https://github.com/edkolev/promptline.vim
 [airblade/vim-rooter]: https://github.com/airblade/vim-rooter
-[tpope/vim-sleuth]: https://github.com/tpope/vim-sleuth
 [octol/vim-cpp-enhanced-highlight]: https://github.com/octol/vim-cpp-enhanced-highlight
 [vim-python/python-syntax]: https://github.com/vim-python/python-syntax
 [uiiaoo/java-syntax.vim]: https://github.com/uiiaoo/java-syntax.vim
