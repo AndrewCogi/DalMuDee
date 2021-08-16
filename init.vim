@@ -1,5 +1,5 @@
 " ==============================[기본세팅 관리]================================
-" testing
+
 syntax on                     		        " 구문강조 하이라이팅 킴
 set nowrap			                   		" 자동 줄바꿈 안되도록 함
 set splitbelow			               		" 가로로 창 분할 시, 새 창은 아래에 생기도록
@@ -636,10 +636,8 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " =========================[(Plug)git-fugitive]================================
 
-" git status,add,commit,push commands
+" git status,add,commit,push commands(in :Git)
 nmap ght :Git<CR>
-nmap gha :Git add %<CR>
-nmap ghc :Git commit -m 
 nmap ghP :Git push<CR>
 
 " =============================================================================
