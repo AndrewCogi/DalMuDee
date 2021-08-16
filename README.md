@@ -371,7 +371,6 @@ deactivate venv
 | [jiangmiao/auto-pairs] | Insert or delete brackets, parens, quotes in pair
 | [alvan/vim-closetag] | Auto close (X)HTML tags
 | [neoclide/coc.nvim] | Intelliscence
-| [romgrk/barbar.nvim] | Tabline manager
 | [kevinhwang91/rnvimr] | Make Ranger running in a floating window to communicate with Neovim via RPC
 | [junegunn/fzf] | Command-line fuzzy finder
 | [junegunn/fzf.vim] | Command-line fuzzy finder for Vim
@@ -409,7 +408,6 @@ deactivate venv
 [jiangmiao/auto-pairs]: https://github.com/jiangmiao/auto-pairs
 [alvan/vim-closetag]: https://github.com/alvan/vim-closetag
 [neoclide/coc.nvim]: https://github.com/neoclide/coc.nvim
-[romgrk/barbar.nvim]: https://github.com/romgrk/barbar.nvim
 [kevinhwang91/rnvimr]: https://github.com/kevinhwang91/rnvimr
 [junegunn/fzf]: https://github.com/junegunn/fzf
 [junegunn/fzf.vim]: https://github.com/junegunn/fzf.vim
