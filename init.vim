@@ -203,8 +203,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " 누가 언제 commit한 내용인지 보여주는 플러그인
 Plug 'rhysd/git-messenger.vim'
-" git commit 디테일 모두 보여주는 플러그인
-Plug 'int3/vim-extradite'
 
 " 창 위치 <leader>ww로 변경해주는 플러그인
 Plug 'wesQ3/vim-windowswap'
@@ -647,13 +645,6 @@ nmap ghP :Git push<CR>
 
 " 매핑 보이는 용도로 적어둔것
 nmap <silent> <leader>gm : commit 팝업 열고 닫는다. 
-
-" =============================================================================
-
-
-" ============================[(Plug)vim-extradite]============================
-
-nmap <silent> <leader>gv :Extradite!<CR>
 
 " =============================================================================
 

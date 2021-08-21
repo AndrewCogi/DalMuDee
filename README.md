@@ -382,7 +382,6 @@ deactivate venv
 | [airblade/vim-gitgutter] | Git gutter
 | [tpope/vim-fugitive] | Awesome git wrapper
 | [rhysd/git-messenger.vim] | Reveal the commit messages under the cursor
-| [int3/vim-extradite] | A git commit browser
 | [wesQ3/vim-windowswap] | Swap your windows without ruining your layout
 | [mhinz/vim-startify] | The fancy start screen
 | [skywind3000/asynctasks.vim] | Modern Task System for Project Building, Testing and Deploying
@@ -419,7 +418,6 @@ deactivate venv
 [airblade/vim-gitgutter]: https://github.com/airblade/vim-gitgutter
 [tpope/vim-fugitive]: https://github.com/tpope/vim-fugitive
 [rhysd/git-messenger.vim]: https://github.com/rhysd/git-messenger.vim
-[int3/vim-extradite]: https://github.com/int3/vim-extradite
 [wesQ3/vim-windowswap]: https://github.com/wesQ3/vim-windowswap
 [mhinz/vim-startify]: https://github.com/mhinz/vim-startify
 [skywind3000/asynctasks.vim]: https://github.com/skywind3000/asynctasks.vim
