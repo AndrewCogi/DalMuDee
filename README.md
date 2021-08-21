@@ -181,7 +181,11 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ⚠️ **JAVA_HOME should same the ${RESULT} path shown above.**
 
-**_4._** Reboot ubuntu server & check $JAVA_HOME
+**_4._** Source `/etc/profile`
+
+❗️ `source /etc/profile`
+
+**_5._** Reboot ubuntu server & check $JAVA_HOME
 
 ❗️ `sudo reboot now`
 
