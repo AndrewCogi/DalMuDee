@@ -189,7 +189,7 @@ export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 
 ❗️ `sudo reboot now`
 
-❗️ `echo JAVA_HOME`
+❗️ `echo $JAVA_HOME`
 
 ❗️ `$JAVA_HOME/bin/javac -version` -> If you get the same result as `javac-version`, you succeed!
 
