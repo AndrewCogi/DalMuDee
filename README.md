@@ -436,4 +436,8 @@ deactivate venv
 
 ***🔑 How to use git-ssh?***
 
-🖇 ref:https://www.google.com/amp/s/jootc.com/p/201905122827/amp
+🖇 ref: https://www.google.com/amp/s/jootc.com/p/201905122827/amp
+
+***🔑 Git commands***
+
+🖇 ref: https://medium.com/@joongwon/git-git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-c25b421ecdbd

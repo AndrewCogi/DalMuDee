@@ -634,9 +634,16 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " =========================[(Plug)git-fugitive]================================
 
-" git status,add,commit,push commands(in :Git)
+" git main
 nmap ght :Git<CR>
+" git uplaad
 nmap ghP :Git push<CR>
+" git log
+nmap ghl :Git log -p<CR>
+" show diff between uploaded file & now file
+nmap ghd :Git diff<CR>
+" show file's commit information
+nmap ghb :Git blame<CR>
 
 " =============================================================================
 
