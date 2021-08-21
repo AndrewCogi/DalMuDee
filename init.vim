@@ -636,6 +636,8 @@ nmap ghp <Plug>(GitGutterPreviewHunk)
 
 " git main
 nmap ght :Git<CR>
+" git add this file
+nmap gha :Git add .<CR>
 " git uplaad
 nmap ghP :Git push<CR>
 " git log

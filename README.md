@@ -426,12 +426,6 @@ deactivate venv
 
 </details>
 
-## Commands
-
-| Command(keyboard) | Command(actual)                 | Operation Description
-| ----------------- | ------------------------------- | -------------------------------------------------------
-| a | b | c
-
 ## Help!
 
 ***🔑 How to use git-ssh?***
