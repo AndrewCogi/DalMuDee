@@ -156,7 +156,4 @@ read answer
 [ "$answer" != "${answer#[Yy]}" ] && installLiveServer || echo "not installing live-server"
 
 echo "Installation Done!!"
-echo "Recommand: Install JAVA and setting path + Gradle"
-echo "JAVA ref: https://all-record.tistory.com/181"
-echo "Gradle ref: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/"
 echo "help: whgustlr0326@gmail.com"
