@@ -59,7 +59,7 @@ installonubuntu() { \
 }
 
 installextrapackages() { \
-  [  -n "$(uname -a | grep Ubuntu)" ] && installonubuntu
+  installonubuntu
 }
 
 installcocextensions() { \
