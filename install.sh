@@ -14,13 +14,13 @@ installpiponubuntu() { \
 
 installnode() { \
   echo "Installing node..."
-  [  -n "$(uname -a | grep Ubuntu)" ] && installnodeubuntu
+  installnodeubuntu
   sudo npm i -g neovim
 }
 
 installpip() { \
   echo "Installing pip..."
-  [  -n "$(uname -a | grep Ubuntu)" ] && installpiponubuntu
+  installpiponubuntu
 }
 
 asktoinstallnode() { \
