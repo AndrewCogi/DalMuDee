@@ -442,8 +442,8 @@ deactivate venv
 
 ***🔑 WSL setting***
 
-🖇 re: https://blog.naver.com/dorje5/221958709990
+🖇 ref: https://blog.naver.com/dorje5/221958709990
 
 ***🔑 Run Linux GUI apps in the WSL***
 
-🖇 rf: https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+🖇 ref: https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
