@@ -10,7 +10,7 @@ set fileencoding=UTF-8 		" 파일 인코딩 한글깨짐 방지
 set cmdheight=2 			" --INSERT--나오는 부분 높이 2로 설정
 set ruler 					" 우측 하단에 커서위치 표시
 set number 					" 라인번호 표시
-set relativenumber 			" 거리에 따른 라인번호 표시
+" set relativenumber 			" 거리에 따른 라인번호 표시
 set pumheight=10 			" 팝업리스트 10개까지 보이도록 함
 set autoindent 				" 자동 들여쓰기 활성화
 set smartindent 			" 조금 더 똑똑한 들여쓰기 활성화
@@ -49,9 +49,9 @@ nnoremap <space> <Nop>
 nmap <silent> <TAB> :bnext<CR>
 
 " 버퍼 지우기, 다음,이전버퍼로 이동
-nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader>bn :bnext<CR>
-nnoremap <silent> <leader>bp :bprevious<CR>
+" nnoremap <silent> <leader>bd :bdelete<CR>
+" nnoremap <silent> <leader>bn :bnext<CR>
+" nnoremap <silent> <leader>bp :bprevious<CR>
 
 " visual모드에서
 " shift + k = 그 줄 올리기
@@ -135,6 +135,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 " airline에 시계 추가하는 플러그인
 Plug 'enricobacis/vim-airline-clock'
+
+
+" tabline plugin
+Plug 'romgrk/barbar.nvim'
+
 
 " 날짜 빠르게 바꿔주는 플러그인
 " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
@@ -284,7 +289,7 @@ let g:airline#extensions#tabline#fnamecollapse = 1
 " =============================================================================
 
 
-" ========================[(Plug)vim-airline-clock]==========================
+" ========================[(Plug)vim-airline-clock]============================
 
 " airline 시계 format
 let g:airline#extensions#clock#format = '%H:%M:%S'
@@ -292,6 +297,44 @@ let g:airline#extensions#clock#format = '%H:%M:%S'
 let g:airline#extensions#clock#updatetime = 1000
 
 " =============================================================================
+
+
+" ============================[(Plug)barbar.nvim]==============================
+
+" Create barbar's option dict
+let bufferline = get(g:, 'bufferline', {})
+
+" Enable/Disable icons
+let bufferline.icons = v:false
+
+" Configure icons on the bufferline
+let bufferline.icon_separator_active = '|'
+let bufferline.icon_close_tab_modified = '*'
+let bufferline.icon_close_tab = 'x'
+
+" Move to next/previous
+nnoremap <silent><leader>bn :BufferNext<CR>
+nnoremap <silent><leader>bp :BufferPrevious<CR>
+
+" Re-order to next/previous
+nnoremap <silent><leader>b> :BufferMoveNext<CR>
+nnoremap <silent><leader>b< :BufferMovePrevious<CR>
+
+
+nnoremap <silent><leader>b1 :BufferGoto 1<CR>
+nnoremap <silent><leader>b2 :BufferGoto 2<CR>
+nnoremap <silent><leader>b3 :BufferGoto 3<CR>
+nnoremap <silent><leader>b4 :BufferGoto 4<CR>
+nnoremap <silent><leader>b5 :BufferGoto 5<CR>
+nnoremap <silent><leader>b6 :BufferGoto 6<CR>
+nnoremap <silent><leader>b7 :BufferGoto 7<CR>
+nnoremap <silent><leader>b8 :BufferGoto 8<CR>
+nnoremap <silent><leader>b9 :BufferGoto 9<CR>
+
+" Select Buffer
+nnoremap <silent><leader>bb :Buffers<CR>
+
+"==============================================================================
 
 
 " ============================[(Plug)quick-scope]==============================
@@ -408,7 +451,7 @@ let python_highlight_all = 1
 " =============================================================================
 
 
-" ===========================[(Plug)java-syntax.vim]============================
+" ===========================[(Plug)java-syntax.vim]===========================
 
 " disable variable,delimiter highlights
 highlight link javaIdentifier NONE
