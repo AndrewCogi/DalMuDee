@@ -137,7 +137,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'enricobacis/vim-airline-clock'
 
 
-" tabline plugin
+" 버퍼 관리하는 플러그인
 Plug 'romgrk/barbar.nvim'
 
 
@@ -320,7 +320,7 @@ nnoremap <silent><leader>bp :BufferPrevious<CR>
 nnoremap <silent><leader>b> :BufferMoveNext<CR>
 nnoremap <silent><leader>b< :BufferMovePrevious<CR>
 
-
+nnoremap <silent><leader>bd :BufferClose<CR>
 nnoremap <silent><leader>b1 :BufferGoto 1<CR>
 nnoremap <silent><leader>b2 :BufferGoto 2<CR>
 nnoremap <silent><leader>b3 :BufferGoto 3<CR>
