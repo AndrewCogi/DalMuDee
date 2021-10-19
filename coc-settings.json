@@ -18,5 +18,7 @@
       }
     }
   },
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.warningSign": "?",
+  "diagnostic.errorSign": ">>"
 }
