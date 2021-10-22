@@ -49,9 +49,9 @@ nnoremap <space> <Nop>
 nmap <silent> <TAB> :bnext<CR>
 
 " 버퍼 지우기, 다음,이전버퍼로 이동
-" nnoremap <silent> <leader>bd :bdelete<CR>
-" nnoremap <silent> <leader>bn :bnext<CR>
-" nnoremap <silent> <leader>bp :bprevious<CR>
+nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <silent> <leader>bn :bNext<CR>
+nnoremap <silent> <leader>bp :bprevious<CR>
 
 " visual모드에서
 " shift + k = 그 줄 올리기
@@ -135,11 +135,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " airline에 시계 추가하는 플러그인
 Plug 'enricobacis/vim-airline-clock'
-
-
-" 버퍼 관리하는 플러그인
-Plug 'romgrk/barbar.nvim'
-
 
 " 날짜 빠르게 바꿔주는 플러그인
 " ex: 2021-08-09 에 커서를 대고 <C-a>, <C-x> 로 날짜 증감가능
@@ -256,7 +251,7 @@ vnoremap <silent> <leader>/ :call Comment()<CR>
 let g:airline#extensions#tabline#enabled = 1
 
 " airline 설정
-let g:airline_powerline_fonts = 0		  	" 구분자 활성화(0=|, 1=>)
+let g:airline_powerline_fonts = 1		  	" 구분자 활성화(0=|, 1=>)
 " let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값=0)
@@ -297,44 +292,6 @@ let g:airline#extensions#clock#format = '%H:%M:%S'
 let g:airline#extensions#clock#updatetime = 1000
 
 " =============================================================================
-
-
-" ============================[(Plug)barbar.nvim]==============================
-
-" Create barbar's option dict
-let bufferline = get(g:, 'bufferline', {})
-
-" Enable/Disable icons
-let bufferline.icons = v:false
-
-" Configure icons on the bufferline
-let bufferline.icon_separator_active = '|'
-let bufferline.icon_close_tab_modified = '*'
-let bufferline.icon_close_tab = 'x'
-
-" Move to next/previous
-nnoremap <silent><leader>bn :BufferNext<CR>
-nnoremap <silent><leader>bp :BufferPrevious<CR>
-
-" Re-order to next/previous
-nnoremap <silent><leader>b> :BufferMoveNext<CR>
-nnoremap <silent><leader>b< :BufferMovePrevious<CR>
-
-nnoremap <silent><leader>bd :BufferClose<CR>
-nnoremap <silent><leader>b1 :BufferGoto 1<CR>
-nnoremap <silent><leader>b2 :BufferGoto 2<CR>
-nnoremap <silent><leader>b3 :BufferGoto 3<CR>
-nnoremap <silent><leader>b4 :BufferGoto 4<CR>
-nnoremap <silent><leader>b5 :BufferGoto 5<CR>
-nnoremap <silent><leader>b6 :BufferGoto 6<CR>
-nnoremap <silent><leader>b7 :BufferGoto 7<CR>
-nnoremap <silent><leader>b8 :BufferGoto 8<CR>
-nnoremap <silent><leader>b9 :BufferGoto 9<CR>
-
-" Select Buffer
-nnoremap <silent><leader>bb :Buffers<CR>
-
-"==============================================================================
 
 
 " ============================[(Plug)quick-scope]==============================
