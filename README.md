@@ -362,7 +362,6 @@ deactivate venv
 | [vim-airline/vim-airline] | Lean & mean status/tabline for vim that's light as air
 | [vim-airline/vim-airline-themes] | A collection of themes for vim-airline
 | [enricobacis/vim-airline-clock] | Vim-airline clock extension
-| [romgrk/barbar.nvim] | Buffer management
 | [tpope/vim-speeddating] | Increment dates, times, and more
 | [tpope/vim-repeat] | Enable repeating supported plugin maps
 | [unblevable/quick-scope] | Lightning fast left-right movement in Vim
@@ -399,7 +398,6 @@ deactivate venv
 [vim-airline/vim-airline]: https://github.com/vim-airline/vim-airline
 [vim-airline/vim-airline-themes]: https://github.com/vim-airline/vim-airline-themes
 [enricobacis/vim-airline-clock]: https://github.com/enricobacis/vim-airline-clock
-[romgrk/barbar.nvim]: https://github.com/romgrk/barbar.nvim
 [tpope/vim-speeddating]: https://github.com/tpope/vim-speeddating
 [tpope/vim-repeat]: https://github.com/tpope/vim-repeat
 [unblevable/quick-scope]: https://github.com/unblevable/quick-scope
