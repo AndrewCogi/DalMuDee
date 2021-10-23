@@ -686,6 +686,9 @@ let g:startify_bookmarks = [
 			\ ]
 " Goto main buffer
 nmap <silent> <leader>bh :Startify<CR>
+" Select Buffer
+nnoremap <silent><leader>bb :Buffers<CR>
+
 
 " =============================================================================
 
