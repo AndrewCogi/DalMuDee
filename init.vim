@@ -251,7 +251,7 @@ vnoremap <silent> <leader>/ :call Comment()<CR>
 let g:airline#extensions#tabline#enabled = 1
 
 " airline 설정
-let g:airline_powerline_fonts = 1		  	" 구분자 활성화(0=|, 1=>)
+let g:airline_powerline_fonts = 0		  	" 구분자 활성화(0=|, 1=>)
 " let g:airline_left_sep = ''						" 왼쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_sep = ''					" 오른쪽 구분자(빈칸은 기본값=0)
 " let g:airline_right_alt_sep = ''			" 중간 구분자(빈칸은 기본값=0)
