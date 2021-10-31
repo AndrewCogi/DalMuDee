@@ -81,27 +81,17 @@ So I started this project with the idea of creating my own development environme
 
 ❗️ `sudo apt install universal-ctags` 
 
-### 7. lazy git
-
-❗️ `sudo add-apt-repository ppa:lazygit-team/release`
-
-❗️ `sudo apt-get update`
-
-❗️ `sudo apt-get install lazygit`
-
-🖇 ref: https://github.com/jesseduffield/lazygit 
-
-### 8. lazy docker
+### 7. lazy docker
 
 ❗️ `curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash`
 
 🖇 ref: https://github.com/jesseduffield/lazydocker 
 
-### 9. fzf
+### 8. fzf
 
 ❗️ `sudo apt install fzf` 
 
-### 10. Nodejs(for python LSP)
+### 9. Nodejs(for python LSP)
 
 ❗️ `sudo apt-get install curl`
 
@@ -113,7 +103,7 @@ So I started this project with the idea of creating my own development environme
 
 🖇 ref: https://soojae.tistory.com/25 
 
-### 11. jedi(for python LSP)
+### 10. jedi(for python LSP)
 
 ❗️ `sudo apt-get install vim-python-jedi`
 
@@ -125,7 +115,7 @@ So I started this project with the idea of creating my own development environme
 
 🖇 ref: https://github.com/palantir/python-language-server/issues/543 
 
-### 12. black (python formatter)
+### 11. black (python formatter)
 
 ❗️ `sudo pip3 install black`
 
@@ -135,7 +125,7 @@ So I started this project with the idea of creating my own development environme
 
 choose `/bin/python3` 
 
-### 13. ccls(for C/C++ LSP)
+### 12. ccls(for C/C++ LSP)
 
 ❗️ `sudo apt install ccls`
 
