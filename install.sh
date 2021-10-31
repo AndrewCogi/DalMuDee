@@ -51,10 +51,8 @@ installonubuntu() { \
   sudo apt-get install silversearcher-ag # 4
   sudo apt install fd-find # 5
   sudo apt install universal-ctags -y # 6
-  sudo add-apt-repository ppa:lazygit-team/release -y # 7
-  sudo apt-get install lazygit # 7
-  curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash # 8
-  sudo apt install fzf # 9
+  curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash # 7
+  sudo apt install fzf # 8
   pip3 install neovim-remote
 }
 
