@@ -1,0 +1,12 @@
+1. in ubuntu
+MYIP=나의 실행컴퓨터 ipconfig 내부아이피 (ex: 192.168.12.345)
+export DISPLAY="${MYIP}:0.0"
+
+2. in window(client)
+https://tolovefeels.tistory.com/29 참고해서 vcxsrv설치 및 하라는대로 세팅하고 실행해주기
+
+3. in ubuntu
+nvim 들어가서 java GUI 등 실행해보고 client측 창에 뜨는지 확인하기
+
+4. gradle 실행할 때는?
+.bashrc 안에다가 export DISPLAY="${MYIP}:0,0" 해주고 reboot 후 실행하면 됨.

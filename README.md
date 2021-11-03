@@ -436,4 +436,4 @@ deactivate venv
 
 ***🔑 Run Linux GUI apps in the WSL(terminal)***
 
-🖇 ref: read GUI.txt in my file
+🖇 ref: read GUI.txt in myreadme dir
