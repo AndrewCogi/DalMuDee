@@ -434,6 +434,6 @@ deactivate venv
 
 🖇 ref: https://blog.naver.com/dorje5/221958709990
 
-***🔑 Run Linux GUI apps in the WSL***
+***🔑 Run Linux GUI apps in the WSL(terminal)***
 
-🖇 ref: https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+🖇 ref: read GUI.txt in my file
