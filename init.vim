@@ -264,7 +264,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['y', 'z']]
 
 " 레이아웃 section별 설정
-let g:airline_section_a = "JNvim2.0"
+let g:airline_section_a = "DalMuDee"
 let g:airline_section_b = '%t'
 let g:airline_section_c = '%{getcwd()}'
 let g:webdevicons_enable_airline_tabline = 1
