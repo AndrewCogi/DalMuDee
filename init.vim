@@ -47,10 +47,11 @@ nnoremap <space> <Nop>
 
 " normal모드에서 <TAB>누르면 다음버퍼로
 nmap <silent> <TAB> :bnext<CR>
+nmap <silent> <S-TAB> :bprevious<CR>
 
 " 버퍼 지우기, 다음,이전버퍼로 이동
 nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader>bn :bNext<CR>
+nnoremap <silent> <leader>bn :bnext<CR>
 nnoremap <silent> <leader>bp :bprevious<CR>
 
 " visual모드에서
