@@ -294,6 +294,14 @@ on your Ubuntu system, and you can start using it.
 
 ***🔑 Help***
 
+Compatibility Matrix(Java <-> Gradle)
+
+🖇 ref: https://docs.gradle.org/current/userguide/compatibility.html
+
+Upgrade gradle (use ppa)
+
+🖇 ref: https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
+
 Execute without executing bar
 
 🖇 ref: https://stackoverflow.com/questions/52690759/how-do-i-get-rid-of-the-executing-progress-bar-when-running-a-gradle-application
