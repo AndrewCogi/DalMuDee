@@ -212,7 +212,7 @@ https://gradle.org/releases/ to see if a newer version is available.
 Downloading the Gradle binary-only zip file in the `/tmp`
 directory using the following `wget` command:
 
-❗️ `VERSION=6.5.1`
+❗️ `VERSION=7.3`
 
 ❗️ `wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp`
 
@@ -263,7 +263,7 @@ To validate that Gradle is installed properly use the `gradle -v` command which 
 You should see something like the following:
 
 ```
-Welcome to Gradle 6.5.1!
+Welcome to Gradle 7.3!
 
 Here are the highlights of this release:
  - Experimental file-system watching
@@ -274,7 +274,7 @@ For more details see https://docs.gradle.org/6.5.1/release-notes.html
 
 
 ------------------------------------------------------------
-Gradle 6.5.1
+Gradle 7.3
 ------------------------------------------------------------
 
 Build time:   2020-06-30 06:32:47 UTC
@@ -297,10 +297,6 @@ on your Ubuntu system, and you can start using it.
 Compatibility Matrix(Java <-> Gradle)
 
 🖇 ref: https://docs.gradle.org/current/userguide/compatibility.html
-
-Upgrade gradle (use ppa)
-
-🖇 ref: https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
 
 Execute without executing bar
 
