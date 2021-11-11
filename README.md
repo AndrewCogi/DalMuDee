@@ -139,9 +139,9 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 
 **_1._** Execute the JDK and JRE installation commands.
 
-❗️ `sudo apt-get install openjdk-11-jre`
+❗️ `sudo apt-get install openjdk-17-jre`
 
-❗️ `sudo apt-get install openjdk-11-jdk`
+❗️ `sudo apt-get install openjdk-17-jdk`
 
 **_2._** Check java installation
 
@@ -164,7 +164,7 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 (append this things)
 
 ```vim
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 ```
