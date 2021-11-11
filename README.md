@@ -139,9 +139,9 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 
 **_1._** Execute the JDK and JRE installation commands.
 
-❗️ `sudo apt-get install openjdk-17-jre`
+❗️ `sudo apt-get install openjdk-14-jre`
 
-❗️ `sudo apt-get install openjdk-17-jdk`
+❗️ `sudo apt-get install openjdk-14-jdk`
 
 **_2._** Check java installation
 
@@ -164,7 +164,7 @@ also setting LSP for C/C++ is in `./coc-settings.json` file
 (append this things)
 
 ```vim
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-14-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH
 ```
@@ -212,7 +212,7 @@ https://gradle.org/releases/ to see if a newer version is available.
 Downloading the Gradle binary-only zip file in the `/tmp`
 directory using the following `wget` command:
 
-❗️ `VERSION=7.3`
+❗️ `VERSION=6.5.1`
 
 ❗️ `wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp`
 
@@ -263,7 +263,7 @@ To validate that Gradle is installed properly use the `gradle -v` command which 
 You should see something like the following:
 
 ```
-Welcome to Gradle 7.3!
+Welcome to Gradle 6.5.1!
 
 Here are the highlights of this release:
  - Experimental file-system watching
@@ -274,7 +274,7 @@ For more details see https://docs.gradle.org/6.5.1/release-notes.html
 
 
 ------------------------------------------------------------
-Gradle 7.3
+Gradle 6.5.1
 ------------------------------------------------------------
 
 Build time:   2020-06-30 06:32:47 UTC
