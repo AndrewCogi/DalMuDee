@@ -100,6 +100,12 @@ installLiveServer(){
   echo "you should do portforwarding!!!"
 }
 
+installEog(){
+  echo "install eog(Image viewer)"
+  sudo apt install eog -y
+  echo "this will help you use matplotlib"
+}
+
 echo "Welcome to DalMuDee"
 
 echo "Start Installing DalMuDee..."
@@ -152,6 +158,10 @@ read answer
 echo -n "Would you like to install live-server now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installLiveServer || echo "not installing live-server"
+
+echo -n "Would you like to install eog(Image viewer) now?  (y/n)? "
+read answer
+[ "$answer" != "${answer#[Yy]}" ] && installEog || echo "not installing eog"
 
 echo "Installation Done!!"
 echo "help: whgustlr0326@gmail.com"
