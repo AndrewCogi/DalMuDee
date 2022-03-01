@@ -9,6 +9,7 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-css',
   \ 'coc-tsserver',
+  \ 'coc-clangd'
   \ ]
   " coc-explorer : 파일 탐색기
   " coc-yank : yy highlighting
@@ -21,6 +22,7 @@ let g:coc_global_extensions = [
   " coc-html : LSP for html
   " coc-css : LSP for css
   " coc-tsserver : LSP for typescript/javascript
+  " coc-clangd : LSP for C/C++
   " \ 'coc-actions',
   " \ 'coc-sh',
   " \ 'coc-java-debug',
