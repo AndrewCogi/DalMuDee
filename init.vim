@@ -616,7 +616,7 @@ nmap ghs <Plug>(GitGutterStageHunk)
 " 달라진 부분 원래대로 돌려놓는다
 nmap ghu <Plug>(GitGutterUndoHunk)
 " 어떻게 달라졌는지 preview한다
-nmap ghp <Plug>(GitGutterPreviewHunk)
+nmap ghr <Plug>(GitGutterPreviewHunk)
 
 " =============================================================================
 
@@ -635,6 +635,8 @@ nmap ghl :Git log -p<CR>
 nmap ghd :Git diff<CR>
 " show file's commit information
 nmap ghb :Git blame<CR>
+" git pull
+nmap ghp :Git pull<CR>
 
 " =============================================================================
 

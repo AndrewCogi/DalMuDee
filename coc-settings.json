@@ -1,5 +1,9 @@
 {
   "diagnostic.checkCurrentLine": true,
   "diagnostic.warningSign": "?",
-  "diagnostic.errorSign": ">>"
+  "diagnostic.errorSign": ">>", 
+  "python.analysis.diagnosticSeverityOverrides":{
+	  "reportGeneralTypeIssues": "none"
+  },
+  "python.linting.mypyEnabled": true
 }
