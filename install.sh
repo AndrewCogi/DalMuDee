@@ -77,7 +77,7 @@ installCppLSP(){
 installPythonLSP(){
 	echo "install Nodejs"
 	sudo apt-get install curl
-	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 	sudo apt-get install -y nodejs
 	sudo apt install build-essential
 
