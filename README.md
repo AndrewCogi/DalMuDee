@@ -45,17 +45,17 @@ So I started this project with the idea of creating my own development environme
 
 🖇 ref: https://www.chrisatmachine.com/Neovim/07-ranger/ 
 
-### 2. ueberzug
+### 2. ~~ueberzug~~ (not maintained)
 
-***⚠️ must be installed before installing ueberzug***
+~~***⚠️ must be installed before installing ueberzug***~~
 
-❗️ `sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev`
+~~❗️ `sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev`~~
 
-🖇 ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/
+~~🖇 ref: https://www.google.co.kr/amp/s/amp.reddit.com/r/linux4noobs/comments/bcmo19/help_installing_ueberzug/~~
 
-❗️ `sudo pip3 install ueberzug`
+~~❗️ `sudo pip3 install ueberzug`~~
 
-🖇 ref: https://github.com/seebye/ueberzug 
+~~🖇 ref: https://github.com/seebye/ueberzug~~
 
 ### 3. ripgrep
 
