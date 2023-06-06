@@ -45,7 +45,7 @@ installpynvim() { \
 installonubuntu() { \
 	sudo apt install ranger -y # 1
 	sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev -y # 2
-	sudo pip3 install ueberzug # 2
+	# sudo pip3 install ueberzug # 2 (not maintained)
 	sudo apt-get update # 3
 	sudo apt-get install ripgrep # 3
 	sudo apt-get install silversearcher-ag # 4
@@ -163,6 +163,10 @@ read answer
 echo -n "Would you like to install eog(Image viewer) now?  (y/n)? "
 read answer
 [ "$answer" != "${answer#[Yy]}" ] && installEog || echo "not installing eog"
+
+echo "Remove unnecessary programs..."
+sudo apt autoremove -y
+echo "Finished Cleaning."
 
 echo "Installation Done!!"
 echo "help: whgustlr0326@gmail.com"
