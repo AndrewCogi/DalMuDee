@@ -7,6 +7,12 @@ DalMuDee🌙
 My Personal Integrated Development Environment
 </p>
 
+<h3 align="center">
+⚠️This repository is no longer actively maintained.⚠️ 
+ 
+ Please refer to [Neovim-Java-IDE](https://github.com/AndrewCogi/Neovim-Java-IDE) for the latest updates.
+</h1>
+
 ## Introduction
 
 When I was serving in the military, the environment for programming was bad.
